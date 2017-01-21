@@ -7,7 +7,7 @@ require_dependency 'wizard/builder'
 class UsersController < ApplicationController
 
   skip_before_filter :authorize_mini_profiler, only: [:avatar]
-  skip_before_filter :check_xhr, only: [:show, :password_reset, :update, :account_created, :activate_account, :perform_account_activation, :user_preferences_redirect, :avatar, :my_redirect, :toggle_anon, :admin_login]
+  skip_before_filter :check_xhr, only: [:show, :password_reset, :update, :account_created, :activate_account, :perform_account_activation, :user_preferences_redirect, :avatar, :my_redirect, :toggle_anon, :switch_locale, :admin_login]
 
   before_filter :ensure_logged_in, only: [:username, :update, :user_preferences_redirect, :upload_user_image,
                                           :pick_avatar, :destroy_user_image, :destroy, :check_emails, :topic_tracking_state]
@@ -500,6 +500,16 @@ class UsersController < ApplicationController
     else
       render json: failed_json, status: 403
     end
+  end
+
+  def switch_locale
+    if current_user && SiteSetting.allow_user_locale
+      current_user.update_attribute(:locale, params[:locale])
+    end
+
+    cookies[:locale] = params[:locale]
+
+    render json: success_json
   end
 
   def account_created

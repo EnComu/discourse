@@ -2,13 +2,23 @@ module CurrentLocale
   private
 
   def resolve_locale
-    locale_from_user || locale_from_header || SiteSetting.default_locale
+    locale_from_user ||
+      locale_from_cookie ||
+      locale_from_header ||
+      SiteSetting.default_locale
   end
 
   def locale_from_user
     return unless current_user && SiteSetting.allow_user_locale
 
     current_user.locale.presence
+  end
+
+  def locale_from_cookie
+    locale = cookies[:locale]
+    return unless SiteSetting.switchable_locales.include?(locale)
+
+    locale
   end
 
   def locale_from_header

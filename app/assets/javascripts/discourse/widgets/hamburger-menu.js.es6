@@ -114,6 +114,23 @@ export default createWidget('hamburger-menu', {
     return links.concat(extraLinks).map(l => this.attach('link', l));
   },
 
+  localeLinks() {
+    const links = [];
+    const localesForLanguageSwitcher = this.siteSettings.locales_for_language_switcher;
+
+    localesForLanguageSwitcher.split('|').forEach(function(localeHyphenLang) {
+      const localeLang = localeHyphenLang.split('-');
+
+      links.push({ action: 'switchLocale',
+                   actionParam: localeLang[0],
+                   className: 'groups-link',
+                   rawLabel: localeLang[1] });
+    });
+
+    const extraLinks = flatten(applyDecorators(this, 'localeLinks', this.attrs, this.state));
+    return links.concat(extraLinks).map(l => this.attach('link', l));
+  },
+
   listCategories() {
     const hideUncategorized = !this.siteSettings.allow_uncategorized_topics;
     const showSubcatList = this.siteSettings.show_subcategory_list;
@@ -178,6 +195,12 @@ export default createWidget('hamburger-menu', {
     results.push(this.listCategories());
     results.push(h('hr'));
     results.push(this.attach('menu-links', { omitRule: true, contents: () => this.footerLinks(prioritizeFaq, faqUrl) }));
+
+    let localesForLanguageSwitcher = this.siteSettings.locales_for_language_switcher;
+    if (localesForLanguageSwitcher && !(localesForLanguageSwitcher.length === 0)) {
+      results.push(h('hr'));
+      results.push(this.attach('menu-links', { omitRule: true, contents: () => this.localeLinks() }));
+    }
 
     return results;
   },

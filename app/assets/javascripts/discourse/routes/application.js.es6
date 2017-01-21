@@ -28,6 +28,12 @@ const ApplicationRoute = Discourse.Route.extend(OpenComposer, {
       });
     },
 
+    switchLocale(locale) {
+      ajax("/users/switch-locale/" + locale, {method: 'GET'}).then(() => {
+        window.location.reload();
+      });
+    },
+
     toggleMobileView() {
       mobile.toggleMobileView();
     },
