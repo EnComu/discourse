@@ -37,6 +37,12 @@ class SiteSetting < ActiveRecord::Base
     LocaleSiteSetting.values.map{ |e| e[:value] }.join('|')
   end
 
+  def self.switchable_locales
+    return [] unless locales_for_language_switcher.present?
+
+    locales_for_language_switcher.split("|").map { |l| l.split('-')[0] }
+  end
+
   def self.topic_title_length
     min_topic_title_length..max_topic_title_length
   end

@@ -19,6 +19,10 @@ export default Ember.Controller.extend({
   actions: {
     appRouteAction(name) {
       return this.send(name);
+    },
+
+    appRouteParameterizedAction(name, param) {
+      return this.send(name, param);
     }
   }
 });

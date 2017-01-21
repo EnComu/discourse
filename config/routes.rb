@@ -304,6 +304,7 @@ Discourse::Application.routes.draw do
   put "users/admin-login" => "users#admin_login"
   get "users/admin-login/:token" => "users#admin_login"
 
+  get "/users/switch-locale/:locale" => "users#switch_locale", constraints: { locale: /#{I18n.available_locales.join("|")}/ }
   post "users/toggle-anon" => "users#toggle_anon"
   post "users/read-faq" => "users#read_faq"
   get "users/search/users" => "users#search_users"

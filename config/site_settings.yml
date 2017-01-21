@@ -78,6 +78,11 @@ basic:
     default: false
   set_locale_from_accept_language_header:
     default: false
+  locales_for_language_switcher:
+    client: true
+    default: ''
+    type: list
+    choices: 'LocaleSiteSetting.values_for_list'
   categories_topics:
     default: 20
     min: 5

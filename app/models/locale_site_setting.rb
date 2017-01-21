@@ -13,6 +13,10 @@ class LocaleSiteSetting < EnumSiteSetting
     end
   end
 
+  def self.values_for_list
+    values.map { |l| "#{l[:value]}-#{l[:name]}" }
+  end
+
   @lock = Mutex.new
 
   def self.language_names
