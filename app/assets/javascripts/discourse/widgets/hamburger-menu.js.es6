@@ -74,7 +74,6 @@ export default createWidget('hamburger-menu', {
   },
 
   generalLinks() {
-    const { siteSettings } = this;
     const links = [];
 
     links.push({ route: 'discovery.latest', className: 'latest-topics-link', label: 'filters.latest.title' });
@@ -95,7 +94,7 @@ export default createWidget('hamburger-menu', {
 
     links.push({ route: 'discovery.top', className: 'top-topics-link', label: 'filters.top.title' });
 
-    if (siteSettings.enable_badges) {
+    if (this.siteSettings.enable_badges) {
       links.push({ route: 'badges', className: 'badge-link', label: 'badges.title' });
     }
 
