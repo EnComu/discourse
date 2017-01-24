@@ -734,7 +734,7 @@ da:
     delete_old_hidden_posts: "Slet automatisk skjulte indlæg der forbliver skjulte i mere end 30 dage."
     default_locale: "Standardsproget for denne Discourse-instans (ISO 639-1 kode)."
     allow_user_locale: "Tillad brugere at vælge egne sprog præferencer på site"
-    set_locale_from_accept_language_header: "set interface language for anonymous users from their web browser's language headers. (EXPERIMENTAL, does not work with anonymous cache)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "Minimumlængde tilladt for indlæg i tegn"
     min_first_post_length: "Minimum tilladte antal tegn (i emne felt) i første indlæg"
     min_private_message_post_length: "Minimumlængde tilladt for indlæg i tegn"

@@ -792,7 +792,7 @@ he:
     delete_old_hidden_posts: "מחיקת אוטומטית של פרסומים מוסתרים שנותרים מוסתרים במשך יותר מ-30 יום."
     default_locale: "שפת ברירת המחדל עבור אתר Discourse זה (קוד ISO 639-1)"
     allow_user_locale: "אפשרו למשתמשים לבחור את הגדרות השפה שלהם בממשק המשתמש/ת"
-    set_locale_from_accept_language_header: "קבעו את שפת הממשק עבור משתמשים אנונימיים לפי השפה בדפדפן. (נ-י-ס-י-ו-נ-י, לא עובד עם cache אנונימי)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "מספר התווים המותר כאורך מינימלי לפוסט"
     min_first_post_length: "אורך מינימלי מותר לפוסט ראשון (בגוף הנושא) בתווים "
     min_private_message_post_length: "אורך הפוסט המינימלי המותר בתווים להודעות"

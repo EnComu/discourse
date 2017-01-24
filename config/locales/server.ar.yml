@@ -899,7 +899,7 @@ ar:
     delete_old_hidden_posts: "سيتم حذف الوظائف المخفية تلقائيًا إذا زادت مدة الإخفاء أكثر من 30 يومًا"
     default_locale: "اللغة الإفتراضية لهذا الديسكورس نموذج  (ISO 639-1 Code)"
     allow_user_locale: "السماح للمستخدمين باختيار واجهة تفضيل لغة خاصة بهم."
-    set_locale_from_accept_language_header: "اختيار لغة الواجه للمستخدمين المجهولين طبقا للغة المختارة بمطصحف الشبكة. (اعداد تجريبى، لا يعمل مع ذاكرة المطصفح)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "الحد الأدنى المسموح به لطول مشاركة في الأحرف"
     min_first_post_length: "الحد الأدنى المسموح به لطول أول المشاركة (مقدمة العنوان) بالأحرف"
     min_private_message_post_length: "الحد الأدنى المسموح به لطول مشاركة في الأحرف"

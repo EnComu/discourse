@@ -744,7 +744,7 @@ sv:
     delete_old_hidden_posts: "Auto-radera alla dolda inlägg som varit dolda i mer än 30 dagar."
     default_locale: "Standardspråk för den här instansen av Discourse (ISO 639-1-kod)"
     allow_user_locale: "Tillåt användare att själva välja språk"
-    set_locale_from_accept_language_header: "sätt gränssnittets språk för anonyma användare från deras webbläsares rubriks språk. (EXPERIMENTELLT, det fungerar inte med anonym cache)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "Minsta tillåtna inläggslängd i antal tecken"
     min_first_post_length: "Lägsta antal tillåtna tecken i första inlägget (ämnestext)"
     min_private_message_post_length: "Lägst antal tillåtna tecken i inlägg för meddelanden"

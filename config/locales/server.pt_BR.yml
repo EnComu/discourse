@@ -758,7 +758,7 @@ pt_BR:
     delete_old_hidden_posts: "Auto-apagar todas as mensagens ocultas que ficar oculta por mais de 30 dias."
     default_locale: "Idioma padrão para esta instância do Discourse (ISO 639-1 Code)"
     allow_user_locale: "Permitir que os usuários escolham suas próprias preferências de idioma de interface"
-    set_locale_from_accept_language_header: "define a língua da interface para os usuários anônimos de acordo com os cabeçalhos de língua de seus navegadores. (EXPERIMENTAL, não funciona com cache anônimo)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "Comprimento mínimo permitido do post em caracteres"
     min_first_post_length: "Comprimento mínimo de caracteres permitido para primeira mensagem (corpo do tópico)"
     min_private_message_post_length: "Comprimento mínimo de caracteres permitido para mensagens"

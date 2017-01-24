@@ -814,7 +814,7 @@ ro:
     delete_old_hidden_posts: "șterge automat toate postările ascunse care stau ascunse mai mult de 30 de zile."
     default_locale: "Limba implicită a acestei instanțe de Discourse (ISO 639-1 Code)"
     allow_user_locale: "Permite utilizatorilor să-și aleagă singuri limba pentru interfață"
-    set_locale_from_accept_language_header: "setează limba interfeței pentru utilizatorii anonimi pe baza header-elor de limbă ale web browser-elor lor. (EXPERIMENTAL, nu funcționează cu cache anonim)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "Lungimea minimă a postării, în caractere"
     min_first_post_length: "Numărul minim de caractere permis pentru prima postare (în corpul mesajului)"
     min_private_message_post_length: "Numărul minim de caractere permis pentru mesaje, per postare"
