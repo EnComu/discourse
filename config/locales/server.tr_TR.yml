@@ -677,7 +677,7 @@ tr_TR:
     delete_old_hidden_posts: "30 günden fazla süreyle gizli kalan gizlenmiş gönderileri otomatik olarak sil."
     default_locale: "Bu Discourse yüklemesinin  (ISO 639-1 Code) öntanımlı dili"
     allow_user_locale: "Kullanıcıların arayüz için kendi istedikleri dili seçmesine izin ver"
-    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence when enabled (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "Gönderide olması gereken en az karakter sayısı"
     min_first_post_length: "İlk gönderi için (konu içi) izin verilen en az karakter sayısı"
     min_private_message_post_length: "İleti gönderileri için izin verilen en az karakter sayısı"

@@ -795,7 +795,7 @@ de:
     delete_old_hidden_posts: "Automatisch alle Beiträge löschen, die länger als 30 Tage versteckt bleiben."
     default_locale: "Die Standardsprache dieser Discourse-Instanz (kodiert in ISO 639-1)."
     allow_user_locale: "Erlaube Benutzern, ihre eigene Oberflächensprache zu wählen"
-    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence when enabled (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "Minimal zulässige Beitragslänge in Zeichen."
     min_first_post_length: "Minimal zulässige Länge des ersten Beitrags (eines Themas) in Zeichen"
     min_private_message_post_length: "Minimale zulässige Beitragslänge in Zeichen für Nachrichten"

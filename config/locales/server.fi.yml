@@ -797,7 +797,7 @@ fi:
     delete_old_hidden_posts: "Poista automaattisesti kaikki yli 30 päivää piilotettuna olleet viestit."
     default_locale: "Sivuston oletuskieli (ISO 639-1 koodi)"
     allow_user_locale: "Salli käyttäjien vaihtaa käyttöliittymän kieli omista asetuksista"
-    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence (EXPERIMENTAL, does not work with anonymous cache)"
+    set_locale_from_accept_language_header: "set interface language from web browser's language headers. For authenticated users, user preference takes precedence when enabled (EXPERIMENTAL, does not work with anonymous cache)"
     min_post_length: "Viestin merkkien minimimäärä"
     min_first_post_length: "Ketjun aloitusviestin (leipätekstin) merkkien minimimäärä"
     min_private_message_post_length: "Viestin merkkien minimimäärä viesteille"
