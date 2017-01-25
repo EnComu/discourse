@@ -1,0 +1,2060 @@
+ca:
+  dates:
+    short_date_no_year: "D MMM"
+    short_date: "D MMM, YYYY"
+    long_date: "MMMM D, YYYY h:mma"
+  datetime_formats:
+    formats:
+      short: "%d-%m-%Y"
+      short_no_year: "%B %-d"
+      date_only: "%B %-d, %Y"
+  date:
+    month_names: [null, Gener, Febrer, Març, Abril, Maig, Juny, Juliol, Agost, Setembre, Octubre, Novembre, Desembre]
+  title: "Discourse"
+  topics: "Temes"
+  posts: "entrades"
+  loading: "Carregant"
+  powered_by_html: 'Powered by <a href="http://www.discourse.org">Discourse</a>, per una millor experiència visita''ns amb JavaScript activat'
+  log_in: "Inicia sessió"
+  purge_reason: "Automàticament esborrat com a compte abandonat i desactivat"
+  disable_remote_images_download_reason: "La descàrrega d'imatges en remot s'ha deshabilitat perquè no hi havia prou espai de disc disponible."
+  anonymous: "Anònim"
+  emails:
+    incoming:
+      default_subject: "Email entrant de %{email}"
+      show_trimmed_content: "Mostra contingut retallat"
+      errors:
+        empty_email_error: "Passa quan el correu que hem rebut està en blanc."
+        no_message_id_error: "Passa quan el correu no té una capçalera \"Message-Id\"."
+        auto_generated_email_error: "Passa quan la capçalera de 'precedence' està posat com a: list, junk, bulk o auto_reply, o quan alguna altra capçalera conté: auto-submitted, auto-replied o auto-generated."
+        no_body_detected_error: "Passa quan no hem pogut extreure el cos del correu i no hi havia adjunts."
+        inactive_user_error: "Passa quan el remitent no està actiu."
+        blocked_user_error: "Passa quan el remitent està bloquejat."
+        bad_destination_address: "Passa quan cap de les adreçes en els camps To/Cc/Bcc es corresponen a una adreça de correu entrant."
+        strangers_not_allowed_error: "Passa quan un usuari mira de crear un tema en una categoria de la qual no és membre."
+        insufficient_trust_level_error: "Passa quan un usuari intenta crear un tema en una categoria per la qual no tenen el nivell de confiança necessari."
+        reply_user_not_matching_error: "Passa quan una resposta prové d'una adreça de correu diferent d'aquella a què es va enviar la notificació."
+        topic_not_found_error: "Passa quan una resposta arriba per a un tema que ha estat esborrat."
+        topic_closed_error: "Passa quan arriba una resposta per a un tema que està tancat."
+        screened_email_error: "Passa quan el remitent ja estava sota sospita."
+  errors:
+    format: '%{attribute} %{message}'
+    messages:
+      too_long_validation: "està limitat a %{max} caràcters; n'has introduït %{length}."
+      invalid_boolean: "Booleà invàlid."
+      taken: "ja s'està utilitzant"
+      accepted: s'ha d'acceptar
+      blank: no pot estar en blanc
+      present: ha d'estar en blanc
+      confirmation: "no es correspon amb %{attribute}"
+      empty: no pot estar buit
+      equal_to: ha de ser igual a %{count}
+      even: ha de ser parell
+      exclusion: està reservat
+      greater_than: ha de ser major que %{count}
+      greater_than_or_equal_to: ha de ser major o igual a %{count}
+      has_already_been_used: "ja s'ha usat"
+      inclusion: no està inclòs a la llista
+      invalid: és invàlid
+      less_than: ha de ser menor que %{count}
+      less_than_or_equal_to: ha de ser menor o igual a %{count}
+      not_a_number: no és un número
+      not_an_integer: ha de ser un número enter
+      odd: ha de ser senar
+      record_invalid: 'Validació fallida: %{errors}'
+      restrict_dependent_destroy:
+        one: "No puc esborrar el registre perquè n'hi ha  un %{record} que en depèn."
+        many: "No puc esborrar el registre perquè hi ha %{record} que en depenen."
+      too_long:
+        one: 'és massa llarg (màxim: 1 caràcter)'
+        other: 'és massa llarg (màxim: %{count} caràcters)'
+      too_short:
+        one: 'és massa curt (mínim: 1 caràcters)'
+        other: 'és massa curt (mínim: %{count} caràcters)'
+      wrong_length:
+        one: té una llargada incorrecta (hauria de ser 1 caràcter)
+        other: té una llargada incorrecta (hauria de ser %{count} caràcters)
+      other_than: "ha de ser diferent de %{count}"
+    template:
+      body: 'Hi ha problemes amb els següents camps:'
+      header:
+        one: '1 error ha fet que no hagi estat possible desar aquest %{model} '
+        other: '%{count} errors han fet que no hagi estat possible desar aquest %{model} '
+    embed:
+      load_from_remote: "Hi ha hagut un error al carregar aquesta entrada."
+    site_settings:
+      min_username_length_exists: "No pots establir una mida mínima de nom d'usuari superior al nom d'usuari més curt."
+      min_username_length_range: "No pots posar un mínim superior al màxim."
+      max_username_length_exists: "No pots establir una mida màxima de nom d'usuari inferior al nom d'usuari més llarg."
+      max_username_length_range: "No pots posar un màxim inferior al mínim."
+      default_categories_already_selected: "No pots seleccionar una categoria que s'usi en una altra llista."
+      s3_upload_bucket_is_required: "No pots activar la pujada a S3 si no configures el 's3_upload_bucket'."
+  backup:
+    operation_already_running: "Actualment s'està efectuant una operació. No es pot iniciar un nou treball en aquest moment."
+    backup_file_should_be_tar_gz: "L'arxiu de la còpia de seguretat hauria d'estar en format .tar.gz."
+    not_enough_space_on_disk: "No hi ha prou espai de disc per pujar aquesta còpia de seguretat."
+  not_logged_in: "Cal que iniciïs sessió per poder fer això."
+  not_found: "Aquest recurs o URL no ha pogut ser trobat."
+  invalid_access: "No se't permet veure el recurs que has demanat."
+  read_only_mode_enabled: "Aquest lloc web està en mode de només lectura. Les interaccions estan deshabilitades."
+  reading_time: "Temps de lectura"
+  likes: "M'agrada"
+  too_many_replies:
+    one: "Ho sentim, però els usuaris nous estan limitats a 1 resposta en un mateix tema."
+    other: "Ho sentim, però els usuaris nous estan limitats a %{count} respostes en un mateix tema."
+  embed:
+    start_discussion: "Inicia discussió"
+    continue: "Continua discussió"
+    more_replies:
+      one: "una resposta més"
+      other: "%{count} respostes més"
+    loading: "Carregant discussió..."
+    permalink: "Enllaç permanent"
+    imported_from: "Aquesta discussió és derivada de l'entrada original de %{link}"
+    in_reply_to: "▶ %{username}"
+    replies:
+      one: "1 resposta"
+      other: "%{count} respostes"
+  no_mentions_allowed: "Ho sentim, però no pots mencionar d'altres usuaris."
+  too_many_mentions:
+    one: "Ho sentim, però només pots mencionar un usuari per entrada."
+    other: "Ho sentim, però només pots mencionar %{count} usuaris per entrada."
+  no_mentions_allowed_newuser: "Ho sentim, però els usuaris nous no poden mencionar d'altres usuaris."
+  too_many_mentions_newuser:
+    one: "Ho sentim, però els nous usuari només poden mencionar un usuari per entrada."
+    other: "Ho sentim, però els nous usuari només poden mencionar %{count} usuaris per entrada."
+  no_images_allowed: "Ho sentim, però els usuaris nous no poden posar imatges en les entrades."
+  too_many_images:
+    one: "Ho sentim, però els usuaris nous només poden posar una imatge per entrada."
+    other: "Ho sentim, però els usuaris nous només poden posar %{count} imatges per entrada."
+  no_attachments_allowed: "Ho sentim, però els usuaris nous no poden adjuntar arxius en les entrades."
+  too_many_attachments:
+    one: "Ho sentim, però els usuaris nous només poden adjuntar un arxiu per entrada."
+    other: "Ho sentim, però els usuaris nous només poden adjuntar %{count} arxius per entrada."
+  no_links_allowed: "Ho sentim, però els usuaris nous no poden posar enllaços en les entrades."
+  too_many_links:
+    one: "Ho sentim, però els usuaris nous només poden posar un enllaç per entrada."
+    other: "Ho sentim, però els usuaris nous només poden posar %{count} enllaços per entrada."
+  spamming_host: "Ho sentim, però no pots publicar un enllaç a aquesta pàgina web."
+  user_is_suspended: "A els usuaris suspesos no se'ls permet fer entrades."
+  topic_not_found: "Alguna cosa ha anat malament. Potser aquest tema està tancat o ha estat esborrat mentres te'l miraves?"
+  just_posted_that: "es massa semblant al que has escrit recentment"
+  invalid_characters: "conté caràcters invàlids"
+  next_page: "pàgina següent →"
+  prev_page: "← pàgina anterior"
+  page_num: "Pàgina %{num}"
+  home_title: "Inici"
+  topics_in_category: "Temes en la categoria '%{category}'"
+  rss_posts_in_topic: "Feed RSS de '%{topic}'"
+  rss_topics_in_category: "Feed RSS de temes en la categoria '%{category}'"
+  author_wrote: "%{author} va escriure:"
+  num_posts: "Entrades:"
+  num_participants: "Participants:"
+  read_full_topic: "Llegir tot el tema"
+  private_message_abbrev: "Msstg"
+  rss_description:
+    latest: "Temes recents"
+    hot: "Temes candents"
+    top: "Millors temes"
+    posts: "Darreres entrades"
+    private_posts: "Darrers missatges privats"
+    group_posts: "Darreres entrades de %{group_name}"
+    group_mentions: "Darreres mencions de %{group_name}"
+    user_posts: "Darreres entrades de @%{username}"
+    user_topics: "Darrers temes de @%{username}"
+  too_late_to_edit: "Aquesta entrada va ser publicada fa massa temps. No pot ser editada ni eliminada."
+  revert_version_same: "La versió actual és la mateixa a la qual mires de retrocedir."
+  excerpt_image: "imatge"
+  queue:
+    delete_reason: "Esborrat via la cua de moderació d'entrades"
+  groups:
+    errors:
+      can_not_modify_automatic: "No pots modificar un grup automàtic"
+      member_already_exist: "'%{username}' ja és membre d'aquest grup."
+      invalid_domain: "'%{domain}' no és un domini vàlid."
+      invalid_incoming_email: "'%{email}' no és una adreça d'email vàlida."
+      email_already_used_in_group: "'%{email}' ja està en ús en el grup '%{group_name}'."
+      email_already_used_in_category: "'%{email}' is ja està en ús en la categoria '%{category_name}'."
+    default_names:
+      everyone: "tothom"
+      admins: "administradors"
+      moderators: "moderadors"
+      staff: "staff"
+      trust_level_0: "trust_level_0"
+      trust_level_1: "nivell de confiança 1"
+      trust_level_2: "nivell de confiança 2"
+      trust_level_3: "nivell de confiança 3"
+      trust_level_4: "nivell de confiança 4"
+  education:
+    until_posts:
+      one: "entrada"
+      other: "%{count} entrades"
+    new-topic: |
+      Benvingut/da a %{site_name} &mdash; **gràcies per iniciar una conversa!**
+
+      - El títol sona interessant si te'l llegeixes en veu alta? És un bon resum?
+
+      - A qui podria interessar? Per què importa? Quina mena de respostes busques?
+
+      - Inclou paraules comunment usades en el tema, per a que d'altres puguin trobar-lo fàcilment. Per agrupar el tema amb d'altres relacionats, selecciona una categoria.
+
+      Per a més consells, [visita les directrius de la nostra comunitat](/guidelines). Aquest panell només apareixerà per als teus primers %{education_posts_text}.
+    new-reply: |
+      Benvingut a %{site_name} &mdash; **gràcies per contribuir a la conversa!**
+
+      - La teva resposta millora la conversa d'alguna manera, encara que sigui només lleugerament?
+
+      - Sigues amable amb els teus companys de comunitat.
+
+      - Les crítiques constructives són benvingudes, però recorda criticar les *idees*, no les persones.
+
+      Per a més consells, [visita les directrius de la nostra comunitat](/guidelines). Aquest panell només apareixerà per als teus primers %{education_posts_text}.
+    avatar: |
+      ### Què tal si poses una fotografia per al teu compte?
+
+      Has escrit uns quants temes i respostes, però encara no tens una fotorgrafia de perfil que t'identifiqui -- de moment, només és una lletra.
+
+      Has considerat **[visitar el teu perfil d'usuari](%{profile_path})** i pujar una fotografia que et representi?
+
+      És més fàcil seguir discussions i trobar gent interessant a la conversa quan tots tenim una fotografia de perfil diferent!
+    sequential_replies: |
+      ### Considera respondre unes quantes entrades d'una tirada
+
+      Enlloc d'escriure unes quantes respostes a un sol tema, siusplau considera escriure una sola resposta que citi diverses entrades prèvies, o mencions via @nom.
+
+      Pots editar la teva darrera resposta per a afegir una cita. Per a fer-ho, selecciona text i prem el botó de <b>cita resposta</b> que apareixerà.
+
+      És més fàcil seguir un tema quan té menys respostes més profundes que no pas moltes respostes indivituals.
+    dominating_topic: |
+      ### Deixa als altres unir-se la conversa
+
+      Aquest tema és molt important per a tu &ndash; has publicat més del %{percent}% de les respostes aquí.
+
+      Estàs segur que estàs proporcionant el temps adequat per a que d'altres puguin oferir també els seus punts de vista?
+    too_many_replies: |
+      ### Has arribat al límit de respostes per a aquest tema
+
+      Ho sentim, però els usuaris nous estan limitats temporalment a %{newuser_max_replies_per_topic} respostes en el mateix tema.
+
+      Enlloc d'afegir una altra resposta, sisplau, considera editar les teves respostes prèvies o visitar d'altres temes.
+    reviving_old_topic: |
+      ### Ressuscitar aquest tema?
+
+      La darrera resposta a aquest tema va ser fa %{days} dies. La teva entrada reactivarà el tema apujant-lo a les primeres posicions de la llista i notificarà aquells involucrats en la conversa prèvia.
+
+      Estàs segur de que vols continuar aquesta antiga conversa?
+  activerecord:
+    attributes:
+      category:
+        name: "Nom de la categoria"
+      post:
+        raw: "Body"
+      user_profile:
+        bio_raw: "Sobre mi"
+    errors:
+      models:
+        topic:
+          attributes:
+            base:
+              warning_requires_pm: "Només pots adjuntar advertències a missatges privats."
+              too_many_users: "Només pots enviar advertències a un usuari cada vegada."
+              cant_send_pm: "Disculpa, no pots enviar-li un missatge privat a eixe usuari."
+              no_user_selected: "Heu de seleccionar un usuari vàlid."
+        user:
+          attributes:
+            password:
+              common: "és una de les 10000 contrasenyes més comuns. Sisplau usa una contrasenya més segura"
+              same_as_username: "és el igual que el teu nom d'usuari. Siusplau, usa una contrassenya més segura."
+              same_as_email: "és igual que el teu correu. Siusplau, usa una contrasseny més segura."
+            ip_address:
+              signup_not_allowed: "El registre no està permès per a aquest compte d'usuari."
+        color_scheme_color:
+          attributes:
+            hex:
+              invalid: "no és un color vàlid"
+  user_profile:
+    no_info_me: "<div class='missing-profile'>El camp 'Sobre mi' del teu perfil està actualment en blanc, <a href='/users/%{username_lower}/preferences/about-me'>T'agradaria omplir-lo?</a></div>"
+    no_info_other: "<div class='missing-profile'>%{name} encara no ha introduït res en el camp 'Sobre mi' del seu perfil</div>"
+  vip_category_name: "Sala VIP"
+  vip_category_description: "Una categoria exclusiva per a membres d'un nivell de confiança de 3 o més."
+  meta_category_name: "Feedback del lloc web"
+  meta_category_description: "Debat sobre aquest lloc web, la seva gestió, com funciona i com podríem millorar-lo."
+  staff_category_name: "Staff"
+  staff_category_description: "Categoria privada per a debats entre moderadors i administradors. Els temes només seran visibles per a membres del staff."
+  assets_topic_body: "Aquest és un tema permanent, visible únicament per membres del staff, amb el fi d'emmagatzemar les imatges i arxius usats en el disseny del lloc web. No l'eliminis!\n\n\nCom fer-ho:\n\n\n1. Respon a aquest tema.\n2. Puja aquí totes les imatges que vulguis per als logos, favicons i demés. (Usa la icona de la barra d'eines en l'editor o arrossega i allibera les imatges, o enganxa-les). \n3. Publica la teva resposta.\n4. Fes clic amb el botó dret en les imatges de la teva nova entrada per a obtenir la ruta on estan pujades, o clica en la icona d'editar per a veure aquestes rutes en el panell d'edició. Copia les rutes.\n5. Enganxa les rutes a les imatges en [ajustos bàsics](/admin/site_settings/category/required).\n\n\nSi necessites habilitar la pujada de diferents tipus d'arxiu, edita `authorized_extensions` en les opcions d'[arxius](/admin/site_settings/category/files)."
+  lounge_welcome:
+    title: "Benvingut a la Sala VIP"
+    body: |2
+
+      Felicitats! :confetti_ball:
+
+      Si pots veure aquest tema, se t'ha promocionat a **habitual** (nivell de confiança 3).
+
+      Ara pots &hellip;
+
+      * Editar el títol de qualsevol tema
+      * Canviar la categoria de qualsevol tema
+      * Fer que tots els teus enllaços es puguin seguir ([nofollow automàtic](http://en.wikipedia.org/wiki/Nofollow) ja no aplica)
+      * Accés a una categoria VIP només visible pels usuaris amb nivell de confiança 3 i superior
+      * Amagar el Spam amb un sol avís
+
+      Aquí tens [una llista dels altres usuaris habituals](/badges/3/regular). Assegura't de saludar-los.
+
+      Gràcies per ser una part important d'aquesta comunitat!
+
+      (Per més informació sobre nivells de confiança, [llegeix aquest tema][trust]. Siusplau, tingues en compte que només els usuaris que segueixin complint els requisits matindran l'estatus d'habitual.)
+
+      [confiança]: https://meta.discourse.org/t/what-do-user-trust-levels-do/4924
+  category:
+    topic_prefix: "Definició de la categoria %{category}"
+    replace_paragraph: "(Canvia aquest primer paràgraf i escriu una breu descripció per la nova categoria. Aquesta gia apareixerà a l'àrea de selecció de categoria, o sigui que mira de mantenir-la per sota dels 200 caràcters. **Fins que editis aquesta descripció o hi creis temes, la categoria no apareixerà a la pàgina de categories.**)"
+    post_template: "%{replace_paragraph}\n\nUsa els següents paràgrafs per a donar una descripció més llarga, o per establir les guies / normes de la categoria:\n\n- Per què hauria algú d'usar aquesta categoria? Per a què serveix?\n\n- Com es diferencia d'altres categories que ja tenim?\n\n- Què haurien de contenir els temes d'aquesta categoria, en termes generals?\n\n- Necessitem aquesta categoria? O la podríem ajuntar amb una altra categoria o subcategoria?\n"
+    errors:
+      uncategorized_parent: "Sense categories no pot tenir categoria primaria"
+      self_parent: "La categoria primaria d'una subcategoria no pot ser ella mateixa."
+      depth: "No es pot anidar una subcategoria debajo d'una altra"
+      invalid_email_in: "'%{email}' no és una adreça d'email vàlida."
+      email_already_used_in_group: "'%{email}' ja està en ús en el grup '%{group_name}'."
+      email_already_used_in_category: "'%{email}' is ja està en ús en la categoria '%{category_name}'."
+    cannot_delete:
+      uncategorized: "Sense categoria no es pot eliminar"
+      has_subcategories: "No es pot eliminar aquesta categoria perquè té subcategories."
+      topic_exists:
+        one: "No es pot eliminar aquesta categoria perquè té 1 tema. El més antic és %{topic_link}."
+        other: "No es pot eliminar aquesta categoria perquè té %{count} temes. El tema més antic es %{topic_link}."
+      topic_exists_no_oldest: "No es pot eliminar aquesta categoria perquè el comptador de temes està en %{count}."
+    uncategorized_description: "Els temes que no necessiten una categoria, o que no encaixen en cap de les categories existents."
+  trust_levels:
+    newuser:
+      title: "nou usuari"
+    basic:
+      title: "usuari bàsic"
+    member:
+      title: "membre"
+    regular:
+      title: "habitual"
+    leader:
+      title: "líder"
+    change_failed_explanation: "Has intentat degradar un usuari %{user_name} a '%{new_trust_level}'. Tanmateix, el seu nivell de confiança ja és '%{current_trust_level}'. %{user_name} seguirà en '%{current_trust_level}'. Si vols degradar un l'usuari, primer bloqueja'n el nivell de confiança"
+  rate_limiter:
+    slow_down: "Has fet aquesta acció massa vegades, intenta-ho més tard."
+    too_many_requests: "Estàs fent això massa sovint. Sisplau, espera %{time_left} abans d'intentar-ho altra vegada."
+    by_type:
+      first_day_replies_per_day: "Has arribat al número màxim de respostes que pot fer un usuari en el seu primer dia. Siusplau, espera %{time_left} abans de tornar-ho a intentar."
+      first_day_topics_per_day: "Has arribat al número màxim de temes que un nou usuari pot crear en el seu primer dia. Siusplau, espera %{time_left} abans de tornar-ho a intentar."
+      create_topic: "Estàs creant temes massa ràpidament. Siusplau, espera %{time_left} abans de tornar-hi."
+      create_post: "Estas responent massa ràpidament. Siusplau, espera %{time_left} abans de tornar-hi."
+      delete_post: "Estas esborrant temes massa ràpidament. Siusplau, espera %{time_left} abans de tornar-hi."
+      topics_per_day: "Has arribat al número màxim de nous temes diaris. Siusplau, espera %{time_left} abans de tornar-hi."
+      pms_per_day: "Has arribat al número màxim de missatges diaris. Siusplau, espera %{time_left} abans de tornar-hi."
+      create_like: "Has arribat al màxim de \"m'agrada\" que pots posar avui. Siusplau, espera %{time_left} abans de tornar-hi."
+      create_bookmark: "Has arribat al número màxim de marcadors que pots posar avui. Siusplau, espera %{time_left} abans de tornar-hi."
+      edit_post: "Has arribat al número màxim d'edicions que pots fer avui. Siusplau, espera %{time_left} abans de tornar-hi."
+      live_post_counts: "Estàs demanant el recompte d'entrades massa sovint. Siusplau, espera %{time_left} abans de tornar-hi."
+      unsubscribe_via_email: "Has arribat al número màxim de des-subscripcions via correu que pots fer avui. Siusplau, espera %{time_left} abans de tornar-hi."
+      topic_invitations_per_day: "Has arribat al número màxim d'invitacions que pots fer avui. Siusplau, espera %{time_left} abans de tornar-hi."
+    hours:
+      one: "1 hora"
+      other: "%{count} hores"
+    minutes:
+      one: "1 minut"
+      other: "%{count} minuts"
+    seconds:
+      one: "1 segon"
+      other: "%{count} segons"
+  datetime:
+    distance_in_words:
+      half_a_minute: "< 1m"
+      less_than_x_seconds:
+        one: "< 1s"
+        other: "< %{count}s"
+      x_seconds:
+        one: "1s"
+        other: "%{count}s"
+      less_than_x_minutes:
+        one: "< 1m"
+        other: "< %{count}m"
+      x_minutes:
+        one: "1m"
+        other: "%{count}m"
+      about_x_hours:
+        one: "1h"
+        other: "%{count}h"
+      x_days:
+        one: "1d"
+        other: "%{count}d"
+      about_x_months:
+        one: "1mon"
+        other: "%{count}mes"
+      x_months:
+        one: "1mon"
+        other: "%{count}mes"
+      about_x_years:
+        one: "1y"
+        other: "%{count}a"
+      over_x_years:
+        one: "> 1y"
+        other: "> %{count}a"
+      almost_x_years:
+        one: "1y"
+        other: "%{count}a"
+    distance_in_words_verbose:
+      half_a_minute: "ara mateix"
+      less_than_x_seconds:
+        one: "ara mateix"
+        other: "ara mateix"
+      x_seconds:
+        one: "fa 1 segon"
+        other: "fa %{count} segons"
+      less_than_x_minutes:
+        one: "fa menys d'1 minut"
+        other: "fa menys de %{count} minuts"
+      x_minutes:
+        one: "fa 1 minut"
+        other: "fa %{count} minuts"
+      about_x_hours:
+        one: "fa 1 hora"
+        other: "fa %{count} hores"
+      x_days:
+        one: "fa 1 dia"
+        other: "fa %{count} dies"
+      about_x_months:
+        one: "fa sobre 1 mes"
+        other: "fa sobre %{count} meses"
+      x_months:
+        one: "fa 1 mes"
+        other: "fa %{count} meses"
+      about_x_years:
+        one: "fa sobre 1 any"
+        other: "fa sobre %{count} anys"
+      over_x_years:
+        one: "fa més d'1 any"
+        other: "fa més de %{count} anys"
+      almost_x_years:
+        one: "fa quasi 1 any"
+        other: "fa quasi %{count} anys"
+  password_reset:
+    no_token: "Disculpa, aquest enllaç de canvi de contrassenya és massa antic. Usa 'he oblidat la meva contrassenya' per a obtenir-ne un altre de nou."
+    update: 'actualitza contrassenya'
+    save: 'Estableix contrassenya'
+    title: 'Restableix contrassenya'
+    success: "Has canviat la teva contrasenya correctament i ara estàs connectat."
+    success_unapproved: "Has canviat la teva contrassenya correctament."
+    continue: "Continuar a %{site_name}"
+  change_email:
+    confirmed: "La teva direcció de correu ha estat actualitzada."
+    please_continue: "Continua a %{site_name}"
+    error: "Hi ha hagut un problema canviant la teva direcció de correu. Potser la direcció ja està en ús?"
+    error_staged: "Hi ha hagut un error canviant la teva adreça de correu. L'adreça ja està en us per part d'un usuari \"staged\"."
+    already_done: "Disculpa, aquest enllaç de confirmació ja no és vàlid. Potser la teva adreça de correu ja ha estat canviada?"
+    authorizing_old:
+      title: "Gràcies per confirmar la teva adreça de correu actual"
+      description: "Ara t'enviarem un correu amb la teva nova adreça per a que la confirmis."
+  activation:
+    action: "Clica aquí per activar el teu compte d'usuari"
+    already_done: "Ho sentim, aquest enllaç de confirmació de compte ja no és vàlid. Potser el teu compte ja està activat?"
+    please_continue: "El teu compte s'ha confirmat, et redirigirem a la pàgina principal."
+    continue_button: "Continua a %{site_name}"
+    welcome_to: "Benvingut/da a %{site_name}!"
+    approval_required: "Cal que un moderador aprovi manualment el teu nou compte abans que puguis accedir a aquest fòrum. Rebràs un correu quan el teu compte sigui aprovat!"
+    missing_session: "No podem detectar si el teu compte d'usuari s'ha creat, siusplau, assegura't que tens les cookies habilitades."
+  post_action_types:
+    off_topic:
+      title: 'Fora de tema'
+      description: 'Aquesta entrada no és relevant per al tema actual tal i com està definit pel títol i la primera entrada, i probablement s''hauria de moure a un altre tema.'
+      long_form: 'avisat: off-tema'
+    spam:
+      title: 'Spam'
+      description: 'Aquesta entrada és un anunci. No és útil ni rellevant per a aquest tema, si no de naturalesa promocional.'
+      long_form: 'avisat: spam'
+      email_title: '"%{title}" ha estat marcat com a spam'
+      email_body: "%{link}\n\n%{message}"
+    inappropriate:
+      title: 'Inadequat'
+      description: 'Aquesta entrada té contingut que una persona sensata podria considerar ofensiu, abusiu o que viola <a href="/guidelines">les nostres directrius de la comunitat</a>.'
+      long_form: 'avisat: inadequat'
+    notify_user:
+      title: 'Envia un missatge a @{{username}}'
+      description: 'Vull parlar directament amb aquesta persona de forma privada sobre la seva entrada.'
+      long_form: 'enviat missatge a l''usuari'
+      email_title: 'La teva publicació en "%{title}"'
+      email_body: "%{link}\n\n%{message}"
+    notify_moderators:
+      title: "Una altra cosa"
+      description: 'Aquesta entrada requereix atenció per part d''un moderador per alguna altra raó.'
+      long_form: 'notificat per a l''anteció dels moderadors'
+      email_title: 'Una entrada en "%{title}" requereix atenció per part del staf'
+      email_body: "%{link}\n\n%{message}"
+    bookmark:
+      title: 'Marcador'
+      description: 'Marca aquesta entrada'
+      long_form: 'Entrada marcada'
+    like:
+      title: 'M''agrada'
+      description: 'T''agrada aquesta entrada'
+      long_form: 'Això t''agrada'
+    vote:
+      title: 'Vota'
+      description: 'Vota per aquesta entrada'
+      long_form: 'Has votat per a aquest entrada'
+  topic_flag_types:
+    spam:
+      title: 'Spam'
+      description: 'Aquest tema és un anunci publicitari. No es útil ni rellevant per a aquest lloc web, si no de naturalesa promocional.'
+      long_form: 'marcar com a spam'
+    inappropriate:
+      title: 'Inadequat'
+      description: 'Aquest tema conté material que una persona sensata podria considerar ofensiu, abusiu, o que viola <a href="/guidelines">les directrius de la nostra comunitat</a>.'
+      long_form: 'marcat com inadequat'
+    notify_moderators:
+      title: "Una altra cosa"
+      description: 'Aquest tema requereix l''atenció del staff, d''acord amb les nostres <a href="/guidelines">directrius</a>, <a href="%{tos_url}">CDS</a>, o per alguna altra raó no llistada aquí sobre.'
+      long_form: 'Has notificat això als moderadors'
+      email_title: 'El tema "%{title}" requereix l atenció d un moderador'
+      email_body: "%{link}\n\n%{message}"
+  flagging:
+    you_must_edit: '<p>La comunitat ha avisat sobre la teva entrada. Siusplau <a href="/my/messages">mira els teus missatges</a>.</p>'
+    user_must_edit: '<p>La comunitat ha avisat sobre aquesta entrada i està oculta temporalment.</p>'
+  archetypes:
+    regular:
+      title: "Tema normal"
+    banner:
+      title: "Tema de capçalera"
+      message:
+        make: "Aquest és ara un tema de capçalera. Apareixerà en la part superior de cada pàgina fins que el usuari el tanqui. "
+        remove: "Aquest ja no és un tema de capçalera i deixarà d'aparèixer en la part superior de cada pàgina."
+  reports:
+    visits:
+      title: "Visites d'usuari"
+      xaxis: "Dia"
+      yaxis: "Nombre de visites"
+    signups:
+      title: "Nous usuaris"
+      xaxis: "Dia"
+      yaxis: "Nombre d'usuaris nous"
+    profile_views:
+      title: "Visites al perfil d'usuari"
+      xaxis: "Dia"
+      yaxis: "Número de perfils d'usuari vistos"
+    topics:
+      title: "Temes nous"
+      xaxis: "Dia"
+      yaxis: "Nombre de temes nous"
+    posts:
+      title: "Noves entrades"
+      xaxis: "dia"
+      yaxis: "Nombre d'entrades noves"
+    likes:
+      title: "M'agrada"
+      xaxis: "Dia"
+      yaxis: "Nombre de \"m'agrada\" nous"
+    flags:
+      title: "Avisos"
+      xaxis: "Dia"
+      yaxis: "Nombre d'avisos"
+    bookmarks:
+      title: "Marcadors"
+      xaxis: "Dia"
+      yaxis: "Nombre de nous marcadors"
+    starred:
+      title: "Favorit"
+      xaxis: "Dia"
+      yaxis: "Nombre de temes nous favorits"
+    users_by_trust_level:
+      title: "Usuaris per nivell de confiança"
+      xaxis: "Dia"
+      yaxis: "Nombre d'usuaris"
+    emails:
+      title: "Correos enviats"
+      xaxis: "Dia"
+      yaxis: "Nombre de correus"
+    user_to_user_private_messages:
+      title: "Usuari a usuari"
+      xaxis: "Dia"
+      yaxis: "Nombre de missatges"
+    system_private_messages:
+      title: "Sistema"
+      xaxis: "Dia"
+      yaxis: "Nombre de missatges"
+    moderator_warning_private_messages:
+      title: "Advertències al moderador"
+      xaxis: "Dia"
+      yaxis: "Nombre de missatges"
+    notify_moderators_private_messages:
+      title: "Notificacions a moderadors"
+      xaxis: "Dia"
+      yaxis: "Nombre de missatges"
+    notify_user_private_messages:
+      title: "Notificacions a usuaris"
+      xaxis: "Dia"
+      yaxis: "Nombre de missatges"
+    top_referrers:
+      title: "Els que més recomanen"
+      xaxis: "Usuari"
+      num_clicks: "Clics"
+      num_topics: "Temes"
+    top_traffic_sources:
+      title: "Les majors fonts de tràfic"
+      xaxis: "Domini"
+      num_clicks: "Clics"
+      num_topics: "Temes"
+      num_users: "Usuaris"
+    top_referred_topics:
+      title: "Els temes més referits"
+      xaxis: "Tema"
+      num_clicks: "Clics"
+    page_view_anon_reqs:
+      title: "Anònim"
+      xaxis: "Dia"
+    page_view_logged_in_reqs:
+      title: "Sessió iniciada"
+      xaxis: "Dia"
+    page_view_crawler_reqs:
+      title: "Crawlers web"
+      xaxis: "Dia"
+    page_view_total_reqs:
+      title: "Total"
+      xaxis: "Dia"
+    page_view_logged_in_mobile_reqs:
+      xaxis: "Dia"
+    page_view_anon_mobile_reqs:
+      xaxis: "Dia"
+    http_background_reqs:
+      title: "Fons"
+      xaxis: "Dia"
+      yaxis: "Peticions usades per actualitzacions i seguiment en directe"
+    http_2xx_reqs:
+      title: "Status 2xx (OK)"
+      xaxis: "Dia"
+      yaxis: "Peticions exitoses (Status 2xx)"
+    http_3xx_reqs:
+      title: "HTTP 3xx (Redirect)"
+      xaxis: "Dia"
+      yaxis: "Peticions redirigides (Status 3xx)"
+    http_4xx_reqs:
+      title: "HTTP 4xx (Client Error)"
+      xaxis: "Dia"
+      yaxis: "Errors de client (Status 4xx)"
+    http_5xx_reqs:
+      title: "HTTP 5xx (Server Error)"
+      xaxis: "Dia"
+      yaxis: "Errors de servidor (Status 5xx)"
+    http_total_reqs:
+      title: "Total"
+      xaxis: "Dia"
+      yaxis: "Peticions totals"
+    time_to_first_response:
+      title: "Temps fins la primera resposta"
+      xaxis: "Dia"
+      yaxis: "Temps de mitjana (hores)"
+    topics_with_no_response:
+      title: "Teme sense resposta"
+      xaxis: "Dia"
+      yaxis: "Total"
+    mobile_visits:
+      title: "Visites d'usuaris"
+      xaxis: "Dia"
+      yaxis: "Nombre de visites"
+  dashboard:
+    rails_env_warning: "El teu servidor està funcionant en mode %{env}."
+    host_names_warning: "el teu arxiu 'config/database.yml' està usant un hostname predeterminat de 'localhost'. Actualitza'l per a usar el hostname del teu lloc web."
+    gc_warning: 'El teu servidor està usant una recol·lecció de residu predeterminats per Ruby, que no ofereix el millor rendiment. Llegeix aquest tema quant a la optimització del rendiment: <a href="http://meta.discourse.org/t/tuning-ruby-and-rails-for-discourse/4126" target="_blank">Tuning Ruby and Rails for Discourse</a>.'
+    sidekiq_warning: 'Sidekiq no està funcionant. Moltes tasques, per exemple l''enviament de correus, estan realitzades de forma asíncrona per sidekiq. Sisplau, assegura''t que com a mínim un procés de sidekiq està funcionant. <a href="https://github.com/mperham/sidekiq" target="_blank">Learn about Sidekiq here</a>.'
+    queue_size_warning: 'El número de tasques encuades és %{queue_size}, que és alt. Això podria indicar un problema amb els procés (o processos) Sidekiq, o que hauries d''afegir més "workers" de Sidekiq.'
+    memory_warning: 'El teu servidor està funcionant amb menys de 1 GB de memòria total. Es recomana un mínim d''1 GB de memòria.'
+    google_oauth2_config_warning: 'El servidor està configurat per a permetre el registre i inici de sessió amb Google OAuth2 (enable_google_oauth2_logins), però els valors client id i client secret estan buits. Ves a <a href="/admin/site_settings">Ajustos del lloc web</a> i actualitza la configuració. <a href="https://meta.discourse.org/t/configuring-google-login-for-discourse/15858" target="_blank">Mira aquesta guia per a saber més</a>.'
+    facebook_config_warning: 'El servidor està configurat per a permetre crear un compte i ingressar usant Facebook (enable_facebook_logins), però els valors id i secret de l''app no estan configurats. Ingressa a <a href="/admin/site_settings">la configuració del lloc web</a> i actualitza la configuració. <a href="https://github.com/discourse/discourse/wiki/The-Discourse-Admin-Quick-Start-Guide#enable-facebook-logins" target="_blank">Revisa la guia per a aprendre més</a>.'
+    twitter_config_warning: 'El servidor està configurat per a permetre crear un compte i ingressar usant Twitter (enable_twitter_logins), però els valors clau i secret de l''app no estan configurades. Ingressa a <a href="/admin/site_settings">la configuració del lloc web</a> i actualitza la configuració. <a href="https://github.com/discourse/discourse/wiki/The-Discourse-Admin-Quick-Start-Guide#enable-twitter-logins" target="_blank">Revisa la guia per a aprendre més</a>.'
+    github_config_warning: 'El servidor està configurat per a permetre crear un compte i ingressar usant GitHub (enable_github_logins), però els valors de client clau i secret no estan configurats. Ingressa a <a href="/admin/site_settings">la configuració del lloc web</a> i actualitza la configuració. <a href="https://github.com/discourse/discourse/wiki/The-Discourse-Admin-Quick-Start-Guide" target="_blank">Revisa la guia per a aprendre més</a>.'
+    s3_config_warning: 'El servidor està configurat per a permetre actualitzar els arxius a s3, però per almenys una de les següents configuracions no està realitzada: s3_access_key_id, s3_secret_access_key o s3_upload_bucket. Ves a <a href="/admin/site_settings">la configuració del lloc web</a> i actualitza la configuració. <a href="http://meta.discourse.org/t/how-to-set-up-image-uploads-to-s3/7229" target="_blank">Revisa "How to set up image uploads to S3?" per a aprendre més</a>.'
+    s3_backup_config_warning: 'El servidor està configurat per a permetre pujar les còpies de seguretat a s3, però almenys una de les següents configuracions no està realitzada: s3_access_key_id, s3_secret_access_key o s3_backup_bucket. Ves a <a href="/admin/site_settings">la configuració del lloc web</a> i actualitza la configuració. <a href="http://meta.discourse.org/t/how-to-set-up-image-uploads-to-s3/7229" target="_blank">Revisa "How to set up image uploads to S3?" per a aprendre més</a>.'
+    image_magick_warning: 'El servidor està configurat per a permetre miniatures d''imatges grans, però ImageMagick no està instal·lat. Instal·la ImageMagick usant el teu administrador de paquets preferit o <a href="http://www.imagemagick.org/script/binary-releases.php" target="_blank">descarrega''t la darrera versió</a>.'
+    failing_emails_warning: 'Hi ha %{num_failed_jobs} tasques relacionades amb l''email que han fallat. Comprova el teu app.yml i assegura''t que la configuració del servidor de correu és correcta. <a href="/sidekiq/retries" target="_blank">Visualitza les tasques fallides de Sidekiq</a>.'
+    subfolder_ends_in_slash: "La configuració de subdirectoris és incorrecta; DISCOURSE_RELATIVE_URL_ROOT té un caràcter '/' al final."
+    email_polling_errored_recently:
+      one: "El polling via email ha generat un error en les darreres 24 hores. Mira't els <a href='/logs' target='_blank'>logs</a> per a més detall."
+      other: "El polling via email ha generat %{count} errors en les darreres 24 hores. Mira't els <a href='/logs' target='_blank'>logs</a> per a més detall."
+    bad_favicon_url: "El favicon no carrega. Comprova la configuració del favicon_url als <a href='/admin/site_settings'>Site Settings</a>."
+    poll_pop3_timeout: "La connexió al servidor POP3 està fent timeout. El correu entrant no es pot recuperar. Siusplau, comprova la <a href='/admin/site_settings/category/email'>configuració de POP3 settings</a> i el teu proveïdor."
+    poll_pop3_auth_error: "La connexió al servidor POP3 està fallant amb un error d'autenticació. Siusplau, comprova la a href='/admin/site_settings/category/email'>configuració de POP3</a>."
+  site_settings:
+    censored_words: "Paraules que automàticament es reemplaçarà per &#9632;&#9632;&#9632;&#9632;"
+    delete_old_hidden_posts: "Auto-esborra qualsevol entrada amagada quan estigui amagada durant més de 30 dies."
+    default_locale: "L'idioma per defecte de Discourse (ISO 639-1 Code)"
+    allow_user_locale: "Permetre que els usuaris escullin el seu propi idioma per a la interfície"
+    set_locale_from_accept_language_header: "selecciona l'idioma dels usuaris anònims basant-se en les capçaleres del seu navegador. (EXPERIMENTAL, no funciona amb \"anonymous cache\")"
+    min_post_length: "Extensió mínima de les entrades, en nombre de caràcters"
+    min_first_post_length: "Mida mínima (del cos del missatge) en caràcters per a la primera entrada"
+    min_private_message_post_length: "Extensió mínima dels missatges, en caràcters"
+    max_post_length: "Extensió màxima de les entrades, en nombre de caràcters"
+    min_topic_title_length: "Extensió mínima del títol dels temes, en nombre de caràcters"
+    max_topic_title_length: "Extensió màxima del títol dels temes, en nombre de caràcters"
+    min_private_message_title_length: "Extensió mínima del títol dels missatges, en nombre de caràcters"
+    min_search_term_length: "Extensió mínima d'una cerca vàlida, en nombre de caràcters"
+    search_tokenize_chinese_japanese_korean: "Força la cerca a tokenitzat Xinès/Japonès/Coreà, fins i tot en llocs web que no siguin X/J/C"
+    allow_uncategorized_topics: "Permet la creació de nous temes sense cap categoria. ATENCIÓ: si hi ha temes sense cateoria, caldrà que els assignis una abans de desactivar aquesta opció."
+    allow_duplicate_topic_titles: "Permetre temes amb títols idèntics, duplicats."
+    unique_posts_mins: "Quants minuts cal que possin abans que un usuari pugui fer una altra entrada amb el mateix contingut?"
+    educate_until_posts: "Quan l'usuari comença a escriure la seva primera o primeres (n) entrades, mostrar un pop-up amb el panell de consells per a usuaris nous en l'editor."
+    title: "El nom d'aquest lloc web, utilitzat a l'etiqueta del títol."
+    site_description: "Descriu aquest lloc web en una frase, s'usa en l'etiqueta meta description."
+    contact_email: "Adreça de correu del responsable d'aquest lloc web. Usat per a notificacions crítiques, com ara avisos sense tractar, i es mostrarà a /about com a adreça de contacte per a qüestions urgents."
+    contact_url: "URL de contacte per a aquest lloc web. Usat al formulari de /about per a qüestions urgents."
+    queue_jobs: "NOMÉS DESENVOLUPADORS! COMPTE! Posa diverses tasques a la cua de Sidekiq. Si es desactiva el lloc web, deixarà de funcionar"
+    crawl_images: "Recuperar imatges desde URLs remotes per a insertar-les amb les dimensions correctes d'ample i llarg."
+    download_remote_images_to_local: "Convertir imatges remotes a locals descarregant-les; això evita imatges trencades."
+    download_remote_images_threshold: "Espai mínim de disc que cal per a descarregar imatges remotes de manera local (percentatge)"
+    disabled_image_download_domains: "Les imatges remotes que provinguin d'aquests dominis no seran descarregades. Llista delimitada per barres."
+    editing_grace_period: "Durant (n) segons després d'enviar una entrada, una edició no resultarà en una nova versió en l'històric de l'entrada."
+    post_edit_time_limit: "L'autor pot editar o eliminar la seva entrada durant (n) minuts després de publicar-la. Posa-hi un 0 per a que pugui fer-ho sempre."
+    edit_history_visible_to_public: "Permetre a tots veure les versiones prèvies d'una entrada editada. Si es deshabilita, només els membres del \"staff\" podran veure-les."
+    delete_removed_posts_after: "Les entrades esborrades pel seu autor s'esborraran al cap de (n) hores. Si poses 0, seran immediatament esborrades."
+    max_image_width: "Amplada màxima de les miniatures de les imatges en una entrada"
+    max_image_height: "Alçada màxima de les miniatures de les imatges en una entrada"
+    category_featured_topics: "Nombre de temes mostrats per categoria en la pàgina /categories. Aquest canvi pot tardar fins a 15 minuts en fer-se efectiu"
+    show_subcategory_list: "Mostrar la llista de subcategories enlloc de la llista de temes quan entres a una categoria."
+    fixed_category_positions: "Si està marcat, podràs ordenar les categories en un ordre fixat. Si no, les categories es mostraran segons la seva activitat recent."
+    fixed_category_positions_on_create: "Si s'habilita, l'ordre de les categories es mantindrà a la pantalla de creació de temes (requereix fixed_category_positions)."
+    add_rel_nofollow_to_user_content: "Afegir l'etiqueta rel nofollow a tot el contingut introduït pels usuaris, excepte pels enllaços entrants (incloent dominis pare). Si ho canvies això, et caldrà fer un rebake de totes les entrades amb: \"rake posts:rebake\""
+    exclude_rel_nofollow_domains: "Si una llista de dominis pels quals no enllaçar amb \"nofollow\". tld.com automàticament habilitarà també subdomini.tld.com. Com a mínim, hauries de permetre tot el contingut top-level per a aquest lloc web per a permetre als crawlers trobar tot el contingut. Si d'altres parts del teu lloc web són en altres dominis, afegeix-los també."
+    post_excerpt_maxlength: "Extensió màxima del resum / extracte d'una entrada."
+    post_onebox_maxlength: "Extensió màxima en caràcters d'una entrada de Discourse en format Onebox."
+    logo_url: "La imatge de logo de dalt a l'esquerra, que hauria de tenir forma de rectangle ample. Si ho deixes en blanc, es mostrarà el títol del lloc web."
+    logo_small_url: "La imatge de logo petita de dalt a l'esquerra, que sortirà quan els usuaris baixin la pantalla. Hauria de tenir forma de quadrat. Si el deixes en blanc, es mostrarà l'icona de casa."
+    favicon_url: "Un favicon pel teu lloc web, veure http://en.wikipedia.org/wiki/Favicon. Per a que funciona correctament sobre una CDN, hauria de ser un png."
+    mobile_logo_url: "La imatge de logo petita que sortirà a dalt a l'esquerra per als visitants amb dispositiu mòbil. Hauria de tenir forma de quadrat. Si el deixes en blanc, es mostrarà l'icona de casa. Exemple: http://example.com/uploads/default/logo.png"
+    apple_touch_icon_url: "Icona per als productes tàctils d'Apple. Es recomana una mida d'144px per 144px."
+    notification_email: "La direcció de correu electrònic \"remitent\", usada en enviar tots els correus essencials del sistema. El domini especificat ha de tenir correctament configurats els registres SPF, DKIM i PTR inversos per a que els correus es rebin correctament."
+    email_custom_headers: "Llista de correus separats per una barra"
+    email_subject: "Format personalitzable dels subjects pels correus estàndard. Veure https://meta.discourse.org/t/customize-subject-format-for-standard-emails/20801"
+    summary_score_threshold: "La puntuació mínima necessària perquè una entrada sigui inclosa en el 'Resum d'aquest tema\""
+    summary_posts_required: "El mínim nombre d'entrades en un tema per a habilitar el 'Resum d'aquest tema'"
+    summary_likes_required: "Mínim nombre de \"m'agrada\" en un tema per a habilitar 'Resum d'aquest tema'"
+    summary_percent_filter: "Cuando un usuari fa clic en \"Resum d'aquest tema\", es mostra les n % millors entrades"
+    summary_max_results: "Màxim nombre d'entrades que 'Resumeix aquest tema' retornarà"
+    enable_long_polling: "Els missatges usats per a notificacions poden usar el \"long polling\""
+    long_polling_base_url: "URL base per a fer long polling (quan una CDN està servint contingut dinàmic, assegura't que aquest sigui l'orígen per a fer pull), ex. http://origin.site.com"
+    long_polling_interval: "Temps que el servidor hauria d'esperar abans de respondre als clients quan ho hi ha dades per enviar (només a usuaris que han iniciat sessió)"
+    polling_interval: "Quan no es fa long polling, quan sovint, en milisegons, haurien de fer poll els clients"
+    anon_polling_interval: "Quan sovint han de fer poll els usuaris anònims, milisegons"
+    background_polling_interval: "Quan sovint, en milisegons, haurien de fer poll els clients (quan la finestra està en background)"
+    flags_required_to_hide_post: "Número d'avisos que fan que una entrada quedi automàticament amagada, i que s'envii un missatge al seu autor (0 vol dir mai)"
+    cooldown_minutes_after_hiding_posts: "Nombre de minuts que un usuari ha d'esperar per a poder editar una entrada oculta pels avisos de la comunitat"
+    tl2_additional_likes_per_day_multiplier: "Incrementa el límit de m'agrada diaris per tl2 (membres) multiplicant per aquest número"
+    tl3_additional_likes_per_day_multiplier: "Incrementa el límit de m'agrada diaris per tl3 (habituals) multiplicant per aquest número"
+    tl4_additional_likes_per_day_multiplier: "Incrementa el límit de m'agrada diaris per tl4 (líders) multiplicant per aquest número"
+    notify_mods_when_user_blocked: "Si un usuari és bloquejat automàticament, envia un missatge a tots els moderadors."
+    flag_sockpuppets: "Si un nou usuari respon a un tema des de la mateixa direcció de IP que el nou usuari que va iniciar el tema, reporta les entrades dels dos com spam en potència."
+    traditional_markdown_linebreaks: "Usa salts de línia tradicionals en Markdown, que requereixen dos espais al final per a un salt de línia."
+    allow_html_tables: "Permet escriure taules en Markdown usant tags HTML. Es permetrà usar TABLE, THEAD, TD, TR i TH (requereix re-cuinar totes les entrades antigues que continguin taules)"
+    post_undo_action_window_mins: "Nombre de minuts durant els quals els usuaris poden desfer les seves accions recents en una entrada (m'agrada, avisos, etc)."
+    must_approve_users: "El staff ha d'aprovar tots els comptes nous abans que puguin accedir al lloc web. ATENCIÓ: si ho habilites per a un lloc web en producció, revocaràs l'accés als usuaris existents, excepte staff!"
+    pending_users_reminder_delay: "Notifica els moderadors si hi ha nous usuaris esperant aprovació durant més de totes aquestes hores. Posa-ho a -1 per a deshabilitar les notificacions."
+    ga_universal_tracking_code: "Codi de seguiment de Google Universal Analytics (analytics.js), exemple: UA-12345678-9; visita http://google.com/analytics"
+    ga_universal_domain_name: "Nom del domini establert en Google Universal Analytics (analytics.js), exemple: elmeulloc.com; visita http://google.com/analytics"
+    enable_escaped_fragments: "Reverteix a l'API Ajax-Crawling de Google si no es detecta cap web crawler. Veure https://developers.google.com/webmasters/ajax-crawling/docs/learn-more"
+    enable_noscript_support: "Habilita el suport de motor de cerca estàndard web crawler mitjançant l'etiqueta noscript"
+    allow_moderators_to_create_categories: "Permetre als moderadors crear noves categories"
+    cors_origins: "Orígens permesos per a cross-origin requests (CORS). Cada orígen ha d'incloure http:// o https://. La variable d'entorn DISCOURSE_ENABLE_CORS ha d'estar posada a \"true\"."
+    use_admin_ip_whitelist: "Els administradors només poden iniciar sessió si són darrere una adreça IP definida en la llista de Screened IPs (Admin > Logs > Screened Ips)."
+    top_menu: "Determina quins ítems apareixeran a la navegació de la pàgina d'inici, i en quin ordre. Per exemple, latest|new|unread|categories|top|read|posted|bookmarks"
+    post_menu: "Determina quins elements apareixen en el menú d'una entrada i en quin ordre. Exemple: like|edit|flag|delete|share|bookmark|reply"
+    post_menu_hidden_items: "Els elements del menú a ocultar per defecte en el menú de cada entrada, a menys que es faci clic en el botó per a expandir les opcions."
+    share_links: "Determina quins elements apareixen en el quadre de compartir i en quin ordre"
+    track_external_right_clicks: "Fes el recompte de clics a enllaços externs pels quals es fa clic de la dreta (per exemple, obre en una nova pestanya). Deshabilitat per defecte perquè reescriu URLs"
+    site_contact_username: "Un nom d'usuari vàlid des del qual enviar tots els missatges automàtics. Si ho deixes en blanc, serà el compte de Sistema."
+    send_welcome_message: "Envia a tots els usuaris un missatge de benvinguda i una guia ràpida d'ús."
+    suppress_reply_directly_below: "No mostrar el comptador de respostes desplegable en una entrada si només hi ha una única resposta i està justament sota l'entrada en qüestió."
+    suppress_reply_directly_above: "No mostrar el desplegable en-resposta-a desplegable en una entrada quan només hi ha una única resposta just sobre de l'entrada."
+    suppress_reply_when_quoting: "No mostrar el desplegable en-resposta-a en una entrada que conté una cita."
+    max_reply_history: "Màxim nombre de respostes a expandir quan s'expandeixi en-resposta-a"
+    topics_per_period_in_top_summary: "Nombre de millors temes mostrats en el resum de millors temes."
+    topics_per_period_in_top_page: "Nombre de millors temes mostrats en la vista expandida en clicar en 'veure més'."
+    redirect_users_to_top_page: "Redirigir automàticament els usuaris nous i els absents de llarga durada a la pàgina de millors temes."
+    top_page_default_timeframe: "Interval de tems per defecte per a la pàgina de \"millors\"."
+    show_email_on_profile: "Mostra el correu de l'usuari en el seu perfil (només visible per a ells mateixos i membres del staff)"
+    email_token_valid_hours: "Els tokens per a restablir contrasenya oblidada / activar compte són vàlids durant (n) hores."
+    enable_badges: "Habilita el sistema d'insígnies"
+    allow_index_in_robots_txt: "Especificar en robots.txt que aquest lloc web pot ser indexat pels motores de cerca web."
+    email_domains_blacklist: "Una llista de dominis separats pel caràcter \"|\" amb els quals els usuaris no poden registrar-se. Per exemple: mailinator.com|trashmail.net"
+    email_domains_whitelist: "Una llista de dominis separats pel caràcter \"|\" amb els quals els usuaris HAN de registrar-se. ATENCIÓ: els usuaris amb adreces de correu d'altres dominis no podran enregistrar-se!"
+    log_out_strict: "Quan tanquis sessió, tanca TOTES les sessions per aquest usuari en tots els dispositius"
+    version_checks: "Fes ping al 'Discourse Hub' per a actualitzacions de versió i mostrar missatges del nombre de versió en el panell /admin"
+    new_version_emails: "Enviar un correu a la direcció contact_email quan estigui disponible una nova versió de Discourse."
+    port: "NOMÉS DESENVOLUPADORS! COMPTE! Usa aquest port HTTP, enlloc del port 80 per defecte. Deixa-ho en blanc per a, per defecte, usar el 80"
+    force_hostname: "NOMÉS DESENVOLUPADORS! COMPTE! Especificar un hostname en la URL, deixa-ho en blanc per al valor per defecte"
+    invite_expiry_days: "Quant temps son vàlides les claus d'invitació d'usuaris, en dies"
+    invite_passthrough_hours: "Quant temps, en hores, un usuari pot usar una clau d'invitació redimida per a iniciar sessió"
+    invite_only: "El registre públic està deshabilitat, tots els usuaris nous hauran de ser invitats explícitament per d'altres membres de la comunitat o del \"staff\"."
+    login_required: "Es requereix haver iniciat sessió per a llegir el contingut d'aquest lloc web, deshabilita el accés anònim."
+    min_username_length: "Llargada mínima d'un nom d'usuari en caràcters."
+    max_username_length: "Llargada màxima d'un nom d'usuari en caràcters."
+    reserved_usernames: "Noms d'usuari que no poden enregistrar-se."
+    min_password_length: "Longitud mínima de contrasenya."
+    min_admin_password_length: "Llargada mínima d'una contrassenya per a l'administrador."
+    block_common_passwords: "No permetre contrasenyes que estiguin entre les 10.000 més comuns."
+    enable_sso: "Habilita el single sign on via un altre lloc web extern (ATENCIÓ: LES ADRECES DE CORREU DELS USUARIS HAN DE SER VALIDADES PEL LLOC WEB EXTERN!)"
+    verbose_sso_logging: "Enregistra diagnòstics relacionats amb SSO de forma exhaustiva a /logs"
+    enable_sso_provider: "Implementa el protocol de proveïdor SSO de Discourse al punt /session/sso_provider, requereix la configuració de sso_secret"
+    sso_url: "URL de l'endpoint de \"single sign on\" (cal que inclogui http:// o https://)"
+    sso_secret: "Cadena secreta per autenticar criptogràficament la informació de SSO, assegura't que tingui 10 caràcters o més"
+    sso_overrides_email: "Sobrescriu l'adreça de correu local amb l'externa proporcionada per SSO en cada inici de sessió, i no permetis canvis locals. (ATENCIÓ: pot generar discrepàncies degut a la normalització d'adreces de correu locals)"
+    sso_overrides_username: "Sobrescriu el nom d'usuari local amb el del lloc extern provinent de la informació de SSO en cada inici de sessió, i no permetis canvis locals. (ATENCIÓ: pot generar discrepàncie degut als requisits de format o llargada dels noms d'usuari)"
+    sso_overrides_name: "Sobrescriu el nom amb el provinent de la informació de SSO en cada inici de sessió, i no permetis canvis locals."
+    sso_overrides_avatar: "Reemplaça l'avatar d'usuari amb el provinent del lloc web extern configurat per al SSO. Si s'activa aquesta opció, es recomana fortament deshabilitar allow_uploaded_avatars"
+    sso_not_approved_url: "Redirigeix comptes SSO no aprovats a aquesta URL"
+    enable_local_logins: "Habilitar els comptes amb nom d'usuari i contrasenya de manera local. (Nota: això ha d'estar habilitat per a que funcionin les invitacions)"
+    allow_new_registrations: "Permetre el registre d'usuaris nous. Desactiva aquesta opció per a evitar que ningú pugui crear un nou compte."
+    enable_signup_cta: "Mostra una notificació als usuaris anònims que retornin, animant-los a crear un compte d'usuari."
+    enable_yahoo_logins: "Activar autenticació via Yahoo"
+    enable_google_oauth2_logins: "Habilita la autenticació amb Google Oauth2. Aquest es el mètode d'autenticació a què Google dóna suport actualment. Requereix una clau de client i una clau secreta."
+    google_oauth2_client_id: "\"Client ID\" de la teva aplicació Google."
+    google_oauth2_client_secret: "\"Client secret\" de la teva aplicació Google."
+    enable_twitter_logins: "Activar autenticació per Twitter, requereix una twitter_consumer_key i un twitter_consumer_secret"
+    twitter_consumer_key: "Consumer key per a autenticació per Twitter, registrat en http://dev.twitter.com"
+    twitter_consumer_secret: "Consumer secret per a autenticació per Twitter, registrat en http://dev.twitter.com"
+    enable_instagram_logins: "Habilita l'autentificació via Instagram, requereix un instagram_consumer_key i instagram_consumer_secret"
+    instagram_consumer_key: "\"Consumer key\" per a autenticació via Instagram"
+    instagram_consumer_secret: "\"Consumer secret\" per a autenticació via Instagram"
+    enable_facebook_logins: "Activar autenticació per Facebook, requereix una facebook_app_id i un facebook_app_secret"
+    facebook_app_id: "App id per a la autenticació per Facebook, registrat en https://developers.facebook.com/apps"
+    facebook_app_secret: "App secret per a autenticació per Facebook, registrat en https://developers.facebook.com/apps"
+    enable_github_logins: "Activar autenticació per Github, requereix una github_client_id i un github_client_secret"
+    github_client_id: "Client id per a la autenticació per Github, registrat en https://github.com/settings/applications"
+    github_client_secret: "Client secret per a la autenticació per Github, registrat en https://github.com/settings/applications"
+    allow_restore: "Permetre la restauració de còpies de seguretat, la qual cosa pot sobreescriure TOTES les dades del lloc web! Deixa-ho en fals, excepte que tinguis planejat recuperar les dades des d'una còpia de seguretat."
+    maximum_backups: "La quantitat màxima de còpies de seguretat a emmagatzemar en disc. Les còpies de seguretat més antigues s'eliminen automàticament"
+    automatic_backups_enabled: "Executa backups automàtics tal i com es definexi en backup frequency"
+    backup_frequency: "Amb quina freqüència creem un backup, en dies."
+    enable_s3_backups: "Puja les còpies de seguretat a S3 quan estiguin completes. IMPORTANT: requereix credencials de S3 vàlides en la configuració d'arxius."
+    s3_backup_bucket: "El \"bucket\" remot per a mantenir còpies de seguretat. COMPTE: Assegura't que és un bucket privat."
+    s3_disable_cleanup: "Deshabilita l'esborrat de backups de S3 quan els esborrem localment."
+    backup_time_of_day: "Hora del dia UTC quan els backups s'haurien de crear."
+    backup_with_uploads: "Inclou els uploads en els backups programats. Si ho fas, els backups només inclouran la base de dades."
+    active_user_rate_limit_secs: "Amb quina freqüència actualitzarem el camp 'last_seen_at', en segons"
+    verbose_localization: "Mostra les ajudes de localització exteses a la IU"
+    previous_visit_timeout_hours: "Quant temps ha de passar fins que una visita deixi de ser considerada la 'visita prèvia', en hores"
+    top_topics_formula_log_views_multiplier: "valor del multiplicador (n) per a les visualitzacions en la fòrmula de millors temes:  `log(views_count) * (n) + op_likes_count * 0.5 + LEAST(likes_count / posts_count, 3) + 10 + log(posts_count)`"
+    top_topics_formula_first_post_likes_multiplier: "valor del multiplicador (n) per als \"m'agrada\" en la fórmula llista dels millors temes: `log(views_count) * 2 + op_likes_count * (n) + LEAST(likes_count / posts_count, 3) + 10 + log(posts_count)`"
+    top_topics_formula_least_likes_per_post_multiplier: "valor del multiplicador (n) per al terme \"menor m'agrada per entrada\" en la fórmula per als millors temes: `log(views_count) * 2 + op_likes_count * 0.5 + LEAST(likes_count / posts_count, (n)) + 10 + log(posts_count)`"
+    rate_limit_create_topic: "Després de crear un tema, els usuaris han d'esperar (n) segons abans de crear un altre tema."
+    rate_limit_create_post: "Després de publicar una entrada, els usuaris han d'esperar (n) segons abans de crear una altra entrada."
+    rate_limit_new_user_create_topic: "Després de crear un tema, els usuaris nous han d'esperar (n) segons abans de crear un altre tema."
+    rate_limit_new_user_create_post: "Després de publicar una entrada, els usuaris nous han d'esperar (n) segons abans de crear una altra entrada."
+    max_likes_per_day: "Màxim nombre de \"m'agrada\" per usuari i dia."
+    max_flags_per_day: "Màxim nombre d'avisos per usuari i dia."
+    max_bookmarks_per_day: "Màxim nombre de marcadors per usuari i dia."
+    max_edits_per_day: "Màxim nombre d'edicions per usuari i dia."
+    max_topics_per_day: "Màxim nombre de temes que un usuari pot crear al dia."
+    max_private_messages_per_day: "Màxim nombre de missatges que els usuaris poden crear per dia."
+    max_invites_per_day: "Màxim nombre d'invitacions que un usuari pot enviar per dia."
+    max_topic_invitations_per_day: "Máxim nombre d'invitacions a un tema que un usuari pot enviar per dia."
+    alert_admins_if_errors_per_minute: "Número d'errors per minut per a generar una alerta a l'administrador. Un valor de 0 deshabilita aquesta funció. NOTA: requereix un restart."
+    alert_admins_if_errors_per_hour: "Número d'errors per hora per a generar una alerta a l'administrador. Un valor de 0 deshabilita aquesta funció. NOTA: requereix un restart."
+    suggested_topics: "Nombre de temes suggerits mostrats a peu de tema."
+    limit_suggested_to_category: "Només mostrar temes de la categoria actual en els temes suggerits."
+    clean_up_uploads: "Eliminar pujades orfes, sense referència, per a prevenir hosting il·legal. COMPTE: abans d'habilitar aquesta opció, potser voldràs fer una còpia de seguretat del teu directori /uploads"
+    clean_orphan_uploads_grace_period_hours: "Període de gràcia (en hores) abans que una pujada orfe sigui eliminada."
+    purge_deleted_uploads_grace_period_days: "Període de gràcia (en dies) abans que una pujada eliminada sigui esborrada."
+    purge_unactivated_users_grace_period_days: "Període de gràcia (en dies) abans d'esborrar un usuari que no hagi activat el seu compte."
+    enable_s3_uploads: "Posa els arxius pujats a l'emmagatzematge Amazon S3. IMPORTANT: requereix cedencials vàlides de S3 (access key ID i secret access key)."
+    s3_use_iam_profile: 'Usa el rol AWS EC2 IAM per obtenir claus. NOTA: si l''habilites, sobrepassaràs la configuració de clau d''accés de s3.'
+    s3_upload_bucket: "Nom del bucket d'Amazon S3 on es pujarà els arxius. COMPTE: ha de ser en minúscules, sense punts ni guions baixos."
+    s3_access_key_id: "La clau id d'accés d'Amazon S3 que s'usarà per a pujar imatges."
+    s3_secret_access_key: "La clau secreta d'Amazon S3 que s'usarà per a pujar imatges."
+    s3_region: "El nom de regió d'Amazon S3 que s'usarà per a pujar imatges."
+    s3_cdn_url: "La URL de CDN per usar per a tots els recursos s3 (per exemple: https://cdn.somewhere.com). ATENCIÓ: després de canviar aquesta opció, has de re-generar totes les entrades velles."
+    avatar_sizes: "Llista de mides automàticament generades pels avatars."
+    external_system_avatars_enabled: "Usa un servei extern d'avatars."
+    default_opengraph_image_url: "URL de la imatge opengraph per defecte."
+    allow_all_attachments_for_group_messages: "Permet qualsevol tipus d'adjunt per als missatges de grup."
+    enable_flash_video_onebox: "Habilitar l'\"embedding\" d'enllaços swf i flv (Adobe Flash) en format Onebox. COMPTE: podria introduir riscos de seguretat."
+    default_invitee_trust_level: "Nivell de confiança per defecte (0-4) per a usuaris invitats."
+    default_trust_level: "Nivell de confiança (0-4) per a tots els usuaris nous. ATENCIÓ! Canviar aquesta opció pot portar molt de spam. "
+    tl1_requires_topics_entered: "Quants temes ha de crear un usuari abans que se'l promocioni al nivell de confiança 1."
+    tl1_requires_read_posts: "Quantes entrades un usuari cal que llegeixi abans que se'l promocioni al nivell 1."
+    tl1_requires_time_spent_mins: "Quants minuts un usuari ha de llegir entrades abans que se'l promocioni a nivell 1."
+    tl2_requires_topics_entered: "Quans temes un usuari ha d'entrar abans que se'l promocioni al nivell 2."
+    tl2_requires_read_posts: "Quantes entrades un usuari ha de llegir abans que se'l promocioni a nivell 2."
+    tl2_requires_time_spent_mins: "Quants minuts un usuari ha de llegir entrades abans que se'l promocioni a nivell 2."
+    tl2_requires_days_visited: "Quants dies un usuari ha de visitar el lloc web abans que se'l promocioni al nivell de confiança 2."
+    tl2_requires_likes_received: "Quants \"m'agrada\" un usuari ha de recollir abans que se'l promocioni al nivell 2."
+    tl2_requires_likes_given: "Quants \"m'agrada\" un usuari ha de recoolir abans que se'l promocioni al nivell 2."
+    tl2_requires_topic_reply_count: "A quants temes un usuari ha de contestar abans que se'l promocioni al nivell 2."
+    tl3_time_period: "Requisit de temps per a usuaris amb nivell de confiança 3 (en dies)"
+    tl3_requires_days_visited: "Mínim nombre de dies que un usuari necessita haver visitat aquest lloc web en els darrers (període de temps tl3) per quedar qualificat com a promocionable al nivell de confiança 3. Posa'l més alt que el període de temps tl3 per a desactivar les promocions a tl3. (0 o més)"
+    tl3_requires_topics_viewed_all_time: "Nombre mínim de temes que un usuari ha d'haver vist per estar qualificat pel nivell 3."
+    tl3_requires_posts_read_all_time: "Nombre mínim d'entrades que un usuari ha d'haver llegit per estar qualificat pel nivell 3."
+    tl3_promotion_min_duration: "Nombre mínim de dies que dura la promoció a nivell 3 abans que un usuari torni al nivell 2."
+    tl3_links_no_follow: "No esborris rel=nofollow dels enllaços que posin els usuaris de nivell 3."
+    min_trust_to_create_topic: "El mínim nivell de confiança necessari per a crear un tema nou."
+    min_trust_to_edit_wiki_post: "El mínim nivell de confiança necessari per a editar una entrada marcada com a wiki."
+    newuser_max_links: "Quants enllaços pot un nou usuari afegir a una entrada."
+    newuser_max_images: "Quantes imatges pot un nou usuari afegir a una entrada."
+    newuser_max_attachments: "Quants adjuntos pot un nou usuari afegir a una entrada."
+    newuser_max_mentions_per_post: "Màxim nombre de mencions a @usuaris que un nou usuari pot usar en una entrada."
+    newuser_max_replies_per_topic: "Màxim nombre de respostes que un nou usuari pot realitzar en el mateix tema, abans que algú respongui a alguna d'elles."
+    max_mentions_per_post: "Màxim nombre de mencions a @usuaris que algú pot usar en una entrada."
+    create_thumbnails: "Crear miniatures d'imatges i lightbox quan aquestes són massa grans per a encaixar en una entrada."
+    email_time_window_mins: "Esperar (n) minuts abans d'enviar qualsevol correu de notificació, per donar als usuaris marge per editar i finalitzar les seves entrades."
+    email_posts_context: "Quantes respostes prèvies s'inclouran com context en els correus de notificació."
+    flush_timings_secs: "Amb quina freqüència, en segons, s'alineen les dades de sincronització amb el servidor."
+    title_max_word_length: "Màxima llargada d'una paraula, en caràcters, en un títol de tema."
+    title_min_entropy: "La mínima entropia permesa (caràcters únics) requerida per al títol d'un tema."
+    body_min_entropy: "La mínima entropia permesa (caràcters únics) requerida per al cos d'una entrada."
+    title_fancy_entities: "Convertir caràcters ASCII comuns en entitats HTML d'abillament en el títol dels temes, estil SmartyPants http://daringfireball.net/projects/smartypants/"
+    min_title_similar_length: "L'extensió mínima que un títol ha de tenir abans de revisar temes similars."
+    min_body_similar_length: "L'extensió mínima que el cos d'una entrada ha de tenir abans de revisar temes similars."
+    category_colors: "Una llista de valors en hexadecimal dels colors per a les categories."
+    category_style: "Estil visual per a les insígnies de categoria."
+    max_image_size_kb: "La mida màxima, en kB, per a pujar imatges. Ha de ser configurat també a nginx (client_max_body_size) / apache o proxy."
+    max_attachment_size_kb: "La mida màxima, en kB, per a adjuntar arxius. Ha de ser configurat també a nginx (client_max_body_size) / apache o proxy."
+    authorized_extensions: "Una llista de les extensions d'arxiu permeses per a pujar (usa \"*\" per habilitar-les totes)"
+    max_similar_results: "Quants temes similars es mostraran sobre l'editor quan estiguis creant un tema nou. La comparació es basa en el títol i el cos del tema."
+    title_prettify: "Prevenir errors comuns en el títol, incloent \"tot en majúscules\", primera lletra minúscula, múltiples signes ! o ?, . extra al final, etc."
+    topic_views_heat_low: "Després d'aquest nombre de setmanes, el camp de visualitzacions queda lleugerament ressaltat."
+    topic_views_heat_medium: "Després d'aquest nombre de visualitzacions, el camp de visualitzacions queda lleugerament ressaltat."
+    topic_views_heat_high: "Després d'aquest nombre de visualitzacions, el camp de visualitzacions queda fortament ressaltat."
+    cold_age_days_low: "Després de tots aquests dies de conversa, el camp de \"darrera activitat\" queda lleugerament esmorteït."
+    cold_age_days_medium: "Després de tots aquests dies de conversa, el camp de \"darrera activitat\" queda moderadament esmorteït."
+    cold_age_days_high: "Després de tots aquests dies de conversa, el camp de \"darrera activitat\" queda fortament esmorteït."
+    history_hours_low: "Una entrada editada en el darrer nombre d'hores que configuris tindrà l'indicador d'edició lleugerament ressaltat."
+    history_hours_medium: "Una entrada editada en el darrer nombre d'hores que configuris tindrà l'indicador d'edició moderadament ressaltat."
+    history_hours_high: "Una entrada editada en el darrer nombre d'hores que configuris tindrà l'indicador d'edició fortament ressaltat."
+    topic_post_like_heat_low: "Després que la ràtio m'agrada:entrades excedeix aquest valor, el comptador d'entrades quedarà lleugerament ressaltat."
+    topic_post_like_heat_medium: "Després que la ràtio m'agrada:entrades excedeix aquest valor, el comptador d'entrades quedarà moderadament ressaltat."
+    topic_post_like_heat_high: "Després que la ràtio m'agrada:entrades excedeix aquest valor, el comptador d'entrades quedarà fortament ressaltat."
+    faq_url: "Si tens un document de preguntes freqüents allotjat que vulguis usar, facilita'n la URL aquí."
+    tos_url: "Si tens un document de condicions de Servei allotjat en algun lloc web vulguis usar, facilita'n la URL aquí."
+    privacy_policy_url: "Si tens un document de preguntes freqüents allotjat en algun lloc web vulguis usar, facilita'n la URL aquí."
+    white_listed_spam_host_domains: "Una llista de dominis a excloure de les proves de spam. Als usuaris nous no se'ls restringirà la possibilitat de crear entrades amb enllaços a aquests dominis."
+    staff_like_weight: "Quina ponderació extra atorguen els \"m'agrada\" provinents dels membres del \"staff\"."
+    levenshtein_distance_spammer_emails: "En revisar coincidències per correus electrònics de spammers, quin nombre de caràcters permeten una coincidència parcial."
+    max_new_accounts_per_registration_ip: "Si ja hi ha (n) comptes amb nivell de confiança 0 per a aquesta adreça IP (i cap d'eles és staff o nivell de confiança 2 o superior), deixa d'acceptar nous registres des d'aquesta adreça IP."
+    min_ban_entries_for_roll_up: "Quan cliquis el botó d'agregació, es crearà una prohibició per a la subxarxa si té com a mínim (N) entrades."
+    max_age_unmatched_emails: "Esborra emails sota sospita després de (N) dies sense una correspondència."
+    max_age_unmatched_ips: "Esborra adreces IP sota sospita després de (N) dies."
+    num_flaggers_to_close_topic: "Mínim nombre d'avisadors que cal per a automàticament pausar un tema per a una intervenció manual"
+    num_flags_to_close_topic: "Mínim nombre d'avisos que cal per a automàticament pausar un tema per a una intervenció manual"
+    auto_respond_to_flag_actions: "Habilita una resposta automàtica quan s'esborri un avís."
+    min_first_post_typing_time: "Mínima quantitat de temps en milisegons que un usuari ha d'escriure durant la primera entrada. Si aquest mínim no es compleix, l'entrada requerirà aprovació. Posa-ho a 0 per a deshabilitar (no recomanat)"
+    auto_block_fast_typers_on_first_post: "Automàticament bloqueja els usuaris que no compleixin min_first_post_typing_time"
+    auto_block_fast_typers_max_trust_level: "Màxim nivell de confiança per a auto-bloquejar els qui teclegin massa ràpid"
+    auto_block_first_post_regex: "Expressió regular nsensible a majúscules que, si es compleix per a una primera entrada d'un usuari, aquesta entri a la cua d'aprovació, i l'usuari quedi bloquejat. Per exemple, raging|a[bc]a farà que totes les entrades que contingin raging, aba o aca quedin bloquejades. Només s'aplica a la primera entrada."
+    reply_by_email_enabled: "Habilitar la resposta a temes per correu."
+    reply_by_email_address: "Plantilla per a la direcció de correu que apareixerà al rebre correus amb la funció de resposta per correu: %{reply_key}@resposta.exemple.com o respostes+%{reply_key}@exemple.com"
+    disable_emails: "Evita que Discourse envii correus de cap mena"
+    strip_images_from_short_emails: "Treu les imatges dels correus si tenen menys de 2800 Bytes."
+    short_email_length: "Mida de correu curt en Bytes"
+    pop3_polling_enabled: "Fes polling via POP3 per descarregar correus resposta."
+    pop3_polling_ssl: "Usa SSL quan et connectis al servidor POP3. (Recomanat)"
+    pop3_polling_period_mins: "El període en minuts entre comprovacions de nou correu via POP3. NOTA: cal que reiniciïs."
+    pop3_polling_port: "El port POP3 on es farà polling."
+    pop3_polling_host: "El host POP3 al qual es farà polling de correu."
+    pop3_polling_username: "El nom d'usuari del compte POP3 per fer polling."
+    pop3_polling_password: "La contrassenya del compte POP3 per fer polling."
+    log_mail_processing_failures: "Enregistra totes les fallades processant correus a http://yoursitename.com/logs"
+    email_in: "Permetre als usuaris crear nous temes per correu (requereix polling pop3). Configura les direccions en la pestaña \"Ajustos\" de cada categoria."
+    email_in_min_trust: "El mínim nivell de confiança necessari per a poder publicar nous temes per correu."
+    email_prefix: "L'[etiqueta] usada en l'assumpte dels correus. Si no està configurat, serà, per defecte, el títol."
+    email_site_title: "El títol del lloc web usat com remitent dels correus des del lloc web. Si no està configurat, serà per defecte 'títol'. Si tu 'títol' conté caràcters que no estan permesos en les cadenes del remitent del correu, usa aquesta opció."
+    minimum_topics_similar: "Quants temes cal que hi hagi en el fòrum abans que es mostri el panell amb temes similars al crear nous temes."
+    relative_date_duration: "Nombre de dies des de la darrera entrada abans dels quals les dates es mostraran en format relatiu (7d) enlloc d'absolut (20 Feb)."
+    delete_user_max_post_age: "No permetre eliminar usuaris pels quals la primera entrada tingui una antiguetat de (x) dies."
+    delete_all_posts_max: "El màxim nombre d'entrades que poden ser eliminades d'un cop amb el botó \"Eliminar totes les entrades\". Si un usuari té un nombre d'entrades superior, aquestes no podran ser eliminades d'un cop, i l'usuari no podrà ser eliminat."
+    username_change_period: "El nombre de dies després de registrar-se dins dels quals un compte pot canviar de nombre d'usuari (0 per a deshabilitar aquesta opció)"
+    email_editable: "Permetre als usuaris canviar la seva direcció de correu després de registrar-se."
+    allow_uploaded_avatars: "Permet als usuaris pujar la seva pròpia fotografia de perfil."
+    allow_animated_avatars: "Permet als usuaris pujar gifs animats com a fotografia de perfil. ATENCIÓ: executa la tasca rake \"avatars:refresh\" després de canviar aquesta opció."
+    allow_animated_thumbnails: "Genera \"thumbnails\" animats per als gifs animats."
+    default_avatars: "URLs als avatars que per defecte s'assignarà a nous usuaris, fins que els canviïn."
+    automatically_download_gravatars: "Descarregar Gravatars per a usuaris quan es creïn un compte o canviïn el correu."
+    detect_custom_avatars: "Verifica o no que els usuaris hagin pujat la seva pròpia fotografia de perfil."
+    max_daily_gravatar_crawls: "Màxim nombre de vegades que Discourse comprovarà Gravatar en busca d'avatars personalitzats en un dia"
+    public_user_custom_fields: "Una llista blanca de camps d'usuari personalitzats que es pot mostrar públicament."
+    staff_user_custom_fields: "Una llista blanca de camps d'usuari personalitzats que un usuari pot mostrar al staff."
+    enable_user_directory: "Proporciona un directori d'usuaris navegable"
+    allow_anonymous_posting: "Permet als usuaris configurar un mode anònim"
+    anonymous_posting_min_trust_level: "Mínim nivell de confiança necessari per habilitar l'opció d'escriure entrades anònimes"
+    anonymous_account_duration_minutes: "Per protegir l'anonimat, crear un nou compte d'usuari anònim cada N minuts per cada usuari. Per exemple, si el poses a 600, tan bon punt passin 600 minuts entre la darrera entrada i l'usuari canvii a anònim, es creara un nou compte anònim."
+    allow_profile_backgrounds: "Permetre als usuaris pujar els seus propios fons de perfil personalitzats."
+    enable_mobile_theme: "Els dispositius mòbils usen un tema adaptat, amb l'habilitat de canviar l'estilo del lloc web. Deshabilita aquesta opció si vols usar una plantilla personalitzada que sigui completament adaptable."
+    dominating_topic_minimum_percent: "Quin percentatge d'entrades ha de publicar un usuari en un mateix tema abans de mostrar-li un recordatori sobre dominar en excés un tema."
+    suppress_uncategorized_badge: "No mostrar l'etiqueta dels temes sense categoria a la llista de temes."
+    global_notice: "Mostrar una noticia d'URGÈNCIA o EMERGÈNCIA per a tots els visitants, deixa aquest camp en blanc per a ocultar-la (es pot usar codi HTML)"
+    disable_edit_notifications: "Desactiva les notificacions d'edició per part de l'usuari del sistema quan 'download_remote_images_to_local' és actiu."
+    full_name_required: "El camp de nom complert en un perfil d'usuari és imprescindible."
+    enable_names: "Mostra el nom complert de l'usuari en el seu perfil, targeta d'usuari, i correus. Deshabilita per a amagar el nom complert de tot arreu."
+    display_name_on_posts: "Mostrar el nombre complert d'un usuari en les seves entrades, a més del seu @usuari."
+    show_time_gap_days: "SI dues entrades estan separades per tots aquests dies, mostra el buit en el tema."
+    invites_per_page: "Nombre d'invitacions per defecte mostrades en la pàgina de perfil de l'usuari."
+    short_progress_text_threshold: "Després que un nombre d'entrades en un tema sobrepassi aquest llindar, la barra de progrés només mostrarà el número de l'entrada actual. Si canvies l'amplada de la barra de progrés, hauries de revisar aquest valor."
+    default_code_lang: "Llenguatge de programació per defecte per a ressaltar-ne la sintaxi en els blocs de codi de GitHub (lang-auto, ruby, python etc.)"
+    warn_reviving_old_topic_age: "Quan algú publiqui en un tema pel qual la darrera resposta té una antiguitat mínima d'aquest nombre de dies, se li mostrarà un avís descoratjant-lo a ressuscitar una discussió antiga. Deshabilita aquesta opció introduint el valor 0."
+    autohighlight_all_code: "Forçar el ressaltat de codi als blocs de codi preformatat quan no s'especifiqui el llenguatge del codi."
+    feed_polling_enabled: "NOMÉS PER A EMBEDIR: embedir feeds RSS/ATOM com entrades."
+    feed_polling_url: "NOMÉS PER A EMBEDIR: URL dels feeds RSS/ATOM a embedir."
+    embed_by_username: "Nom d'usuari de Discourse que crea els temes embedits."
+    embed_username_key_from_feed: "Clau per a extreure el nom d'usuari de Discourse des del feed."
+    embed_truncate: "Truncar les entrades embedides."
+    embed_post_limit: "Nombre màxim d'entrades a embedir."
+    embed_whitelist_selector: "Selector CSS per als elements que estàn permesos en els embedits."
+    embed_blacklist_selector: "Selector CSS per als elements que estàn eliminats en els embedits."
+    notify_about_flags_after: "Si hi ha avisos que no han estat revisats després d'aquest número d'hores, enviar un correu electrònic al contact_email. Deshabilita aquesta opció introduint el valor 0."
+    show_create_topics_notice: "Si el lloc web té menys de 5 temes oberts al públic, mostrar un avís demanant als administradors crear més temes."
+    delete_drafts_older_than_n_days: Esborra els esborradors de més de (n) dies.
+    prevent_anons_from_downloading_files: "Evita que els usuaris anònims descarreguin adjunts. COMPTE: això farà que tots els recursos que no siguin imatges deixin de funcionar."
+    slug_generation_method: "Tria un mètode per a generar \"slugs\". L'opció \"encoded\" generarà cadenes codificades amb el caràcter \"%\". L'opció \"none\" deshabilitarà els \"slugs\"."
+    enable_emoji: "Habilita emojis"
+    emoji_set: "Com voldries l'emoji?"
+    enforce_square_emoji: "Força una ràtio d'aspecte sobre tots els emojis."
+    approve_unless_trust_level: "Entrades d'usuaris per sota d'aquest nivell de confiança requereixen aprovació"
+    errors:
+      invalid_email: "Direcció de correu electrònic invàlida. "
+      invalid_username: "No existeix cap usuari amb aquest nom. "
+      invalid_integer_min_max: "El valor ha d'estar entre %{min} i %{max}."
+      invalid_integer_min: "El valor ha de ser igual o major que %{min}. "
+      invalid_integer_max: "El valor no pot ser major que %{max}."
+      invalid_integer: "El valor ha de ser un enter. "
+      regex_mismatch: "El valor introduït no té el format requerit. "
+      must_include_latest: "El menú del capdament inclou el tab \"darrers\"."
+      invalid_string: "Valor invàlid."
+      invalid_string_min_max: "Ha de contenir entre %{min} i %{max} caràcters."
+      invalid_string_min: "Ha de contenir com mínim %{min} caràcters. "
+      invalid_string_max: "No ha d'excedir els %{max} caràcters. "
+      invalid_reply_by_email_address: "El valor ha de contenir '%{reply_key}' i ha de ser diferent del correu de notificació."
+  search:
+    within_post: "#%{post_number} per %{username}"
+    types:
+      category: 'Categories'
+      topic: 'Resultats'
+      user: 'Usuaris'
+  sso:
+    not_found: "No hem trobat el teu compte d'usuari. Siusplau, contacta amb l'administrador d'aquest lloc web."
+    account_not_approved: "El teu compte d'usuari està pendent d'aprovació. Rebràs un email notificant-t'ho quan sigui aprovat."
+    unknown_error: "Hi ha un problema amb el teu compte d'usuari. Siusplau, contacta amb l'administrador d'aquest lloc web."
+    timeout_expired: "El login ha fet timeout, siusplau torna-ho a provar."
+  original_poster: "Autor original"
+  most_posts: "Amb més entrades"
+  most_recent_poster: "Autor més recent"
+  frequent_poster: "Autor freqüent"
+  redirected_to_top_reasons:
+    new_user: "Benvingut/da a la nostra comunitat! Aquests són els temes recents més populars."
+    not_seen_in_a_month: "Bentornat/da! Feia un temps que no et vèiem. Aquests són els temes més populars des de la teva darrera visita."
+  move_posts:
+    new_topic_moderator_post:
+      one: "Una entrada separada a un nou tema: %{topic_link}"
+      other: "%{count} entrades separades a un nou tema: %{topic_link}"
+    existing_topic_moderator_post:
+      one: "Una entrada incorporada a un tema existent: %{topic_link}"
+      other: "%{count} entrades incorporades a un tema existent: %{topic_link}"
+  change_owner:
+    post_revision_text: "S'ha transferit la propietat de %{old_user} a %{new_user}"
+    deleted_user: "un usuari esborrat"
+  emoji:
+    errors:
+      name_already_exists: "Disculpa, el nom '%{name}' ja està en ús per un altre emoji."
+      error_while_storing_emoji: "Disculpa, hi ha hagut un error emmagatzemant l'emoji."
+  topic_statuses:
+    archived_enabled: "Aquest tema està ara arxivat. Està congelat, i no pot ser canviat de cap manera."
+    archived_disabled: "Aquest tema s'ha des-arxivat. Ja no està congelat, i pot ser canviat."
+    closed_enabled: "Aquest tema està ara tancat. No s'hi admet noves respostes"
+    closed_disabled: "Aquest tema està ara obert. S'hi admet noves respostes"
+    autoclosed_message_max_posts:
+      one: "Aquest missatge ha estat tancat automàticament, després d'arribar al número màxim d'una resposta."
+      other: "Aquest missatge ha estat tancat automàticament, després d'arribar al número màxim de %{count} respostes."
+    autoclosed_topic_max_posts:
+      one: "Aquest tema ha estat tancat automàticament, després d'arribar al número màxim d'una resposta."
+      other: "Aquest tema ha estat tancat automàticament, després d'arribar al número màxim de %{count} respostes."
+    autoclosed_enabled_days:
+      one: "Aquest tema va quedar automàticament tancat després d'1 dia. No s'hi permet noves respostes."
+      other: "Aquest tema va quedar automàticament tancat després de %{count} dies. No s'hi permet noves respostes."
+    autoclosed_enabled_hours:
+      one: "Aquest tema va quedar automàticament tancat després d'1 hora. No s'hi permet noves respostes."
+      other: "Aquest tema va quedar automàticament tancat després de %{count} hores. No s'hi permet noves respostes."
+    autoclosed_enabled_minutes:
+      one: "Aquest tema va quedar automàticament tancat després d'1 minut. No s'hi permet noves respostes."
+      other: "Aquest tema va quedar automàticament tancat després de %{count} minuts. No s'hi permet noves respostes."
+    autoclosed_enabled_lastpost_days:
+      one: "Aquest tema va quedar automàticament tancat després d'1 dia des de la darrera resposta. No s'hi permet noves respostes."
+      other: "Aquest tema va quedar automàticament tancat després de %{count} dies des de la darrera resposta. No s'hi permet noves respostes."
+    autoclosed_enabled_lastpost_hours:
+      one: "Aquest tema va quedar automàticament tancat després d'1 hora des de la darrera resposta. No s'hi permet noves respostes."
+      other: "Aquest tema va quedar automàticament tancat després de %{count} hores des de la darrera resposta. No s'hi permet noves respostes."
+    autoclosed_enabled_lastpost_minutes:
+      one: "Aquest tema va quedar automàticament tancat després d'1 minut des de la darrera resposta. No s'hi permet noves respostes."
+      other: "Aquest tema va quedar automàticament tancat després de %{count} minuts des de la darrera resposta. No s'hi permet noves respostes."
+    autoclosed_disabled: "El tema ara està obert, s'hi permet respostes."
+    autoclosed_disabled_lastpost: "Aquest tema ara està obert. S'hi permet respostes."
+    pinned_enabled: "Aquest tema ara està enganxat. Apareixerà en primer lloc en la llista de la seva categoria, fins que es desenganxi."
+    pinned_disabled: "Aquest tema està ara desenganxat. No apareixerà més en la part superior de la seva categoria."
+    pinned_globally_enabled: "Aquest tema ara està destacat globalment. Apareixerà en primer lloc en la llista del seu categoria i en totes les llistes de temes fins que algú el desenganxi."
+    pinned_globally_disabled: "Aquest tema s'ha desenganxat. Ja no apareixerà en primer lloc de la seva categoria."
+    visible_enabled: "Aquest tema està ara llistat. Es mostrarà a les llistes de temes."
+    visible_disabled: "Aquest tema ja no està llistat. Ja no es mostrarà a les llistes de temes. L'única manera d'accedir-hi és mitjançant un enllaç directe."
+  login:
+    not_approved: "El teu compte encara no ha estat aprovat. Se't notificarà per correu quan estiguis preparat per a iniciar sessió."
+    incorrect_username_email_or_password: "Nom d'usuari, correu o contrassenya incorrectes"
+    wait_approval: "Gràcies per registrar-te. Se't notificarà quan el teu compte hagi estat aprovat."
+    active: "El teu compte està actiu i preparat."
+    activate_email: "<p>Gairebé has acabat! Hem enviat un correu d'activació a <b>%{email}</b>. Siusplau, segueix les instruccions en el correu per a activar el teu compte.</p><p>Si no arriba, siusplau comprova la carpeta de correu brossa, o mira de tornar a identificar-te i demanar un altre correu d'activació.</p>"
+    not_activated: "Encara no pots iniciar sessió. T'hem enviat un correu d'activació. Sisplau, segueix les instruccions en el correu per a activar el teu compte."
+    not_allowed_from_ip_address: "No pots iniciar sessió com a %{username} des d'aquesta adreça IP."
+    admin_not_allowed_from_ip_address: "No pots iniciar sessió d'administrador des d'aquesta adreça IP."
+    suspended: "No pots iniciar sessió fins %{date}."
+    suspended_with_reason: "Compte suspès fins %{date}: %{reason}"
+    errors: "%{errors}"
+    not_available: "No disponible. Prova %{suggestion}?"
+    something_already_taken: "Alguna cosa ha sortit malament, potser el nom d'usuari o el correu ja estan registrats. Prova l'enllaç d'\"he oblidat la meva contrasenya\"."
+    omniauth_error: "Disculpa, hi ha ha hagut un error autoritzant el teu compe. Potser no has aprovat l'autorització?"
+    omniauth_error_unknown: "Alguna cosa ha sortit malament processant el teu inici de sessió, sisplau torna a intentar-ho."
+    new_registrations_disabled: "L'enregistrament de nous comptes no està permès en aquest moment."
+    password_too_long: "Les contrasenyes poden ser d'un màxim de 200 caràcters."
+    email_too_long: "L'adreça de correu que has proporcionat és massa llarga. Les adreces no poden tenir més de 254 caràcters, i els noms de domini han de tenir-ne menys de 253."
+    reserved_username: "Aquet nom d'usuari no està permès."
+    missing_user_field: "No has completat tots els camps d'usuari"
+    close_window: "S'ha competat l'autorització. Tanca aquesta finestra per a continuar."
+    already_logged_in: "Uix, sembla que estas mirant d'acceptar una invitació que era per a un altre usuari. Si no ets %{current_user}, siusplau, tanca sessió i prova-ho de nou."
+  user:
+    no_accounts_associated: "No hi ha comptes associats"
+    username:
+      short: "ha de contenir almenys %{min} caràcters"
+      long: "ha de contenir no més de %{max} caràcters"
+      characters: "només pot incloure caràcters i números"
+      unique: "ha de ser únic"
+      blank: "ha d'estar present"
+      must_begin_with_alphanumeric_or_underscore: "ha de començar amb una lletra, número, o guió baix"
+      must_end_with_alphanumeric: "ha d'acabar amb una lletra o número"
+      must_not_contain_two_special_chars_in_seq: "no pot contenir una seqüència de 2 o més caràcters especials (.-_)"
+      must_not_end_with_confusing_suffix: "no pot acabar amb un sufix confús, com ara .json o .png etc."
+    email:
+      not_allowed: "Aquest proveïdor de correu no està permès. Sisplau, usa una altra direcció de correu."
+      blocked: "no està permès."
+    ip_address:
+      blocked: "L'enregistrament de nous comptes des d'aquesta direcció IP no està permès."
+      max_new_accounts_per_registration_ip: "L'enregistrament de nous comptes des d'aquesta direcció IP no està permès (límit excedit). Contacta un membre del staff."
+  flags_reminder:
+    flags_were_submitted:
+      one: "Avisos enviats fa més d'una hora. Siusplau, revisa'ls."
+      other: "Avisos enviats fa més de %{count} hores. Siusplau, revisa'ls."
+    subject_template:
+      one: "1 avís esperant acció"
+      other: "%{count} avisos esperant acció"
+  unsubscribe_mailer:
+    subject_template: "Confirma que ja no vols rebre emails de %{site_title}"
+    text_body_template: |
+      Algú (segurament tu mateix) ha demanat que es deixin de rebre emails de %{site_domain_name} a aquesta adreça de correu.
+      Si vols confirmar-ho, siusplau clica aquest enllaç:
+
+      %{confirm_unsubscribe_link}
+
+
+      Si vols continuar rebent correus, siusplau ignora aquest correu.
+  invite_mailer:
+    subject_template: "%{invitee_name} t'ha convidat a '%{topic_title}' en %{site_domain_name}"
+    text_body_template: |
+      %{invitee_name} t'ha convidat a un debat
+
+      > **%{topic_title}**
+      >
+      > %{topic_excerpt}
+
+      en
+
+      > %{site_title} -- %{site_description}
+
+      Si hi estàs interessat, fes clic en el següent enllaç:
+
+      %{invite_link}
+
+      Aquesta invitació prové d'un usuari de confiança, per la qual cosa no necessitaràs iniciar sessió.
+  invite_forum_mailer:
+    subject_template: "%{invitee_name} t'ha convidat a unir-te a %{site_domain_name}"
+  invite_password_instructions:
+    subject_template: "Configura la contrassenya per al teu compte de %{site_name}"
+    text_body_template: |
+      Gràcies per acceptar la invitació a %{site_name} -- benvingut/da!
+
+      Clica aquest enllaç per triar contrassenya:
+      %{base_url}/users/password-reset/%{email_token}
+
+      (Si l'enllaç expira, tria l'opció "he oblidat la contrassenya" quan iniciis sessió amb la teva adreça de correu.)
+  test_mailer:
+    subject_template: "[%{site_name}] Prova d'enviament de correu"
+  new_version_mailer:
+    subject_template: "[%{site_name}] Nova versió de Discourse, actualització disponible"
+  new_version_mailer_with_notes:
+    subject_template: "[%{site_name}] actualització disponible"
+  queued_posts_reminder:
+    subject_template:
+      one: "[%{site_name}] 1 entrada esperant revisió"
+      other: "[%{site_name}] %{count} entrades esperant revisió"
+  flag_reasons:
+    off_topic: "La teva entrada ha estat marcada com a **fora de tema**: la comunitat creu que no es correspòn amb el tema, tal i com queda definit pel títol i la primera entrada."
+    inappropriate: "La teva entrada ha estat marcada com a **inadequada**: la comunitat creu que és ofensiva, o que viola les nostres [guies de comportament de la comunitat](/guidelines)."
+    spam: "La teva entrada ha estat marcada com a **spam**: la comunitat creu que és un anunci, de natura excessivament promocional enlloc de ser útil o rellevant pel tema."
+    notify_moderators: "La teva entrada ha estat marcada com a **per revisar per part d'un moderador**: la comunitat creu que hi ha alguna cosa en l'entrada que requereix intervenció manual per part del staff."
+  flags_dispositions:
+    agreed: "Gràcies per avisar-nos. Coincidim amb el avís que hi ha un problema i ho estem revisant."
+    agreed_and_deleted: "Gràcies per avisar-nos. Coincidim amb el teu avís que hi ha un problema i hem eliminat l'entrada."
+    disagreed: "Gràcies per fer-nos-ho saber. Ho estem revisant."
+    deferred: "Gràcies per fer-nos-ho saber. Ho estem revisant."
+    deferred_and_deleted: "Gràcies per fer-nos-ho saber. Hem eliminat l'entrada."
+  temporarily_closed_due_to_flags: "El tema està temporalment tancat degut a un gran nombre d'avisos per part de la comunitat."
+  system_messages:
+    welcome_user:
+      subject_template: "Benvingut a %{site_name}!"
+      text_body_template: |
+        Gràcies per unir-te a %{site_name}! Benvingut!
+
+        %{new_user_tips}
+
+        Creiem en un [comportament civilitzat de la comunitat](%{base_url}/guidelines) per a tots els casos.
+
+        Gaudeix de la teva visita!
+
+        (Si necessites comunicar-te amb [membres del staff](%{base_url}/about) com a nou usuari, simplement respon aquest missatge.)
+    welcome_invite:
+      subject_template: "Benvingut a %{site_name}!"
+    backup_succeeded:
+      subject_template: "Còpia de seguretat feta"
+    backup_failed:
+      subject_template: "Còpia de seguretat fallida"
+    restore_succeeded:
+      subject_template: "Restauració feta"
+    restore_failed:
+      subject_template: "Restauració fallida"
+    bulk_invite_succeeded:
+      subject_template: "Invitació massiva processada amb èxit"
+      text_body_template: "El teu arxiu d'invitació massiva ha estat processat, s'ha enviat %{sent} invitacions."
+    bulk_invite_failed:
+      subject_template: "Invitació massiva processada amb alguns errors"
+      text_body_template: |
+        El teu arxiu d'invitació massiva ha estat processat, s'ha enviat %{sent} invitacions i s'han produït %{failed} error(s).
+
+        Aquest és el registre:
+
+        ```
+        %{logs}
+        ```
+    csv_export_succeeded:
+      subject_template: "Exportació de dates feta"
+      text_body_template: |
+        L'exportació de dades s'ha completat! :dvd:
+
+        <a class="attachment" href="%{download_link}">%{file_name}</a> (%{file_size})
+
+        L'enllaç de descàrrega funcionarà durant 48 hores.
+    csv_export_failed:
+      subject_template: "Exportació de dades fallida"
+      text_body_template: "Disculpa, però l'exportació de dades ha fallat. Siusplau, consulta els registres d'activitat o contacta un membre del staff."
+    email_reject_insufficient_trust_level:
+      subject_template: "[%{site_name}] Problema amb email -- Nivell de confiança insuficient"
+      text_body_template: |
+        Ho sentim, però el teu msisatge de correu a %{destination} (titulat %{former_title}) no ha funcionat.
+
+        El teu compte no té el nivell de confiança suficient per a crear nous temes per aquesta adreça de correu. Si creus que això és un error, contacta un membre del staff.
+    email_reject_user_not_found:
+      subject_template: "[%{site_name}] Problema de correu -- Usuari no trobat"
+      text_body_template: |
+        Ho sentim, però el teu msisatge de correu a %{destination} (titulat %{former_title}) no ha funcionat.
+
+        Hem rebut la teva resposta des d'un correu desconegut. Mira d'enviar-la des d'una altra adreça de correu, o contacta un membre del staff.
+    email_reject_screened_email:
+      subject_template: "[%{site_name}] Problema de correu -- Email bloquejat"
+      text_body_template: |
+        Ho sentim, però el teu msisatge de correu a %{destination} (titulat %{former_title}) no ha funcionat.
+
+        La teva resposta ha arribat des d'una adreça de correu bloquiejada. Prova d'enviar-la des d'una altra adreça, o contacta un membre del staff.
+    email_reject_inactive_user:
+      subject_template: "[%{site_name}] Problema de correu -- Usuari inactiu"
+      text_body_template: |
+        Ho sentim, però el teu msisatge de correu a %{destination} (titulat %{former_title}) no ha funcionat.
+
+        El compte associat a aquesta adreça de correu no està activat. Siusplau, activa el teuc compte abans d'enviar emails.
+    email_reject_blocked_user:
+      subject_template: "[%{site_name}] Problema de correu -- Usuari bloquejat"
+    email_reject_no_account:
+      subject_template: "[%{site_name}] Problema amb el correu -- Compte desconegut"
+    email_reject_empty:
+      subject_template: "[%{site_name}] Problema amb el correu -- Sense contingut"
+    email_reject_parsing:
+      text_body_template: |
+        Disculpa, però el teu missatge de correu a %{destination} (titulat %{former_title}) no s'ha pogut enviar.
+
+        No podem trobar la teva resposta en el correu. **Assegura't que la teva resposta és al capdamunt del correu** -- no podem processar respostes tipus "inline".
+    email_reject_invalid_access:
+      subject_template: "[%{site_name}] Problema amb el correu -- Accés invàlid"
+    email_reject_strangers_not_allowed:
+      subject_template: "[%{site_name}] Problema de correu -- Accés invàlid"
+    email_reject_invalid_post:
+      subject_template: "[%{site_name}] Problema de correu -- Error posant entrada"
+    email_reject_invalid_post_specified:
+      subject_template: "[%{site_name}] Problema de correu -- Error posant entrada"
+    email_reject_invalid_post_action:
+      subject_template: "[%{site_name}] Problema de correu -- Acció invàlida"
+    email_reject_reply_key:
+      subject_template: "[%{site_name}] Problema amb el correu -- Clau de resposta desconeguda"
+    email_reject_bad_destination_address:
+      subject_template: "[%{site_name}] Problema de correu -- Destinatari desconegut"
+    email_reject_topic_not_found:
+      subject_template: "[%{site_name}] Problema amb el correu -- Tema no trobat"
+    email_reject_topic_closed:
+      subject_template: "[%{site_name}] Problema amb el correu -- Tema tancat"
+    email_reject_auto_generated:
+      subject_template: "[%{site_name}] Problema amb el correu -- Resposta auto-generada"
+    email_error_notification:
+      subject_template: "[%{site_name}] Problema amb el correu -- Problema d'autenticació POP"
+    spam_post_blocked:
+      subject_template: "L'usuari nou %{username} té entrades bloquejades degut a la repetició d'enllaços."
+    pending_users_reminder:
+      subject_template:
+        one: "1 usuari esperant aprovació"
+        other: "%{count} usuaris esperant aprovació"
+      text_body_template: |
+        Hi ha nous registres d'usuari esperant a ser aprovats (o no) abans de poder accedir al fòrum.
+
+        [Sisplau, revisa això en la secció d'administració](%{base_url}/admin/users/list/pending).
+    download_remote_images_disabled:
+      subject_template: "Deshabilitada la descàrrega d'imatges remotes"
+      text_body_template: "L'opció `download_remote_images_to_local` ha estat deshabilitada perquè s'ha arribat al límit d'espai de disc configurat en `download_remote_images_threshold`."
+    dashboard_problems:
+      subject_template: "Hem trobat problemes"
+  subject_re: "Re:"
+  subject_pm: "[MP]"
+  user_notifications:
+    previous_discussion: "Respostes anteriors"
+    reached_limit:
+      one: "COMPTE: has arribat al màxim d'emails diaris. Les noves notificacions via email seran suprimides"
+      other: "COMPTE: has arribat al màxim de %{count} emails diaris. Les noves notificacions via email seran suprimides."
+    in_reply_to: "En resposta a"
+    unsubscribe:
+      title: "Donar-se de baixa"
+      description: "No estàs interessat en rebre aquests correus? No hi ha problema! Fes clic a sota per a donar-te de baixa instantàniament:"
+    posted_by: "Publicat per %{username} el %{post_date}"
+    invited_to_private_message_body: |
+      %{username} t'ha invitat a un missatge
+
+      > **%{topic_title}**
+      >
+      > %{topic_excerpt}
+
+      a
+
+      > %{site_title} -- %{site_description}
+    invited_to_topic_body: |
+      %{username} t'ha invitat a una discussió
+
+      > **%{topic_title}**
+      >
+      > %{topic_excerpt}
+
+      a
+
+      > %{site_title} -- %{site_description}
+    user_invited_to_private_message_pm:
+      subject_template: "[%{site_name}] %{username} t'ha convidat al missatge '%{topic_title}'"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{respond_instructions}
+    user_invited_to_private_message_pm_staged:
+      subject_template: "[%{site_name}] %{username} t'ha invitat al missatge '%{topic_title}'"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{respond_instructions}
+    user_invited_to_topic:
+      subject_template: "[%{site_name}] %{username} t'ha invitat a '%{topic_title}'"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{respond_instructions}
+    user_replied:
+      subject_template: "[%{site_name}] %{username} ha contestat la teva entrada en '%{topic_title}'"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_replied_pm:
+      subject_template: "[%{site_name}] [PM] %{topic_title}"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_quoted:
+      subject_template: "[%{site_name}] %{username} t'ha mencionat en '%{topic_title}'"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_linked:
+      subject_template: "[%{site_name}] %{topic_title}"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_mentioned:
+      subject_template: "[%{site_name}] %{username} t'ha mencionat en '%{topic_title}'"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_group_mentioned:
+      subject_template: "[%{site_name}] %{topic_title}"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_posted:
+      subject_template: "[%{site_name}] %{subject_prefix}%{username} ha publicat en '%{topic_title}'"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_posted_pm:
+      subject_template: "[%{site_name}] [MP] %{topic_title}"
+      text_body_template: |
+        %{header_instructions}
+
+        %{message}
+
+        %{context}
+
+        %{respond_instructions}
+    user_posted_pm_staged:
+      subject_template: "%{optional_re}%{topic_title}"
+      text_body_template: |2
+
+        %{message}
+    digest:
+      why: "Un breu resum de %{site_link} des de la teva darrera visita el %{last_seen_at}"
+      click_here: "clic aquí"
+    forgot_password:
+      subject_template: "[%{site_name}] Restablir contrassenya"
+      text_body_template: |
+        Algú ha demanat restablir la teva contrasenya en [%{site_name}](%{base_url}).
+
+        Si no has estat tu, pots ignorar aquest correu sense cap perill.
+
+        Fes clic en el següent enllaç per a canviar la teva contrasenya:
+        %{base_url}/users/password-reset/%{email_token}
+    set_password:
+      subject_template: "[%{site_name}] Establir contrassenya"
+      text_body_template: |
+        S'ha sol·licitat afegir una contrasenya al teu compte de [%{site_name}](%{base_url}). Una altra opció es iniciar la sessió usant qualsevol servei online suportat (Google, Twitter, etc) que estigui associat a aquesta direcció de correu validada.
+
+        Si no has formulat aquesta petició, sisplau, ignora aquest correu.
+
+        Fes clic en el següent enllaç per a triar contrasenya:
+        %{base_url}/users/password-reset/%{email_token}
+    admin_login:
+      subject_template: "[%{site_name}] Inicia sessió"
+      text_body_template: |
+        Algú ha demanat iniciar sessió al teu compte de [%{site_name}](%{base_url}).
+
+        Si no has estat tu qui ho ha demanat, pots ignorar aquest correu.
+
+        Clica el següent enllaç per iniciar la sessió:
+        %{base_url}/users/admin-login/%{email_token}
+    account_created:
+      subject_template: "[%{site_name}] El teu nou compte"
+      text_body_template: |
+        S'ha creat un nou compte per a tu a %{site_name}
+
+        Clica el següent enllaç per a triar la contrasenya pel teu nou compte:
+        %{base_url}/users/password-reset/%{email_token}
+    confirm_new_email:
+      subject_template: "[%{site_name}] Confirma la teva nova adreça de correu"
+      text_body_template: |
+        Confirma la teva nova adreça de correu per a %{site_name} clicant el següent enllaç:
+
+        %{base_url}/users/authorize-email/%{email_token}
+    confirm_old_email:
+      subject_template: "[%{site_name}] Confirma la teva adreça de correu actual"
+      text_body_template: |
+        Abans que canviis la teva adreça de correu, necessitem que confirmis que controles
+        l'actual adreça. Després que completis aquest pas, et demanarem que confirmis la nova.
+
+        Confirma l'actual compte de correu per a %{site_name} clicant en el següent enllaç:
+
+        %{base_url}/users/authorize-email/%{email_token}
+    notify_old_email:
+      subject_template: "[%{site_name}] Hem canviat la teva adreça de correu "
+      text_body_template: |+
+        Aquest és un missatge de correu automàtic per a informar-te que la teva adreça de correu per
+        %{site_name} ha canviat. Si això ha estat un error, siusplau contacta un administrador del lloc web.
+
+        La teva adreça de correu ha canviat a:
+
+        %{new_email}
+
+    signup_after_approval:
+      subject_template: "La teva sol·licitud ha estat aprovada a %{site_name}!"
+      text_body_template: |
+        Benvingut a %{site_name}!
+
+        Un membre del "staff" ha aprovat el teu compte d'usuari a %{site_name}.
+
+        Clica el següent enllaç per confirmar i activatar el teu compte:
+        %{base_url}/users/activate-account/%{email_token}
+
+        Si l'enllaç no és clicable, prova de copiar i enganxar a la barra d'adreces del teu navegador web.
+
+        %{new_user_tips}
+
+        Creiem fermament en [un comportament cívic de la comunitat](%{base_url}/guidelines).
+
+        Gaudeix de la teva estada!
+
+        (Si necessites comunicar-te amb un [membre del staff](%{base_url}/about) com a nou usuari, simplement contesta aquest missatge.)
+    signup:
+      subject_template: "[%{site_name}] Confirma el teu nou compte"
+      text_body_template: |
+        Benvingut a %{site_name}!
+
+        Fes clic en el següent enllaç per a confirmar i activar el teu nou compte
+        %{base_url}/users/activate-account/%{email_token}
+
+        Si l'enllaç anterior no es clicable, prova de copiar i enganxar-lo a la barra de direccions del teu navegador.
+  page_not_found:
+    title: "Aix. Aquesta pàgina no existeix, o és privada."
+    popular_topics: "Populars"
+    recent_topics: "Recents"
+    see_more: "Més"
+    search_title: "Cerca en aquest lloc web"
+    search_google: "Google"
+  login_required:
+    welcome_message: |
+      #[Benvingut a %{title}](#welcome)
+      Et cal un compte d'usuari. Sisplau, crea un compte o inicia sessió per continuar.
+  terms_of_service:
+    title: "Condicions d'ús"
+    signup_form_message: 'He llegit i accepto les <a href="/tos" target="_blank">condicions de servei</a>.'
+  deleted: 'esborrat'
+  upload:
+    edit_reason: "descarregades còpies de les imatges en local"
+    unauthorized: "Ho sentim, l'arxiu que estàs intentant pujar no està autoritzat (extensions permeses: %{authorized_extensions})."
+    pasted_image_filename: "Imatge enganxada"
+    store_failure: "Hi ha hagut un error en l'emmagatzematge de la pujada #%{upload_id} per a l'usuari #%{user_id}."
+    file_missing: "Disculpa, has de proporcionar un arxiu per a pujar-lo."
+    attachments:
+      too_large: "Disculpa, l'arxiu que intentes pujar és massa gran (mida màxima: %{max_size_kb}KB)."
+    images:
+      too_large: "Disculpa, l'imatge que intentes pujar és massa gran (mida màxima: %{max_size_kb}KB), siusplau canvia'n la mida i torna-ho a provar."
+      size_not_found: "Ho sentim, però no hem pogut determinar la mida de la imatge. Potser l'arxiu està corrupte?"
+  avatar:
+    missing: "Disculpa, no podem trobar cap avatar associat a aquesta adreça de correu. Potsm irar de pujar-lo altra vegada?"
+  email_log:
+    no_user: "No es pot trobar l'usuari amb id %{user_id}"
+    anonymous_user: "L'usuari és anònim"
+    suspended_not_pm: "L'úsuari està suspès, no és un missatge"
+    seen_recently: "L'usuari va ser vist fa poc"
+    post_not_found: "No es pot trobar una entrada amb id %{post_id}"
+    notification_already_read: "La notificació de la que informava aquest correu ja ha estat llegida"
+    topic_nil: "entrada.tema és nul"
+    post_deleted: "l'entrada va ser eliminada pel seu autor"
+    user_suspended: "l'usuari ja estat suspès"
+    already_read: "l'usuari ja ha llegit aquest entrada"
+    message_blank: "el missatge està en blanc"
+    message_to_blank: "el destinatari està en blanc"
+    text_part_body_blank: "el cos està en blanc"
+    body_blank: "el cos està en blanc"
+  color_schemes:
+    base_theme_name: "Base"
+  about: "Quant a"
+  guidelines: "Directrius"
+  privacy: "Privacitat"
+  edit_this_page: "Edita aquesta pàgina"
+  csv_export:
+    boolean_yes: "Sí"
+    boolean_no: "No"
+  static_topic_first_reply: |
+    Edita la primera entrada d'aquest tema per a canviar el contingut de la pàgina %{page_name}.
+  guidelines_topic:
+    title: "Preguntes freqüents / Directrius"
+    body: |
+      <a name="civilized"></a>
+
+      ## [Aquest és un lloc públic per la discussió cívica](#civilized)
+
+      Siusplau, tracta aquest fòrum de discussió amb el mateix respecte que tractaries un parc públic. Nosaltres som, també, un recurs que comparteix una comunitat: un lloc per compartir idees, coneixements i interessos mitjançant la conversa.
+
+      Aquestes normes no són rígides, si no una ajuda a la pròpia comunitat. Apliquem aquestes directrius per conservar aquest lloc net, iluminat, i civilitzat, per habilitar la discussió pública.
+
+      <a name="improve"></a>
+
+      ## [Millora la discussió](#improve)
+
+      Ajuda'ns a millorar aquest fòrum de discussió, mirant sempre de millorar qualsevol discussió d'alguna manera, encara que sigui en petita mesura. Si no estàs segur/a que el que escrius contribueix a la conversa, repensa el que has de dir, i torna-ho a provar.
+
+      Els temes que aquí es discuteix ens importen a nosaltres, i volem que et comportis d'acord amb això, igual que si t'importéssin en igual mesura a tu. Sigues respectuós/a amb els temes i la gent que els discuteix, encara que puguis no estar d'acord amb alguna de les coses que s'hi diu.
+
+      Una manera de millorar la discussió és descobrint quines hi ha en marxa. Siusplau, dedica uns quants minuts a navegar pels temes oberts, abans de contestar o crear-ne un de nou. Així tindràs més possibilitats de trobar aquells que comparteixen els teus interessos.
+
+      <a name="agreeable"></a>
+
+      ## [Sigues agradable, també en el desacord](#agreeable)
+
+      A vegades voldràs mostrar el teu desacord. És normal. Però recorda que has de _criticar idees, no persones_. Siusplau, evita:
+
+      * Insults.
+      * Atacs personals "ad hominem".
+      * Respondre pel to d'una entrada, enlloc de pel seu contingut.
+      * Contradir perquè sí, com a reflex visceral.
+
+      Enlloc d'això, mira de raonar arguments i contra-arguments que millorin la conversa.
+
+      <a name="participate"></a>
+
+      ## [La teva participació compta](#participate)
+
+      Les converses que tenim aquí marquen el to per a tothom. Ajuda'ns a infuir positivament en el futur d'aquesta comunitat triant involucrar-te en discussions que fan d'aquest fòrum in lloc interessant, i evita aquelles que fan el contrari.
+
+      Discourse dóna eines que ajuden la comunitat a identificar col·lectivament les millors (i les pitjors) contribucions: favorits, marcadors, "m'agrada", avisos, respostes, edició d'entrades, etcètera. Usa aquestes eines per millorar la teva pròpia experiència d'usuari: la teva, i la de la resta de la gent.
+
+      Intenta deixar el parc millor del que el vas trobar.
+
+      <a name="flag-problems"></a>
+
+      ## [Si veus un problema, fes un avís](#flag-problems)
+
+      Els moderadors gadeixen d'una autoritat superior; són els responsables d'aquest fòrum. Però tu també ho ets. Amb la teva ajuda, els moderadors poden facilitar el funcionament de la comunitat, enlloc de convertir-se en policies.
+
+      Quan vegis un comportament inadequat, no contestis. Això encoratja el mal comportament, consumeix la teva energia i malgasta el temps de tots. Simplement, _fes un avís_. Si hi ha prous avisos, hi haurà una reacció, ja sigui automàtica, o amb la intervenció manual d'un moderador.
+
+      Per tal de mantenir la comunitat, els moderadors es reserven el dret d'esborrar qualsevol contingut i qualsevol compte d'usuari, per qualsevol raó, i en qualsevol moment. Els moderadors no pre-visualitzen el contingut de cap manera; els moderadors i operadors d'aquest servei no es responsabilitzen del contingut que la comunitat envia.
+
+      <a name="be-civil"></a>
+
+      ## [Sigues sempre cívic](#be-civil)
+
+      No hi ha millor manera de sabotejar una conversa com la manca d'educació:
+
+      * Sigues cívic. No escriguis res que una persona raonable podria considerar ofensiu, abusiu, o un vehicle per a l'odi.
+      * Manten-ho net. No pugis material obscè o sexualment explícit.
+      * Respecta els altres. No assatgis o causis dolor a ningú. No suplantis l'identitat de ningú ni exposis informació privada.
+      * Respecta el nostre fòrum. No enviis spam ni vandalitzis aquest fòrum.
+
+      Aquestes no són unes normes perfectament definides ni concretes &mdash; _evita fins i tot allò que s'hi assembli_. Si no n'estàs segur/a, pregunta't com et faria sentir si el que estàs escrivint arribés a la portada d'un diari de tirada nacional.
+
+      Aquest és un fòrum públic, i els motors de cerca l'indexen. Manté el llenguatge, enllaços, i imatges en un to acceptable per a tots els públics.
+
+      <a name="keep-tidy"></a>
+
+      ## [Sigues endreçat](#keep-tidy)
+
+      Esforça't a mantenir-ho tot endreçat, de manera que poguem passar més temps parlant i menys endreçant i netejant. Per tant:
+
+      * No comencis un tema en la categoria que no toca.
+      * No facis entrades amb el mateix contingut en més d'un tema.
+      * No escriguis respostes buides de contingut.
+      * No desviis el tema
+      * No signis les entrades. Cada entrada que escrius inclou la teva informació.
+
+      Enlloc d'escriure "+1" o "Hi estic d'acord", usa el botó de "m'agrada". Enlloc de desviar el tema cap una altra direcció, usa el botó de "Contesta com a nou tema".
+
+      <a name="stealing"></a>
+
+      ## [Posa només allò que sigui de la teva autoria](#stealing)
+
+      No pots pujar cap contingut digital sense que el permís del seu autor. No posis descripcions, enllaços o mètodes per a infringir la propietat intel·lectual (incloent software, vídeo, àudio, imatges), or per trencar cap llei.
+
+      <a name="power"></a>
+
+      ## [Operat per i per a tu](#power)
+
+      Aquest lloc web l'opera [els teus amics del staff](/about) i també *vosaltres*, la comunitat. Si tens cap pregunta sobre com hauria de funcionar tot, obre un nou tema a la [categoria de feedback sobre el lloc web](/c/site-feedback) i parlem-ho! Ai hi ha cap tema crític o urgent que no es pot tractar d'aquesta manera o mitjançant un avís, contacta'ns via la [pàgina del staff](/about).
+
+      <a name="tos"></a>
+
+      ## [Termes del servei](#tos)
+
+      Sí, el llenguatge legal és avorrit, però ens hem de protegir a nosaltres mateixos, i per extensió, a tu i les teves dades, contra individus malintencionats. Tenim uns [Termes de Servei](/tos) que descriuen el teu (i el nostre comportament) i drets relacionats amb el contingut, la privacitat, i les lleis. Per usar aquest servei, has d'estar d'acord i regir-te segons aquests [TdS](/tos).
+  tos_topic:
+    title: "Termes del servei"
+    body: |
+      The following terms and conditions govern all use of the %{company_domain} website and all content, services and products available at or through the website, including, but not limited to, %{company_domain} Forum Software, %{company_domain} Support Forums and the %{company_domain} Hosting service ("Hosting"), (taken together, the Website). The Website is owned and operated by %{company_full_name} ("%{company_name}"). The Website is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, %{company_domain}’s [Privacy Policy](/privacy) and [Community Guidelines](/faq)) and procedures that may be published from time to time on this Site by %{company_name} (collectively, the "Agreement").
+
+      Please read this Agreement carefully before accessing or using the Website. By accessing or using any part of the web site, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access the Website or use any services. If these terms and conditions are considered an offer by %{company_name}, acceptance is expressly limited to these terms. The Website is available only to individuals who are at least 13 years old.
+
+      <a name="1"></a>
+
+      ## [1. Your %{company_domain} Account](#1)
+
+      If you create an account on the Website, you are responsible for maintaining the security of your account and you are fully responsible for all activities that occur under the account. You must immediately notify %{company_name} of any unauthorized uses of your account or any other breaches of security. %{company_name} will not be liable for any acts or omissions by you, including any damages of any kind incurred as a result of such acts or omissions.
+
+      <a name="2"></a>
+
+      ## [2. Responsibility of Contributors](#2)
+
+      If you post material to the Website, post links on the Website, or otherwise make (or allow any third party to make) material available by means of the Website (any such material, "Content"), You are entirely responsible for the content of, and any harm resulting from, that Content. That is the case regardless of whether the Content in question constitutes text, graphics, an audio file, or computer software. By making Content available, you represent and warrant that:
+
+      *   the downloading, copying and use of the Content will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark or trade secret rights, of any third party;
+      *   if your employer has rights to intellectual property you create, you have either (i) received permission from your employer to post or make available the Content, including but not limited to any software, or (ii) secured from your employer a waiver as to all rights in or to the Content;
+      *   you have fully complied with any third-party licenses relating to the Content, and have done all things necessary to successfully pass through to end users any required terms;
+      *   the Content does not contain or install any viruses, worms, malware, Trojan horses or other harmful or destructive content;
+      *   the Content is not spam, is not machine- or randomly-generated, and does not contain unethical or unwanted commercial content designed to drive traffic to third party sites or boost the search engine rankings of third party sites, or to further unlawful acts (such as phishing) or mislead recipients as to the source of the material (such as spoofing);
+      *   the Content is not pornographic, does not contain threats or incite violence, and does not violate the privacy or publicity rights of any third party;
+      *   your content is not getting advertised via unwanted electronic messages such as spam links on newsgroups, email lists, blogs and web sites, and similar unsolicited promotional methods;
+      *   your content is not named in a manner that misleads your readers into thinking that you are another person or company; and
+      *   you have, in the case of Content that includes computer code, accurately categorized and/or described the type, nature, uses and effects of the materials, whether requested to do so by %{company_name} or otherwise.
+
+      <a name="3"></a>
+
+      ## [3. User Content License](#3)
+
+      User contributions are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US). Without limiting any of those representations or warranties, %{company_name} has the right (though not the obligation) to, in %{company_name}’s sole discretion (i) refuse or remove any content that, in %{company_name}’s reasonable opinion, violates any %{company_name} policy or is in any way harmful or objectionable, or (ii) terminate or deny access to and use of the Website to any individual or entity for any reason, in %{company_name}’s sole discretion. %{company_name} will have no obligation to provide a refund of any amounts previously paid.
+
+
+      <a name="4"></a>
+
+      ## [4. Payment and Renewal](#4)
+
+      ### General Terms
+
+      Optional paid services or upgrades may be available on the Website. When utilizing an optional paid service or upgrade, you agree to pay %{company_name} the monthly or annual subscription fees indicated. Payments will be charged on a pre-pay basis on the day you begin utilizing the service or upgrade and will cover the use of that service or upgrade for a monthly or annual subscription period as indicated. These fees are not refundable.
+
+      ### Automatic Renewal
+
+      Unless you notify %{company_name} before the end of the applicable subscription period that you want to cancel a service or upgrade, your subscription will automatically renew and you authorize us to collect the then-applicable annual or monthly subscription fee (as well as any taxes) using any credit card or other payment mechanism we have on record for you. Subscriptions can be canceled at any time.
+
+      <a name="5"></a>
+
+      ## [5. Services](#5)
+
+      ### Hosting, Support Services
+
+      Optional Hosting and Support services may be provided by %{company_name} under the terms and conditions for each such service. By signing up for a Hosting/Support or Support services account, you agree to abide by such terms and conditions.
+
+      <a name="6"></a>
+
+      ## [6. Responsibility of Website Visitors](#6)
+
+      %{company_name} has not reviewed, and cannot review, all of the material, including computer software, posted to the Website, and cannot therefore be responsible for that material’s content, use or effects. By operating the Website, %{company_name} does not represent or imply that it endorses the material there posted, or that it believes such material to be accurate, useful or non-harmful. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. The Website may contain content that is offensive, indecent, or otherwise objectionable, as well as content containing technical inaccuracies, typographical mistakes, and other errors. The Website may also contain material that violates the privacy or publicity rights, or infringes the intellectual property and other proprietary rights, of third parties, or the downloading, copying or use of which is subject to additional terms and conditions, stated or unstated. %{company_name} disclaims any responsibility for any harm resulting from the use by visitors of the Website, or from any downloading by those visitors of content there posted.
+
+      <a name="7"></a>
+
+      ## [7. Content Posted on Other Websites](#7)
+
+      We have not reviewed, and cannot review, all of the material, including computer software, made available through the websites and webpages to which %{company_domain} links, and that link to %{company_domain}. %{company_name} does not have any control over those non-%{company_domain} websites and webpages, and is not responsible for their contents or their use. By linking to a non-%{company_domain} website or webpage, %{company_name} does not represent or imply that it endorses such website or webpage. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. %{company_name} disclaims any responsibility for any harm resulting from your use of non-%{company_domain} websites and webpages.
+
+      <a name="8"></a>
+
+      ## [8. Copyright Infringement and DMCA Policy](#8)
+
+      As %{company_name} asks others to respect its intellectual property rights, it respects the intellectual property rights of others. If you believe that material located on or linked to by %{company_domain} violates your copyright, and if this website resides in the USA, you are encouraged to notify %{company_name} in accordance with %{company_name}’s [Digital Millennium Copyright Act](http://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act) ("DMCA") Policy. %{company_name} will respond to all such notices, including as required or appropriate by removing the infringing material or disabling all links to the infringing material. %{company_name} will terminate a visitor’s access to and use of the Website if, under appropriate circumstances, the visitor is determined to be a repeat infringer of the copyrights or other intellectual property rights of %{company_name} or others. In the case of such termination, %{company_name} will have no obligation to provide a refund of any amounts previously paid to %{company_name}.
+
+      <a name="9"></a>
+
+      ## [9. Intellectual Property](#9)
+
+      This Agreement does not transfer from %{company_name} to you any %{company_name} or third party intellectual property, and all right, title and interest in and to such property will remain (as between the parties) solely with %{company_name}. %{company_name}, %{company_domain}, the %{company_domain} logo, and all other trademarks, service marks, graphics and logos used in connection with %{company_domain}, or the Website are trademarks or registered trademarks of %{company_name} or %{company_name}’s licensors. Other trademarks, service marks, graphics and logos used in connection with the Website may be the trademarks of other third parties. Your use of the Website grants you no right or license to reproduce or otherwise use any %{company_name} or third-party trademarks.
+
+      <a name="10"></a>
+
+      ## [10. Advertisements](#10)
+
+      %{company_name} reserves the right to display advertisements on your content unless you have purchased an Ad-free Upgrade or a Services account.
+
+      <a name="11"></a>
+
+      ## [11. Attribution](#11)
+
+      %{company_name} reserves the right to display attribution links such as ‘Powered by %{company_domain},’ theme author, and font attribution in your content footer or toolbar. Footer credits and the %{company_domain} toolbar may not be removed regardless of upgrades purchased.
+
+      <a name="12"></a>
+
+      ## [12. Changes](#12)
+
+      %{company_name} reserves the right, at its sole discretion, to modify or replace any part of this Agreement. It is your responsibility to check this Agreement periodically for changes. Your continued use of or access to the Website following the posting of any changes to this Agreement constitutes acceptance of those changes. %{company_name} may also, in the future, offer new services and/or features through the Website (including, the release of new tools and resources). Such new features and/or services shall be subject to the terms and conditions of this Agreement.
+
+      <a name="13"></a>
+
+      ## [13. Termination](#13)
+
+      %{company_name} may terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. If you wish to terminate this Agreement or your %{company_domain} account (if you have one), you may simply discontinue using the Website. All provisions of this Agreement which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+      <a name="14"></a>
+
+      ## [14. Disclaimer of Warranties](#14)
+
+      The Website is provided "as is". %{company_name} and its suppliers and licensors hereby disclaim all warranties of any kind, express or implied, including, without limitation, the warranties of merchantability, fitness for a particular purpose and non-infringement. Neither %{company_name} nor its suppliers and licensors, makes any warranty that the Website will be error free or that access thereto will be continuous or uninterrupted. If you’re actually reading this, here’s [a treat](http://www.newyorker.com/online/blogs/shouts/2012/12/the-hundred-best-lists-of-all-time.html). You understand that you download from, or otherwise obtain content or services through, the Website at your own discretion and risk.
+
+      <a name="15"></a>
+
+      ## [15. Limitation of Liability](#15)
+
+      In no event will %{company_name}, or its suppliers or licensors, be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory for: (i) any special, incidental or consequential damages; (ii) the cost of procurement for substitute products or services; (iii) for interruption of use or loss or corruption of data; or (iv) for any amounts that exceed the fees paid by you to %{company_name} under this agreement during the twelve (12) month period prior to the cause of action. %{company_name} shall have no liability for any failure or delay due to matters beyond their reasonable control. The foregoing shall not apply to the extent prohibited by applicable law.
+
+      <a name="16"></a>
+
+      ## [16. General Representation and Warranty](#16)
+
+      You represent and warrant that (i) your use of the Website will be in strict accordance with the %{company_name} [Privacy Policy](/privacy), [Community Guidelines](/guidelines), with this Agreement and with all applicable laws and regulations (including without limitation any local laws or regulations in your country, state, city, or other governmental area, regarding online conduct and acceptable content, and including all applicable laws regarding the transmission of technical data exported from the country in which this website resides or the country in which you reside) and (ii) your use of the Website will not infringe or misappropriate the intellectual property rights of any third party.
+
+      <a name="17"></a>
+
+      ## [17. Indemnification](#17)
+
+      You agree to indemnify and hold harmless %{company_name}, its contractors, and its licensors, and their respective directors, officers, employees and agents from and against any and all claims and expenses, including attorneys’ fees, arising out of your use of the Website, including but not limited to your violation of this Agreement.
+
+      <a name="18"></a>
+
+      ## [18. Miscellaneous](#18)
+
+      This Agreement constitutes the entire agreement between %{company_name} and you concerning the subject matter hereof, and they may only be modified by a written amendment signed by an authorized executive of %{company_name}, or by the posting by %{company_name} of a revised version. Except to the extent applicable law, if any, provides otherwise, this Agreement, any access to or use of the Website will be governed by the laws of the state of California, U.S.A., excluding its conflict of law provisions, and the proper venue for any disputes arising out of or relating to any of the same will be the state and federal courts located in San Francisco County, California. Except for claims for injunctive or equitable relief or claims regarding intellectual property rights (which may be brought in any competent court without the posting of a bond), any dispute arising under this Agreement shall be finally settled in accordance with the Comprehensive Arbitration Rules of the Judicial Arbitration and Mediation Service, Inc. (“JAMS”) by three arbitrators appointed in accordance with such Rules. The arbitration shall take place in San Francisco, California, in the English language and the arbitral decision may be enforced in any court. The prevailing party in any action or proceeding to enforce this Agreement shall be entitled to costs and attorneys’ fees. If any part of this Agreement is held invalid or unenforceable, that part will be construed to reflect the parties’ original intent, and the remaining portions will remain in full force and effect. A waiver by either party of any term or condition of this Agreement or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach thereof. You may assign your rights under this Agreement to any party that consents to, and agrees to be bound by, its terms and conditions; %{company_name} may assign its rights under this Agreement without condition. This Agreement will be binding upon and will inure to the benefit of the parties, their successors and permitted assigns.
+
+      This document is CC-BY-SA. It was last updated May 31, 2013.
+
+      Originally adapted from the [WordPress Terms of Service](http://en.wordpress.com/tos/).
+  privacy_topic:
+    title: "Política de privacitat"
+  badges:
+    editor:
+      name: Editor
+      description: Primera edició d'entrada
+      long_description: |
+        Aquesta insígnia es concedeix quan edites una entrada. No dubtis a editar les teves entrades en qualsevol moment per a millorar-les, arreglar errades o afegir-hi contingut. Edita per a fer les teves entrades encara millor!
+    basic_user:
+      name: Bàsic
+      description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/4">Disposa</a> de totes les funcions essencials de la comunitat
+      long_description: |
+        Aquesta insígnia se't concedeix quan arribes al nivell de confiança 1. Gràcies per quedar-te per aquí i llegir uns quants temes per descobrir de què va aquesta comunitat. T'hem aixecat les restriccions de nou usuari, i ara tens totes les habilitats essencials, com ara enviar missatges personals, fer avisos, editar la wiki, i adjuntar imatges i enllaços.
+    member:
+      name: Membre
+      description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/5">Se li concedeix</a> enviar invitacions, missatges de grup, més "m'agrada"
+      long_description: |
+        Aquesta insígnia se't concedeix quan arribes al nivell de confiança 2. Gràcies per participar en la nostra comunitat durant setmanes. Ara pots enviar invitacions des de la teva pàgina d'usuari o temes individuals, crear missatges de grup, i posar uns quants m'agrada més al dia.
+    regular:
+      name: Habitual
+      description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/6">Se li concedeix</a> l'habilitat de re-categoritzar, re-nombrar, seguir enllaços i més m'agrada
+      long_description: |
+        Aquesta insígnia se't concedeix quan arribes al nivell de confiança 3. Gràcies per formar part de la nostra comunitat de forma habitual durant mesos. Ets un dels lectors més assidus, i un contribuient constant a la comunitat. Pots re-categoritzar i renombrar temes, crear avisos més potents, accedir una àrea privada, i posar la tira de m'agrada per dia.
+    leader:
+      name: Líder
+      description: <a href="https://meta.discourse.org/t/what-do-user-trust-levels-do/4924/7">Se li concedeix</a> l'habilitat de fer edicions globals, enganxar, tancar, arxivar, dividir i combinar temes, més "m'agrada"
+      long_description: |
+        Aquesta insígnia se't concedeix quan arribes al nivell de confiança 4. Ets un líder d'aquesta comunitat d'acord amb el staff, i ets un exemple a seguir pel que fas i pel que dius. Tens la possibilitat d'editar totes les entrades, executar accions de moderació com ara enganxar, tancar, desllistar, arxivar, partir, unir, i pots fer la tira de m'agrada per dia.
+    welcome:
+      name: Benvingut/da
+      description: He rebut un "m'agrada"
+      long_description: |
+        Aquesta insígnia es concedeix quan reps el primer m'agrada a una entrada. Felicitats, has escrit una entrada que els teus companys han trobat interessant o útil.
+    autobiographer:
+      name: Autobiògraf
+      description: Ha omplert la informació del <a href="/my/preferences">perfil</a> d'usuari
+      long_description: |+
+        Aquesta insígnia es concedeix quan completes el teu <a href="/my/preferences">perfil d'usuari</a>  i selecciones una fotografia de perfil. Donar més a conèixer sobre qui és i què t'interessa ajuda a fer una comunitat millor i més unida.
+
+    anniversary:
+      name: Aniversari
+      description: Membre actiu per més d'un any, ha escrit com a mínim una vegada
+      long_description: |
+        Aquesta insígnia es concedeix quan has estat membre durant un any, amb com a mínim una entrada escrita durant aquest any. Gràcies per estar entre nosaltres i per contribuir a la comunitat.
+    nice_post:
+      name: Bona resposta
+      description: Rebuts 10 "m'agrada" en una resposta
+      long_description: |
+        Aquesta insígnia se't concedeix quan una reposta rep 10 "m'agrada". La teva resposta ha deixat una bona impressió a la comunitat i ha ajudat a fer avançar la conversa!
+    good_post:
+      name: Molt bona resposta
+      description: Rebuts 25 "m'agrada" en una resposta
+      long_description: |
+        Aquesta insígnia se't concedeix quan una reposta rep 25 "m'agrada". La teva resposta ha estat excepcional i ha millorat molt la conversa!
+    great_post:
+      name: Gran resposat
+      description: Rebuts 50 "m'agrada" en una resposta
+      long_description: |
+        Aquesta insígnia se't concedeix quan una reposta rep 50 "m'agrada". Uau! La teva resposta ha estat inspiradora, fascinant, divertida o incisiva, i ha encantat a la comunitat.
+    nice_topic:
+      name: Bon tema
+      description: Rebuts 10 "m'agrada" a un tema
+      long_description: |
+        Aquesta insígnia se't concedeix quan una reposta rep 10 "m'agrada". Ep, has començat una conversa interessant per a la comunitat!
+    good_topic:
+      name: Molt bon tema
+      description: Rebuts 25 "m'agrada" a un tema
+      long_description: |
+        Aquesta insígnia se't concedeix quan una reposta rep 25 "m'agrada". Ep, has llançat una conversa vibrant i la comunitat s'hi ha llançat de cap!
+    great_topic:
+      name: Gran tema
+      description: Rebuts 50 "m'agrada" a un tema
+      long_description: |
+        Aquesta insígnia se't concedeix quan una reposta rep 50 "m'agrada". Has començat una conversa fascinant que ha encantat a la comunitat!
+    nice_share:
+      name: Bon "comparteix"
+      description: He compartit una entrada amb 25 visitants únics
+      long_description: |
+        Aquesta insígnia es concedeix quan comparteixes un enllaç que visiten 25 visitants externs. Bona feina! Compartir enllaços a discussions amb amics és una gran manera de fer créixer la nostra comunitat.
+    good_share:
+      name: Molt bon "comparteix"
+      description: He compartit una entrada amb 300 visitants únics
+      long_description: |
+        Aquesta insígnia es concedeix quan comparteixes un enllaç a una entrada que ha estat visitat per 300 visitants externs. Has mostrat una discussió a <i>molta</i> gent nova i ens has ajudat a créixer.
+    great_share:
+      name: Excel·lent "comparteix"
+      description: He compartit una entrada amb 1000 visitants únics
+      long_description: |
+        Aquesta insígnia es concedeix quan comparteixes un enllaç que és visitat per 1000 visitants externs. Uau! Has promocionat una discussió a una nova audiència, la qual cosa ha ajudat a fer créier la comunitat.
+    first_like:
+      name: Primer "m'agrada"
+      description: M'ha agradat una entrada
+      long_description: |
+        Aquesta insígnia es concedeix quan poses m'agrada per primera vegada usant el botó de :heart:. Posar m'agrada a les entrades és una gran manera de fer saber als membres de la comunitat que la seva entrada t'ha resultat interessant o divertida. Comparteix l'amor!
+    first_flag:
+      name: Primer avís
+      description: He fet un avís en relació a una entrada
+      long_description: |
+        Aquesta insígnia es concedeix quan fas un avís sobre un enllaç. Aquests avisos són crucials per la salut de la comunitat. Si trobes entrades que demanen l'atenció d'un moderador, siusplau no dubtis en avisar-nos. També pots usar la pantalla d'avisos per a enviar <b>missatges</b> a altres usuaris.
+    promoter:
+      name: Promotor
+      description: Ha convidat un usuari
+      long_description: |
+        Aquesta insígnia es concedeix quan invites algú a participar de la comunitat via el botó d'invitar en la teva pàgina d'usuari o al capdavall d'un tema. Invitar amics que puguin estar interessats en la conversa és una gran manera d'introduir nous membres a la comunitat, o sigui que gràcies!
+    campaigner:
+      name: Paladí
+      description: Ha invitat 3 usuaris bàsics
+      long_description: |
+        Aquesta insígnia es concedeix quan invites 3 persones que després passen prou temps al lloc web com per convertir-se en usuaris bàsics. Una comunitat vibrant necessita un influx constant de nouvinguts que regularment participen i afegeixen la seva veu a les converses.
+    champion:
+      name: Campió
+      description: Ha invitat 5 membres
+      long_description: |
+        Aquesta insígnia es concedeix quan invites 5 persones que després passen prou temps al lloc web com per convertir-se en membres de ple dret. Uau! Gràcies per aportar diversitat a la comunitat amb aquests nous membres!
+    first_share:
+      name: Primer "comparteix"
+      description: He compartit una entrada
+      long_description: |
+        Aquesta insígnia es concedeix quan comparteixes per primera vegada una resposta o un tema usant el botó de compartir. Compartir enllaços és una gran manera de mostrar discussions interessants amb la resta del món i així fer créixer la nostra comunitat.
+    first_link:
+      name: Primer enllaç
+      description: He afegit un enllaç intern a un altre tema
+      long_description: |
+        Aquesta insígnia es concedeix quan poses per primera vegada un enllaç a un altre tema. Enllaçar temes ajuda els lectors a trobar converses interessants relacionades, ajudant a connectar-los bidireccionament.
+    first_quote:
+      name: Primera cita
+      description: He citat una entrada
+      long_description: |
+        Aquesta insígnia es concedeix quan cites per primera vegada una entrada en la teva resposta. Citar les parts rellevants en la teva resposta ajuda a matenir les discussions focalitzades en el tema en qüestió. La manera més fàcil de fer-ho és seleccionar una secció de l'entrada abans d'apretar el botó de respondre. Cita amb generositat!
+    read_guidelines:
+      name: Directrius llegides
+      description: He llegit les <a href="/guidelines">directrius de la comunitat</a>
+      long_description: |
+        Aquesta insígnia es concedeix quan <a href="/guidelines">llegeixes les guies de comportament de la comunitat</a>. Seguir i compartir aquestes guies ajuda a mantenir la comunitat sostenible, segura, i divertida.
+    reader:
+      name: Lector
+      description: He llegit totes les entrades d'un tema amb més de 100 entrades
+      long_description: |
+        Aquesta entrada se't concedeix la primera vegada que llegeixes un tema amb més de 100 respostes. Llegir una conversa t'ajuda a seguir la discussió, entendre diferents punts de vista, i porta a converses més interessants. Com més llegeixes, millor es torna la conversa. Com ens agrada dir, llegir és bàsic :slight_smile:
+    popular_link:
+      name: Enllaç popular
+      description: He posat un enllaç extern amb 50 clics
+      long_description: |
+        Aquesta insígnia se't concedeix quan un enllaç que comparteixes rep 50 clics. Gràcies per posar un enllaç interessant per donar context a la conversa!
+    hot_link:
+      name: Enllaç calent
+      description: He posat un enllaç amb 300 clics
+      long_description: |
+        Aquesta insígnia se't concedeix quan un enllaç que comparteixes rep 300 clics. Gràcies per posar un enllaç tan interessant que ha il·luminat la discussió!
+    famous_link:
+      name: Enllaç famós
+      description: He posat un enllaç amb 1000 clics
+    appreciated:
+      name: Apreciat
+      description: He rebut 1 m'agrada en 20 entrades
+      long_description: |
+        Aquesta insígnia se't concedeix quan reps com a mínim un "m'agrada" en 20 entrades diferents. Les teves contribucions agraden a la comunitat!
+    respected:
+      name: Respectat
+      description: He rebut 2 m'agrada en 100 entrades
+      long_description: |
+        Aquesta insígnia se't concedeix quan reps com a mínim de 2 "m'agrada" en 100 entrades diferents. La comunitat et respecte per les teves contribucions a la conversa.
+    admired:
+      name: Admirat
+      description: He rebut 5 m'agrada en 300 entrades
+      long_description: |
+        Aquesta insígnia se't concedeix quan reps com a mínim de 5 "m'agrada" en 300 entrades diferents. Uau! Tens l'admiració de la comunitat per les teves contribucions freqüents i de qualitat.
+    out_of_love:
+      name: Amb amor
+      description: Donats 50 "m'agrada" en un dia
+      long_description: |
+        Aquesta insígnia se't concedeix quan uses 50 "m'agrada" diaris. El fet de recordar-te de prendre't un temps per a mostrar el teu apreci per les entrades que t'han agradat encoratja els membres de la comunitat a crear discussions encara millors en el futur.
+    higher_love:
+      name: Amb molt d'amor
+      description: Donats 50 "m'agrada" en un dia 5 vegades
+      long_description: |
+        Aquesta insígnia se't concedeix quan uses 50 "m'agrada" en un dia, i ho fas 5 dies. Gràcies per prendre't un temps per a mostrar el teu apreci per les entrades que t'han agradat!
+    crazy_in_love:
+      name: Boig d'amor
+      description: Donats 50 "m'agrada" en un dia 20 vegades
+      long_description: |
+        Aquesta insígnia se't concedeix quan uses 50 "m'agrada" en un dia, i ho fas 20 dies. Uau! El teu comportament és modèlic quant a encoratjar els altres membres de la comunitat a contribuir-hi!
+    thank_you:
+      name: Gràcies
+      description: Li han agradat 20 entrades i ha donat 10 "m'agrada"
+    gives_back:
+      name: Donant
+      description: Té 100 "m'agrada" i n'ha donat 100
+    empathetic:
+      name: Empàtic
+      description: Té 500 "m'agrada" i n'ha donat 1000
+    first_emoji:
+      name: Primer emoji
+      description: Ha usat un emoji en una entrada
+      long_description: |
+        Aquesta insígnia es concedeix la primera vegada que afegeixes un emoji a una entrada :thumbsup:. Els emoji ajuden a transmetre emocions en les teves entrades, des de felicitat :smiley: fins a tristesa :anguished: o enfadament :angry: i tot el que hi hagi pel mig :sunglasses:. Simplement escriu : (dos punts) o prem el botó de menú d'emojis en l'editor per a seleccionar-ne un d'entre cenentars :ok_hand:
+    first_mention:
+      name: Primera menció
+      description: Ha mencionat un usuari en una entrada
+      long_description: Aquesta insígnia se't concedeix la primera vegada que menciones algun @usuari en una entrada. Cada menció genera una notificació a la persona en qüestió, per tal que vegin la teva entrada. Simplement comença teclejant @ (arroba) per a mencionar algun usuari o, si hi tens permís, grup. És una manera còmoda de cridar l'atenció d'algú.
+    first_onebox:
+      name: Primer enllaç-capseta
+      description: Ha posat un enllaç amb la seva capseta
+      long_description: Aquesta insígnia se't concedeix la primera vegada que poses un enllaç en una línia sola, de manera que automàticament s'ha expandit en una capseta aïllada amb un breu resum de l'enllaç, un títol i (si n'hi ha) una imatge.
+  admin_login:
+    success: "Correu enviat"
+    error: "Error!"
+    email_input: "Correu de l'administrador"
+    submit_button: "Envia el correu"
+  discourse_hub:
+    access_token_problem: "Digues-li-ho a un administrador: siusplau actualitza les opcions de configuració per incloure el discourse_org_access_key correcte."
+  performance_report:
+    initial_post_raw: Aquest tema inclou reports de rendiment diaris pel teu lloc web.
+    initial_topic_title: Reports de rendiment del lloc web
+  topic_invite:
+    user_exists: "Disculpa, aquest usuari ja ha estat invitat. Només pots invitar un usuari a un tema una sola vegada."

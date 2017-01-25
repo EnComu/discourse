@@ -1,0 +1,27 @@
+ca:
+  js:
+    poll:
+      voters:
+        one: "votant"
+        other: "votants"
+      total_votes:
+        one: "vot total"
+        other: "vots totals"
+      average_rating: "Puntuació mitjana: <strong>%{average}</strong>."
+      cast-votes:
+        title: "Envia els teus vots"
+        label: "Vota ara!"
+      show-results:
+        title: "Mostra els resultats de la votatció"
+        label: "Mostra els resultats"
+      hide-results:
+        title: "Torna als teus vots"
+        label: "Amaga resultats"
+      open:
+        title: "Obre la votació"
+        label: "Obre"
+        confirm: "Segur que vols obrir aquesta votació?"
+      close:
+        title: "Tanca la votació"
+        label: "Tanca"
+        confirm: "Segur que vols tancar aquesta votació?"
