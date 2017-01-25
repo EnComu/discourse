@@ -6,7 +6,7 @@ Fabricator(:web_hook) do
   verify_certificate true
   active true
 
-  transient post_hook: WebHookEventType.find_by(name: 'post')
+  transient post_hook: WebHookEventType.find_or_create_by(name: 'post')
 
   after_build do |web_hook, transients|
     web_hook.web_hook_event_types << transients[:post_hook]
@@ -22,7 +22,7 @@ Fabricator(:wildcard_web_hook, from: :web_hook) do
 end
 
 Fabricator(:topic_web_hook, from: :web_hook) do
-  transient topic_hook: WebHookEventType.find_by(name: 'topic')
+  transient topic_hook: WebHookEventType.find_or_create_by(name: 'topic')
 
   after_build do |web_hook, transients|
     web_hook.web_hook_event_types = [transients[:topic_hook]]
