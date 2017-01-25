@@ -18,9 +18,6 @@ addons:
     - jhead
 
 matrix:
-  allow_failures:
-    - env: "RAILS_MASTER=1"
-    - rvm: rbx-2
   fast_finish: true
 
 rvm:
