@@ -20,12 +20,10 @@ class UPeCImport
 
   def initialize(filename={})
     raw = CSV.read(filename)
-    # Only delete DB on first run
-    delete_db if Topic.count < 20
     process_all raw
   end
 
-  def delete_db 
+  def self.delete_db 
     # Clean all DDBB
     Topic.delete_all
     Post.delete_all
@@ -50,6 +48,13 @@ class UPeCImport
     end
   end
 
+  def delete_last_post_and_topic
+    # Deletes the last Post and Topic
+    # By default Discourse creates an "About the..." pinned Post/Topic
+    Topic.last.delete
+    Post.last.delete
+  end
+
   def create_category category_name
     # Create category given a name
     category = Category.find_or_create_by(
@@ -57,6 +62,8 @@ class UPeCImport
       color: COLORS.sample,
       user_id: USER_ID
     )
+    delete_last_post_and_topic
+    category
   end
 
   def create_subcategory subcategory_name, category
@@ -67,6 +74,8 @@ class UPeCImport
       color: COLORS.pop,
       user_id: USER_ID
     )
+    delete_last_post_and_topic
+    subcategory
   end
 
   def create_topic topic_title, topic_body, subcategory
@@ -83,6 +92,35 @@ class UPeCImport
       user_id: USER_ID, 
       topic: topic
     ) 
+    topic
+  end
+
+  def create_master_topic topics
+    topic_body = "En aquesta categoria encontraras aquestes aportacions inicials: \n\n" 
+    topics.each do |t|
+      if t.title == "Diagnosi" 
+        topic_body << "</ul><h2>#{t.category.name}</h2>"
+        topic_body << "<ul><li><a href=#{t.url}>#{t.title}</a></li>"
+      else
+        topic_body << "<li><a href=#{t.url}>#{t.title}</a></li>"
+      end
+    end
+    topic_body << "</ul>"
+    # Create a Topic and a first Post (required by Discourse)
+    topic = Topic.new(
+      title: "Explicació per #{topics.first.category.parent_category.name}",
+      category: topics.first.category,
+      user_id: USER_ID,
+      pinned_at: DateTime.now
+    )
+    # Doesn't like titles like "Diagnosi", too little chars :/ 
+    topic.save(validate: false)
+    post = Post.create(
+      raw: topic_body,
+      user_id: USER_ID, 
+      topic: topic
+    ) 
+    topic
   end
 
   def process_all raw
@@ -90,14 +128,15 @@ class UPeCImport
 
     #category_name = raw[0][0]   
     category_name = get_category_name raw[0][0]
-    puts "Creating Category ... " + category_name
+    puts "Creating Category \t" + category_name
     category = create_category category_name
+    topics = [] # A list of all topics to making the Master/Pinned Topic for this Category
 
     (1..100).each do |column|
       # Create or find this subcategory by name
       subcategory_name = raw[2][column]
       unless subcategory_name.nil?
-        puts "Creating Subcategory ... " + subcategory_name
+        puts "Creating Subcategory \t" + subcategory_name
         subcategory = create_subcategory subcategory_name, category
         (3..100).each do |line|
           # line = 3
@@ -105,12 +144,13 @@ class UPeCImport
           unless raw[line].nil? or raw[line][column].nil?
             topic_title = raw[line][column].split("\n")[0]
             topic_body = raw[line][column].split("\n")[1..-1].join("\n\n")
-            puts "Creating Topic => " + topic_title
-            create_topic topic_title, topic_body, subcategory
+            puts "Creating Topic \t\t" + topic_title
+            topics << create_topic(topic_title, topic_body, subcategory)
           end
         end
       end
     end
+    create_master_topic(topics)
   end
 
 end
