@@ -17,6 +17,7 @@ class UPeCImport
     'ED207B', 
     '8C6238'
   ]
+  LIPSUM = "Discuteix! \n\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
 
   def initialize(filename={})
     raw = CSV.read(filename)
@@ -88,7 +89,6 @@ class UPeCImport
       sort_order: "created",
       sort_ascending: true
     )
-    delete_last_post_and_topic
     category
   end
 
@@ -100,7 +100,6 @@ class UPeCImport
       color: COLORS.pop,
       user_id: USER_ID
     )
-    delete_last_post_and_topic
     subcategory
   end
 
@@ -112,7 +111,6 @@ class UPeCImport
       user_id: USER_ID
     )
     debugger unless topic.valid?
-    # Doesn't like titles like "Diagnosi", too little chars :/ 
     post = Post.create(
       raw: topic_body, 
       user_id: USER_ID, 
@@ -134,21 +132,19 @@ class UPeCImport
       end
     end
     topic_body << "</ul>"
-    # Create a Topic and a first Post (required by Discourse)
-    topic = Topic.create(
-      title: "Introducció de #{topics.first.category.parent_category.name}",
-      category: topics.first.category.parent_category,
-      user_id: USER_ID,
-      pinned_at: DateTime.now
-    )
+
+    # Use the first created Topic as explanation
+    topic = topics.first.category.parent_category.topics.first
+    topic.title = "Introducció de #{topics.first.category.parent_category.name}"
+    topic.closed = true
+    topic.save
     debugger unless topic.valid?
-    # Doesn't like titles like "Diagnosi", too little chars :/ 
-    post = Post.create(
-      raw: topic_body,
-      user_id: USER_ID, 
-      topic: topic
-    ) 
+
+    post = topic.posts.first 
+    post.raw = topic_body
+    post.save
     debugger unless post.valid?
+
     topic
   end
 
@@ -159,11 +155,11 @@ class UPeCImport
 
     # Create category from first row first line
     category_name = get_category_name raw[0][0]
-    puts "Creating Category \t" + category_name
     category = create_category category_name
+    puts "Category;#{category.name};#{category.id};https://fem.unpaisencomu.cat#{category.url}"
 
     # Creates Topic to debate on Forum Obert
-    topic_body = "Discuteix! \n\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
+    topic_body = LIPSUM
     create_topic "Debat obert de #{category_name}", topic_body, category_forum
 
     # For later, a list of all topics to making the Master/Pinned Topic for this Category
@@ -173,8 +169,9 @@ class UPeCImport
       # Create or find this subcategory by name
       subcategory_name = raw[2][column]
       unless subcategory_name.nil?
-        puts "Creating Subcategory \t" + subcategory_name
         subcategory = create_subcategory subcategory_name, category
+        puts "Category;#{subcategory.name};#{subcategory.id};https://fem.unpaisencomu.cat#{subcategory.url}"
+        delete_last_post_and_topic
         (3..100).each do |line|
           # line = 3
           # Create topics on subcategory 
@@ -182,8 +179,9 @@ class UPeCImport
             topic_title = raw[line][column].split("\n")[0]
             topic_body = raw[line][column].split("\n")[1..-1].join("\n\n")
             topic_title = topic_title.starts_with?("Diagnosi") ? "Diagnosi de #{subcategory.name}" : topic_title
-            puts "Creating Topic \t\t" + topic_title
-            topics << create_topic(topic_title, topic_body, subcategory)
+            topic = create_topic(topic_title, topic_body, subcategory)
+            puts "Topic;#{topic.title};#{topic.id};#{topic.url}"
+            topics << topic
           end
         end
       end
