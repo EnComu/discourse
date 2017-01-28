@@ -30,21 +30,45 @@ class UPeCImport
     Category.delete_all
   end
 
-  def get_category_name category_name
-    # Error on categories with more than 50 characters, changing names...
+  def get_category_color category_name
+    case category_name
+    when "Un nou model econòmic i ecològic"
+      "9EB83B"
+    when "Un nou model de benestar"
+      "F7941D"
+    when "Un país fratern i sobirà"
+      "ED207B"
+    when "Una revolució democràtica i feminista"
+      "652D90"
+    when "Un país inclusiu"
+      "0E76BD"
+    when "Un projecte de país des de tots els territoris"
+      "12A89D"
+    when "Suport"
+      "666666"
+    when "Forum Obert"
+      "000000"
+    else
+      debugger
+    end
+  end
+
+  def get_category_name(category_name)
     case category_name
     when "Títol: 1. Un nou model econòmic i ecològic basat en el bé comú"
-      "Un nou model econòmic"
+      "Un nou model econòmic i ecològic"
     when "Títol: 2. Un nou model de benestar per una societat justa i igualitària"
-      "Un nou model de bienestar"
+      "Un nou model de benestar"
     when "Títol: 3. Un país fratern i sobirà en tots els àmbits"
-      "Un país fratern"
+      "Un país fratern i sobirà"
     when "Títol: 4. Una revolució democràtica i feminista"
-      "Una revolució democràtica"
+      "Una revolució democràtica i feminista"
     when "Títol: 5. Un país inclusiu on tothom tingui cabuda"
-      "Un plaís inclusiu"
+      "Un país inclusiu"
     when "Títol: 6. Un projecte de país des de tots els territoris"
-      "Un projecte de país"
+      "Un projecte de país des de tots els territoris"
+    else
+      debugger
     end
   end
 
@@ -59,7 +83,7 @@ class UPeCImport
     # Create category given a name
     category = Category.find_or_create_by(
       name: category_name,
-      color: COLORS.sample,
+      color: get_category_color(category_name),
       user_id: USER_ID
     )
     delete_last_post_and_topic
@@ -78,27 +102,29 @@ class UPeCImport
     subcategory
   end
 
-  def create_topic topic_title, topic_body, subcategory
+  def create_topic topic_title, topic_body, category
     # Create a Topic and a first Post (required by Discourse)
-    topic = Topic.new(
+    topic = Topic.create(
       title: topic_title, 
-      category: subcategory, 
+      category: category, 
       user_id: USER_ID
     )
+    debugger unless topic.valid?
     # Doesn't like titles like "Diagnosi", too little chars :/ 
-    topic.save(validate: false)
     post = Post.create(
       raw: topic_body, 
       user_id: USER_ID, 
       topic: topic
     ) 
+    debugger unless post.valid?
     topic
   end
 
-  def create_master_topic topics
-    topic_body = "En aquesta categoria encontraras aquestes aportacions inicials: \n\n" 
+  def create_master_topic topics, topic_body
+    topic_body = topic_body
+    topic_body << "\n\n En aquesta categoria encontraras aquestes aportacions inicials: \n\n" 
     topics.each do |t|
-      if t.title == "Diagnosi" 
+      if t.title.starts_with? "Diagnosi" 
         topic_body << "</ul><h2>#{t.category.name}</h2>"
         topic_body << "<ul><li><a href=#{t.url}>#{t.title}</a></li>"
       else
@@ -107,30 +133,39 @@ class UPeCImport
     end
     topic_body << "</ul>"
     # Create a Topic and a first Post (required by Discourse)
-    topic = Topic.new(
-      title: "Explicació per #{topics.first.category.parent_category.name}",
-      category: topics.first.category,
+    topic = Topic.create(
+      title: "Introducció de #{topics.first.category.parent_category.name}",
+      category: topics.first.category.parent_category,
       user_id: USER_ID,
       pinned_at: DateTime.now
     )
+    debugger unless topic.valid?
     # Doesn't like titles like "Diagnosi", too little chars :/ 
-    topic.save(validate: false)
     post = Post.create(
       raw: topic_body,
       user_id: USER_ID, 
       topic: topic
     ) 
+    debugger unless post.valid?
     topic
   end
 
   def process_all raw
-    # Create category from first row first line
+    # Creates Suport and Forum Obert forums
+    create_category "Suport"
+    category_forum = create_category "Forum Obert"
 
-    #category_name = raw[0][0]   
+    # Create category from first row first line
     category_name = get_category_name raw[0][0]
     puts "Creating Category \t" + category_name
     category = create_category category_name
-    topics = [] # A list of all topics to making the Master/Pinned Topic for this Category
+
+    # Creates Topic to debate on Forum Obert
+    topic_body = "Discuteix! \n\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."
+    create_topic "Debat obert de #{category_name}", topic_body, category_forum
+
+    # For later, a list of all topics to making the Master/Pinned Topic for this Category
+    topics = []
 
     (1..100).each do |column|
       # Create or find this subcategory by name
@@ -144,13 +179,17 @@ class UPeCImport
           unless raw[line].nil? or raw[line][column].nil?
             topic_title = raw[line][column].split("\n")[0]
             topic_body = raw[line][column].split("\n")[1..-1].join("\n\n")
+            topic_title = topic_title.starts_with?("Diagnosi") ? "Diagnosi de #{subcategory.name}" : topic_title
             puts "Creating Topic \t\t" + topic_title
             topics << create_topic(topic_title, topic_body, subcategory)
           end
         end
       end
     end
-    create_master_topic(topics)
+    
+    # Create the Introductory for Subcategory Master Topic, with Intro text and Initial Topics
+    master_topic_body = raw[3][0]
+    create_master_topic(topics, master_topic_body)
   end
 
 end
