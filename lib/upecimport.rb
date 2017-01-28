@@ -84,7 +84,9 @@ class UPeCImport
     category = Category.find_or_create_by(
       name: category_name,
       color: get_category_color(category_name),
-      user_id: USER_ID
+      user_id: USER_ID,
+      sort_order: "created",
+      sort_ascending: true
     )
     delete_last_post_and_topic
     category
