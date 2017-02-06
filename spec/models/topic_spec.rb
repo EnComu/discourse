@@ -586,6 +586,16 @@ describe Topic do
 
       expect(mod_post).to be_present
     end
+
+    it "creates a moderator post without errors" do
+      mod_post = topic.add_moderator_post(
+        moderator,
+        "x" * (SiteSetting.min_post_length - 1),
+        post_number: 999
+      )
+
+      expect(mod_post.errors).to be_empty
+    end
   end
 
 
