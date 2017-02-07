@@ -2773,3 +2773,354 @@ ca:
         check_email:
           title: "Mostra correu electrònic d'aquesta persona"
           text: "Mostra"
+      user:
+        suspend_failed: "Alguna cosa ha fallat en suspendre aquesta persona {{error}}"
+        unsuspend_failed: "Alguna cosa ha fallat en desfer la suspensió d'aquesta persona {{error}}"
+        suspend_duration: "Quant de temps durarà la suspensió d'aquesta persona?"
+        suspend_duration_units: "(dies)"
+        suspend_reason_label: "Per què suspens aquesta persona? Aquest text <b>serà visible per a tothom</b> a la pàgina del seu perfil i es mostrarà quan aquesta persona s'hi vulgui connectar. Fes-ho breu."
+        suspend_reason: "Motiu"
+        suspended_by: "Persona suspesa per"
+        delete_all_posts: "Esborra totes les publicacions"
+        delete_all_posts_confirm_MF: "Estàs a punt d'esborrar {POSTS, plural, one {1 publicació} other {# publicacions}} i {TOPICS, plural, one {1 tema} other {# temes}}. Segur?"
+        suspend: "Suspèn"
+        unsuspend: "Desfés suspendre"
+        suspended: "Suspès?"
+        moderator: "Moderador?"
+        admin: "Admin?"
+        blocked: "Bloquejat?"
+        staged: "Escenificat?"
+        show_admin_profile: "Admin"
+        edit_title: "Edita títol"
+        save_title: "Desa títol"
+        refresh_browsers: "Força l'actualització del navegador"
+        refresh_browsers_message: "Missatge enviat a totes les persones clientes!"
+        show_public_profile: "Mostra perfil públic"
+        impersonate: 'Personifica'
+        ip_lookup: "Cerca IP"
+        log_out: "Surt"
+        logged_out: "La persona ha sortit a tots els dispositius"
+        revoke_admin: 'Revoca admin'
+        grant_admin: 'Concedeix admin'
+        revoke_moderation: 'Revoca moderació'
+        grant_moderation: 'Concedeix moderació'
+        unblock: 'Desbloca'
+        block: 'Bloca'
+        reputation: Reputació
+        permissions: Permisos
+        activity: Activitat
+        like_count: <i>M'agrada</i> donats / rebuts
+        last_100_days: 'durant els darrers 100 dies'
+        private_topics_count: Temes privats
+        posts_read_count: Publicacions llegides
+        post_count: Publicacions creades
+        topics_entered: Temes vistos
+        flags_given_count: Banderes donades
+        flags_received_count: Banderes rebudes
+        warnings_received_count: Avisos rebuts
+        flags_given_received_count: 'Banderes donades / rebudes'
+        approve: 'Aprova'
+        approved_by: "aprovat per"
+        approve_success: "Persona aprovada i correu enviat amb instruccions d'activació"
+        approve_bulk_success: "Èxit! Totes les persones seleccionades han estat aprovades i avisades."
+        time_read: "Temps de lectura"
+        anonymize: "Fes anònima la persona usuària"
+        anonymize_confirm: "Segur que vols fer anònim aquest compte? Això canviarà el nom de persona usuària i el correu electrònic, així com restablir tota la informació de perfil."
+        anonymize_yes: "Sí, fes anònim aquest compte"
+        anonymize_failed: "Hi ha hagut un problema en fer anònim aquest compte."
+        delete: "Esborra persona usuària"
+        delete_forbidden_because_staff: "No es poden esborrar les persones administradores i moderadores."
+        delete_posts_forbidden_because_staff: "No es poden esborrar totes les publicacions de les persones administradores i moderadores."
+        delete_forbidden:
+          one: "No es poden esborrar les persones usuàries si tenen publicacions. Esborra totes les publicacions abans d'eliminar una persona usuària. (No es poden esborrar les publicacions amb més d'%{count} dia)"
+          other: "No es poden esborrar les persones usuàries si tenen publicacions. Esborra totes les publicacions abans d'eliminar una persona usuària. (No es poden esborrar les publicacions amb més de %{count} dies)"
+        cant_delete_all_posts:
+          one: "No es poden esborrar totes les publicacions. Algunes publicacions tenen més d'%{count} dia. (La configuració delete_user_max_post_age)"
+          other: "No es poden esborrar totes les publicacions. Algunes publicacions tenen més de %{count} dies. (La configuració delete_user_max_post_age)"
+        cant_delete_all_too_many_posts:
+          one: "No es poden esborrar totes les publicacions perquè la persona usuària té més d'1 publicació.  (delete_all_posts_max)"
+          other: "No es poden esborrar totes les publicacions perquè la persona usuària té més de %{count} publicacions.  (delete_all_posts_max)"
+        delete_confirm: "Segur que vols esborrar aquesta persona? Això és permanent!"
+        delete_and_block: "Esborra i <b>bloca</i> aquest correu electrònic i adreça IP"
+        delete_dont_block: "Només esborra"
+        deleted: "La persona usuària ha estat eliminada."
+        delete_failed: "Hi ha hagut un error en esborrar aquesta persona. Assegura't que s'esborren totes les publicacions abans de provar d'esborrar aquesta persona usuària. "
+        send_activation_email: "Envia un correu d'activació"
+        activation_email_sent: "S'ha enviat un correu d'activació"
+        send_activation_email_failed: "Hi ha hagut un problema en enviar un altre correu d'activació. %{error}"
+        activate: "Activa compte"
+        activate_failed: "Hi ha hagut un problema en activar aquesta persona usuària."
+        deactivate_account: "Desactiva compte"
+        deactivate_failed: "Hi ha hagut un problema en desactivar aquesta persona."
+        unblock_failed: 'Hi ha hagut un problema en desbloquejar aquesta persona.'
+        block_failed: 'Hi ha hagut un problema en bloquejar aquesta persona.'
+        block_confirm: 'Segur que vols bloquejar aquesta persona? No podrà crear nous temes o noves publicacions. '
+        block_accept: 'Sí, bloca aquesta persona'
+        bounce_score: "Puntuació de rebots"
+        reset_bounce_score:
+          label: "Reinicia"
+          title: "Reinicia la puntuació de rebots a 0"
+        deactivate_explanation: "Una persona desactivada ha de revalidar el correu."
+        suspended_explanation: "Una persona suspesa no pot connectar-s'hi."
+        block_explanation: "Una persona bloquejada no pot publicar o iniciar temes."
+        staged_explanation: "Una persona escenificada només pot publica per correu a alguns temes."
+        bounce_score_explanation:
+          none: "Recentment no s'han rebut rebots d'aquest correu."
+          some: "S'han rebut alguns rebots des d'aquest correu."
+          threshold_reached: "S'han rebut massa rebots des d'aquest correu."
+        trust_level_change_failed: "Hi ha hagut un problema en canviar el nivell de confiança d'aquesta persona."
+        suspend_modal_title: "Suspèn persona usuària"
+        trust_level_2_users: "Nivell de confiança 2 persones usuàries"
+        trust_level_3_requirements: "Nivell de confiança 3 requisits"
+        trust_level_locked_tip: "el nivell de confiança està bloquejat, el sistema no promourà o degradarà la persona usuària"
+        trust_level_unlocked_tip: "el nivell de confiança està desbloquejat, el sistema pot promoure o degradar la persona usuària"
+        lock_trust_level: "Bloqueja el nivell de confiança"
+        unlock_trust_level: "Desbloqueja el nivell de confiança"
+        tl3_requirements:
+          title: "Requisits per al nivell de confiança 3"
+          table_title:
+            one: "durant el darrer dia:"
+            other: "durant els darrers %{count} dies:"
+          value_heading: "Valor"
+          requirement_heading: "Requisit"
+          visits: "Visits"
+          days: "dies"
+          topics_replied_to: "Temes resposts a"
+          topics_viewed: "Temes vistos"
+          topics_viewed_all_time: "Temes vists (sempre)"
+          posts_read: "Publicacions llegides"
+          posts_read_all_time: "Publicacions llegides (sempre)"
+          flagged_posts: "Publicacions amb bandera"
+          flagged_by_users: "Persones que han abanderat"
+          likes_given: "<i>M'Agrada</i> donats"
+          likes_received: "<i>M'Agrada</i> rebuts"
+          likes_received_days: "<i>M'Agrada</i> rebuts: dies únics"
+          likes_received_users: "<i>M'Agrada</i> rebuts: persones úniques"
+          qualifies: "Qualificacions per al nivell de confiança 3"
+          does_not_qualify: "No qualifica per al nivell de confiança 3"
+          will_be_promoted: "Es promourà aviat."
+          will_be_demoted: "Es degradarà aviat."
+          on_grace_period: "Hores d'ara en període de promoció, no es degradarà."
+          locked_will_not_be_promoted: "Nivell de confiança bloquejat. Mai no es promourà"
+          locked_will_not_be_demoted: "Nivell de confiança bloquejat. Mai no es degradarà."
+        sso:
+          title: "Inscripció simple"
+          external_id: "ID externa"
+          external_username: "Nom de persona usuària"
+          external_name: "Nom"
+          external_email: "Correu electrònic"
+          external_avatar_url: "URL de la imatge de perfil"
+      user_fields:
+        title: "Camps de persona usuària"
+        help: "Afegeix camps que les teves persones puguin emplenar."
+        create: "Crea un camp de persona usuària"
+        untitled: "Sense títol"
+        name: "Nom del camp"
+        type: "Tipus de camp"
+        description: "Descripció del camp"
+        save: "Desa"
+        edit: "Edita"
+        delete: "Esborra"
+        cancel: "Cancel·la"
+        delete_confirm: "Segur que vols esborrar aquest camp de persona usuària?"
+        options: "Opcions"
+        required:
+          title: "Necessari en identificar-se?"
+          enabled: "necessari"
+          disabled: "no necessari"
+        editable:
+          title: "Editable després d'identificar-se?"
+          enabled: "editable"
+          disabled: "no editable"
+        show_on_profile:
+          title: "Mostra al perfil públic?"
+          enabled: "mostrat al perfil"
+          disabled: "no mostrat al perfil"
+        show_on_user_card:
+          title: "Mostra a la targeta de la persona?"
+          enabled: "mostrat a la targeta de la persona"
+          disabled: "no mostrat a la targeta de la persona"
+        field_types:
+          text: 'Camp de text'
+          confirm: 'Confirmació'
+          dropdown: "Desplega"
+      site_text:
+        description: "Pots personalitzar qualsevol text al teu fòrum. Si us plau comença cercant tot seguit:"
+        search: "Cerca el text que t'agradaria editar"
+        title: 'Contingut del text'
+        edit: 'edita'
+        revert: "Reverteix els canvis"
+        revert_confirm: "Segur que vols revertir els canvis?"
+        go_back: "Torna a la cerca"
+        recommended: "Recomanem personalitzar el següent text segons les teves necessitats:"
+        show_overriden: 'Només mostra anul·lat'
+      site_settings:
+        show_overriden: 'Només mostra anul·lat'
+        title: 'Configuració'
+        reset: 'reinicia'
+        none: 'cap'
+        no_results: "Sense resultats"
+        clear_filter: "Neteja"
+        add_url: "afegeix URL"
+        add_host: "afegeix amfitrió"
+        categories:
+          all_results: 'Tot'
+          required: 'Necessari'
+          basic: 'Configuració bàsica'
+          users: 'Persones usuàries'
+          posting: 'Publicant'
+          email: 'Correu electrònic'
+          files: 'Fitxers'
+          trust: 'Nivells de confiança'
+          security: 'Seguretat'
+          onebox: "Caixa"
+          seo: 'SEO'
+          spam: 'Brossa'
+          rate_limits: 'Límits de ritme'
+          developer: 'Desenvolupador'
+          embedding: "Incrustant"
+          legal: "Legal"
+          user_api: 'API de persona usuària'
+          uncategorized: 'Altres'
+          backups: "Còpies de seguretat"
+          login: "Iniciar sessió"
+          plugins: "Complements"
+          user_preferences: "Preferències personals"
+          tags: "Etiquetes"
+          search: "Cerca"
+          groups: "Grups"
+      badges:
+        title: Distintius
+        new_badge: Nou distintiu
+        new: Nou
+        name: Nom
+        badge: Distintiu
+        display_name: Mostra el nom
+        description: Descripció
+        long_description: Descripció llarga
+        badge_type: Tipus de distintiu
+        badge_grouping: Grups
+        badge_groupings:
+          modal_title: Agrupacions de distintius
+        granted_by: Concedit per
+        granted_at: Concedit a
+        reason_help: (Un enllaç a una publicació o un tema)
+        save: Desa
+        delete: Esborra
+        delete_confirm: Segur que vols esborrar aquest distintiu?
+        revoke: Revoca
+        reason: Motiu
+        expand: 'Expandeix &hellip; '
+        revoke_confirm: Segur que vols revocar aquest distintiu?
+        edit_badges: Edita distintius
+        grant_badge: Atorga distintiu
+        granted_badges: Distintius concedits
+        grant: Atorga
+        no_user_badges: "%{name} no ha atorgat cap distintiu"
+        no_badges: No hi ha distintius que puguin atorgar-se.
+        none_selected: "Tria un distintiu per començar"
+        allow_title: Permet que es faci servir el distintiu com a títol
+        multiple_grant: Pot atorgar-se molts cops
+        listable: Mostra distintiu a la pàgina pública de distintius
+        enabled: Activa distintiu
+        icon: Icona
+        image: Imatge
+        icon_help: "Fes servir la classe Font Awesome o una URL a una imatge"
+        query: Consulta distintius (SQL)
+        target_posts: La consulta apunta les publicacions
+        auto_revoke: Executa la consulta diària de revocacions
+        show_posts: Mostra el distintiu atorgat a la publicació a la pàgina de distintius
+        trigger: Desencadenar
+        trigger_type:
+          none: "Actualitza cada dia"
+          post_action: "Quan una persona actua a una publicació"
+          post_revision: "Quan una persona edita o crea una publicació"
+          trust_level_change: "Quan una persona canvia el nivell de confiança"
+          user_change: "Quan una persona és editada o creada"
+          post_processed: "Després de processar una publicació "
+        preview:
+          link_text: "Previsualitza distintius concedits"
+          plan_text: "Previsualitza amb esquema de consulta"
+          modal_title: "Previsualitzar la consulta de distintius"
+          sql_error_header: "Hi ha hagut un error amb la consulta"
+          error_help: "Mira els següents enllaços per ajuda amb les consultes de distintius"
+          bad_count_warning:
+            header: "ATENCIÓ!"
+            text: "Hi ha mostres perdudes de concessions. Això passa quan la consulta de distintius retorna ID de persona usuària o de publicacions que no existeixen. Després això pot provocar resultats inesperats - si us plau, torna a revisar la teva consulta."
+          no_grant_count: "No hi ha distintius per assignar."
+          grant_count:
+            one: "<b>1</b> distintiu per assignar."
+            other: "<b>%{count}</b> distintius per assignar."
+          sample: "Exemple:"
+          grant:
+            with: <span class="username">%{username}</span>
+            with_post: <span class="username">%{username}</span> per a publicació dins %{link}
+            with_post_time: <span class="username">%{username}</span> per a publicació dins %{link} a <span class="time">%{time}</span>
+            with_time: <span class="username">%{username}</span> a <span class="time">%{time}</span>
+      emoji:
+        title: "Emoji"
+        help: "Afegeix un nou emoji que serà disponible per a tothom. (GRAN CONSELL: arrossega i deixa anar molts fitxers d'un sol cop)"
+        add: "Afegeix emoji nou"
+        name: "Nom"
+        image: "Imatge"
+        delete_confirm: "Segur que vols esborrar l'emoji :%{name}:?"
+      embedding:
+        get_started: "Si vols incrustar <i>Discourse</i> a un altre web, comença per afegir-hi el seu amfitrió."
+        confirm_delete: "Segur que vols esborrar aquest amfitrió?"
+        sample: "Fes servir el següent codi HTML al teu lloc per crear i incrustar temes de <i>Discourse</i>. Reemplaça <b>REEMPLAÇA'M</b> amb la URL canònica de la pàgina a la qual ho estàs incrustant."
+        title: "Incrustant"
+        host: "Amfitrions permesos"
+        path_whitelist: "Llista blanca de camins"
+        edit: "edita"
+        category: "Publicar a categoria"
+        add_host: "Afegeix amfitrió"
+        settings: "Configuració d'incrustacions"
+        feed_settings: "Configuració de sindicació"
+        feed_description: "Si proporciones una sindicació RSS/ATOM al teu lloc milloraràs la capacitat de <i>Discourse</i> per importar els teus continguts."
+        crawling_settings: "Configuració d'aranya"
+        crawling_description: "Quan el <i>Discourse</i> crea temes per a les teves publicacions, si no hi ha sindicació RSS/ATOM es provarà d'analitzar els teus continguts a banda del teu HTML. A vegades, això pot comportar l'extracció dels teus continguts i per això t'oferim la possibilitat d'especificar les regles de CSS per tal de fer més fàcil l'extracció."
+        embed_by_username: "Nom de persona usuària per crear un tema"
+        embed_post_limit: "Quantitat màxima de publicacions per incrustar"
+        embed_username_key_from_feed: "Clau per treure el nom de persona usuària de la sindicació"
+        embed_title_scrubber: "Expressió regular emprada per depurar el títol de les publicacions"
+        embed_truncate: "Separa les publicacions incrustades"
+        embed_whitelist_selector: "Selector de CSS per a elements permesos a les incrustacions"
+        embed_blacklist_selector: "Selector de CSS per a elements que han estat eliminats de les incrustacions"
+        embed_classname_whitelist: "Noms permesos de classes de CSS"
+        feed_polling_enabled: "Importa publicacions amb RSS/ATOM"
+        feed_polling_url: "URL de la sindicació RSS/ATOM per rastrejar"
+        save: "Desa la configuració d'incrustacions"
+      permalink:
+        title: "Enllaços permanents"
+        url: "URL"
+        topic_id: "ID de tema"
+        topic_title: "Tema"
+        post_id: "ID de publicació"
+        post_title: "Publicació"
+        category_id: "ID de categoria"
+        category_title: "Categoria"
+        external_url: "URL externa"
+        delete_confirm: Segur que vols esborrar aquest enllaç permanent?
+        form:
+          label: "Nou:"
+          add: "Afegegix"
+          filter: "Cerca (URL o URL externa)"
+  wizard_js:
+    wizard:
+      done: "Fet"
+      back: "Enrere"
+      next: "Següent"
+      step: "%{current} de %{total}"
+      upload: "Carrega"
+      uploading: "Actualitzant..."
+      quit: "Potser més tard"
+      staff_count:
+        one: "La teva comunitat té 1 membre d'equip."
+        other: "La teva comunitat té %{count} membres d'equip."
+      invites:
+        add_user: "afegegix"
+        none_added: "No hi has convidat cap equip. Segur que vols continuar?"
+        roles:
+          admin: "Admin"
+          moderator: "Moderació"
+          regular: "Persona usuària ordinària"
