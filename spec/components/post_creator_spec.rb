@@ -738,6 +738,11 @@ describe PostCreator do
       creator = PostCreator.new(user, raw: 'q', title: 'q', skip_validations: true)
       creator.create
       expect(creator.errors).to be_blank
+
+      topic.update(closed: true)
+      creator = PostCreator.new(user, raw: 'q', topic_id: topic.id, skip_validations: true)
+      creator.create
+      expect(creator.errors).to be_blank
     end
   end
 
