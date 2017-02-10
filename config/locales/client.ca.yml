@@ -1396,11 +1396,8 @@ ca:
         make_banner: "Bandera de tema"
         remove_banner: "Elimina bandera de tema"
       reply:
-        post:
-          title: 'Respon'
-        topic:
-          title: 'Respon'
-          help: 'comença a redactar una resposta a aquest tema'
+        title: 'Respon'
+        help: 'comença a redactar una resposta a aquest tema'
       clear_pin:
         title: "Neteja clavat"
         help: "Neteja l'estat clavat d'aquest tema perquè no torni a aparèixer al principi de la teva llista de temes"
@@ -1545,8 +1542,8 @@ ca:
         one: "{{count}} Resposta"
         other: "{{count}} Respostes"
       has_likes:
-        one: "{{count}}  <i>M'agrada</i>"
-        other: "{{count}} <i>M'agrada</i>"
+        one: "{{count}} M'agrada"
+        other: "{{count}} M'agrada"
       has_likes_title:
         one: "La publicació agrada a 1 persona"
         other: "La publicació agrada a {{count}} persones"
