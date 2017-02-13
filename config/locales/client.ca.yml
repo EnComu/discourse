@@ -412,8 +412,8 @@ ca:
       flair_preview_image: "Vista prèvia d'imatge"
       flair_note: "Nota: l'adornament només es mostrarà per a un grup primari de persones usuàries."
     user_action_groups:
-      '1': "<i>M'agrada</i> donats"
-      '2': "<i>M'agrada</i> rebuts"
+      '1': "M'agrada donats"
+      '2': "M'agrada rebuts"
       '3': "Preferits"
       '4': "Temes"
       '5': "Respostes"
@@ -661,7 +661,7 @@ ca:
       website: "Lloc web"
       email_settings: "Correu electrònic"
       like_notification_frequency:
-        title: "Avisa quan hi hagi un <i>M'Agrada</i>"
+        title: "Avisa quan hi hagi un M'Agrada"
         always: "Sempre"
         first_time_and_daily: "El primer cop que agradi una publicació i a diari "
         first_time: "El primer cop que agradi una publicació"
@@ -790,7 +790,7 @@ ca:
         most_liked_by: "Més agradat per"
         most_liked_users: "Més agradat"
         most_replied_to_users: "Més respost a "
-        no_likes: "Encara sense <i>M'agrada</i>"
+        no_likes: "Encara sense M'agrada"
       associated_accounts: "Sessions iniciades"
       ip_address:
         title: "Darrera adreça IP"
@@ -833,7 +833,7 @@ ca:
     logout: "T'has desconnectat."
     refresh: "Actualitza"
     read_only_mode:
-      enabled: "El lloc web es troba en mode només de lectura. Si us plau, continua navegant però per ara estan desactivades respondre, <i>M'agrada</i> i altres accions."
+      enabled: "El lloc web es troba en mode només de lectura. Si us plau, continua navegant però per ara estan desactivades respondre, M'agrada i altres accions."
       login_disabled: "S'ha desactivat l'inici de sessió mentre aquest lloc es trobi en mode només de lectura."
       logout_disabled: "S'ha desactivat el tancament de sessió mentre aquest lloc es trobi en mode només de lectura."
     too_few_topics_and_posts_notice: "Som-hi, <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>comença aquest debat!</a> Hores d'ara hi ha <strong>%{currentTopics} / %{requiredTopics}</strong> temes i <strong>%{currentPosts} / %{requiredPosts}</strong> publicacions. Les noves visites necessiten algunes converses per llegir-te i respondre't."
@@ -1291,8 +1291,8 @@ ca:
         one: "hi ha 1 nova publicació a aquest tema des de la teva darrera lectura"
         other: "hi ha {{count}} noves publicacions a aquest tema des de la teva darrera lectura"
       likes:
-        one: "hi ha 1 <i>M'agrada</i> a aquest tema"
-        other: "hi ha {{count}} <i>M'agrada</i> a aquest tema"
+        one: "hi ha 1 M'agrada a aquest tema"
+        other: "hi ha {{count}} M'agrada a aquest tema"
       back_to_list: "Torna al llistat de temes"
       options: "Opcions de tema"
       show_links: "mostra enllaços dins d'aquest tema"
@@ -1573,12 +1573,12 @@ ca:
         about: "aquesta publicació és una wiki"
       archetypes:
         save: 'Desa opcions'
-      few_likes_left: "Gràcies per compartir l'amor! Avui ja només et queden un grapat de <i>M'agrada</i>."
+      few_likes_left: "Gràcies per compartir l'amor! Avui ja només et queden un grapat de M'agrada."
       controls:
         reply: "comença a redactar una resposta a aquesta publicació"
         like: "M'agrada aquesta publicació"
         has_liked: "t'ha agradat aquesta publicació"
-        undo_like: "Desfés <i>M'agrada</i>"
+        undo_like: "Desfés M'agrada"
         edit: "edita aquesta publicació"
         edit_anonymous: "Disculpa, et cal identificar-te per fer editar aquesta publicació."
         flag: "posa bandera en privat a aquesta publicació per destacar-la o envia una alerta privada sobre el mateix"
@@ -1610,7 +1610,7 @@ ca:
           spam: "Desfés bandera"
           inappropriate: "Desfés bandera"
           bookmark: "Desfés preferit"
-          like: "Desfés <i>M'agrada</i>"
+          like: "Desfés M'agrada"
           vote: "Desfés votar"
         people:
           off_topic: "Marca amb bandera de fora de context"
@@ -1790,7 +1790,7 @@ ca:
       sort_options:
         default: "per defecte"
         likes: "Agrada"
-        op_likes: "<i>M'agrada</i> a publicacions originals"
+        op_likes: "M'agrada a publicacions originals"
         views: "Vistes"
         posts: "Publicacions"
         activity: "Activitat"
@@ -2550,7 +2550,7 @@ ca:
             description: 'Emprat per indicar que una acció ha estat reeixida.'
           love:
             name: 'amor'
-            description: "El color del botó <i>M'agrada</i>"
+            description: "El color del botó M'agrada"
       email:
         title: "Correus"
         settings: "Configuracions"
@@ -2806,7 +2806,7 @@ ca:
         reputation: Reputació
         permissions: Permisos
         activity: Activitat
-        like_count: <i>M'agrada</i> donats / rebuts
+        like_count: M'agrada donats / rebuts
         last_100_days: 'durant els darrers 100 dies'
         private_topics_count: Temes privats
         posts_read_count: Publicacions llegides
@@ -2889,10 +2889,10 @@ ca:
           posts_read_all_time: "Publicacions llegides (sempre)"
           flagged_posts: "Publicacions amb bandera"
           flagged_by_users: "Persones que han abanderat"
-          likes_given: "<i>M'Agrada</i> donats"
-          likes_received: "<i>M'Agrada</i> rebuts"
-          likes_received_days: "<i>M'Agrada</i> rebuts: dies únics"
-          likes_received_users: "<i>M'Agrada</i> rebuts: persones úniques"
+          likes_given: "M'Agrada donats"
+          likes_received: "M'Agrada rebuts"
+          likes_received_days: "M'Agrada rebuts: dies únics"
+          likes_received_users: "M'Agrada rebuts: persones úniques"
           qualifies: "Qualificacions per al nivell de confiança 3"
           does_not_qualify: "No qualifica per al nivell de confiança 3"
           will_be_promoted: "Es promourà aviat."
