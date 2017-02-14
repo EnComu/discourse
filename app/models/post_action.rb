@@ -317,7 +317,7 @@ SQL
     SQL
 
     post_cols_to_copy =
-      PostActionType.types.keys.map { |key| :"#{key}_count" } + %i(sort_order like_score)
+      PostActionType.types.keys.map { |key| :"#{key}_count" } + [:like_score]
 
     target_post.update_columns(original_post.slice(*post_cols_to_copy))
 
